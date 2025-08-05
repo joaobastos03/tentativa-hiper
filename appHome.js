@@ -371,27 +371,8 @@ style.textContent = `
     }
 `;
 
-function showWelcomeMessage() {
-    const welcomeMsg = document.getElementById('welcome-message');
-    if (welcomeMsg) {
-        // Mostra a mensagem
-        welcomeMsg.classList.add('show');
-        
-        // Configura para esconder após 3 segundos
-        setTimeout(() => {
-            welcomeMsg.classList.remove('show');
-            welcomeMsg.classList.add('hide');
-            
-            // Remove completamente o elemento após a animação
-            setTimeout(() => {
-                welcomeMsg.remove();
-            }, 500);
-        }, 3000);
-    }
-}
 
 document.head.appendChild(style);
 
 // Inicia a aplicação quando o DOM estiver totalmente carregado
-document.addEventListener('DOMContentLoaded', showWelcomeMessage);
 document.addEventListener('DOMContentLoaded', inicializarAplicacao);

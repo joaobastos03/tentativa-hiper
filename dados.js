@@ -1,1 +1,0 @@
-const cursadas = ["GGM00137","GQI00042","TER00108","GAN00140","TEM00277"];
