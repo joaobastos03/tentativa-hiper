@@ -1,0 +1,246 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 40px 20px;
+    color: #333;
+}
+
+.settings-container {
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 16px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.settings-header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.settings-header h2 {
+    color: #2d3748;
+    font-size: 28px;
+    margin-bottom: 8px;
+}
+
+.settings-header .subtitle {
+    color: #4a5568;
+    font-size: 16px;
+}
+
+.periodo-section {
+    margin-bottom: 30px;
+    border-bottom: 1px solid #e2e8f0;
+    padding-bottom: 20px;
+}
+
+.periodo-section:last-child {
+    border-bottom: none;
+}
+
+.periodo-title {
+    color: #4a5568;
+    font-size: 20px;
+    margin-bottom: 15px;
+    padding-left: 10px;
+    border-left: 4px solid #667eea;
+}
+
+.disciplinas-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 12px;
+}
+
+.disciplina-item {
+    display: flex;
+    align-items: center;
+    padding: 12px 15px;
+    background-color: #f8fafc;
+    border-radius: 8px;
+    transition: all 0.2s ease;
+    border: 1px solid #e2e8f0;
+}
+
+.disciplina-item:hover {
+    background-color: #edf2f7;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+.disciplina-item input[type="checkbox"] {
+    appearance: none;
+    -webkit-appearance: none;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #cbd5e0;
+    border-radius: 4px;
+    margin-right: 15px;
+    cursor: pointer;
+    position: relative;
+    transition: all 0.2s ease;
+}
+
+.disciplina-item input[type="checkbox"]:checked {
+    background-color: #667eea;
+    border-color: #667eea;
+}
+
+.disciplina-item input[type="checkbox"]:checked::after {
+    content: '✓';
+    position: absolute;
+    color: white;
+    font-size: 14px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.disciplina-label {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.disciplina-codigo {
+    font-size: 12px;
+    color: #718096;
+    margin-bottom: 2px;
+}
+
+.disciplina-nome {
+    font-size: 14px;
+    color: #2d3748;
+    font-weight: 500;
+}
+
+.enfase-section {
+    margin: 40px 0;
+}
+
+.section-title {
+    color: #4a5568;
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.select-wrapper {
+    position: relative;
+}
+
+.enfase-select {
+    width: 100%;
+    padding: 14px 16px;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    font-size: 16px;
+    color: #2d3748;
+    background-color: #fff;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23667eea' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e");
+    background-repeat: no-repeat;
+    background-position: right 12px center;
+    background-size: 16px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.enfase-select:focus {
+    outline: none;
+    border-color: #667eea;
+    box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.2);
+}
+
+.form-actions {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 30px;
+}
+
+.save-button {
+    background-color: #667eea;
+    color: white;
+    border: none;
+    padding: 14px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+.save-button:hover {
+    background-color: #5a67d8;
+}
+
+.back-link {
+    color: #667eea;
+    text-align: center;
+    text-decoration: none;
+    font-weight: 500;
+    padding: 10px;
+    transition: color 0.2s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+.back-link:hover {
+    color: #5a67d8;
+    text-decoration: underline;
+}
+
+/* Ícones (pode substituir por ícones reais ou biblioteca como Font Awesome) */
+.icon-save::before {
+    content: '💾';
+}
+
+.icon-arrow-left::before {
+    content: '←';
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .settings-container {
+        padding: 25px 15px;
+    }
+    
+    .disciplinas-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .periodo-title {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        padding: 20px 10px;
+    }
+    
+    .settings-header h2 {
+        font-size: 24px;
+    }
+}
