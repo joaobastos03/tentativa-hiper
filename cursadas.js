@@ -1,6 +1,6 @@
 // Estado para controle de matérias cursadas
 const materiasCursadas = {
-    cursadas: [],
+    cursadas: ["GGM00137", "GMA00154"],
     
     carregar: function() {
         const salvo = localStorage.getItem('materiasCursadas');
