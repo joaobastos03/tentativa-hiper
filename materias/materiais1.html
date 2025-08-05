@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style_aux.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <title>Página Auxiliar</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><img src="logo pet mec.png" alt=""></li>
+                <li><h1>Engenharia de Materiais 1A</h1></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <ul>
+            <li>
+                <div class="titulo" onclick="expandir_div('apostila')"><span>Apostilas e Bibliografia Indicada</span></div>
+                <div class="texto" id="apostila">
+                    <ul>
+                        <li>  APOSTILA A</li>
+                        <li>  APOSTILA B</li>
+                        <li>  APOSTILA C</li>
+                        <li>  TEORIA DO CONTEÚDO X</li>
+                        <li>  TEORIA DO CONTEÚDO Y</li>
+                        <li>  TEORIA DO CONTEÚDO Z</li>
+                        <li><a href="">  Bibliografia indicada 1</a></li>
+                        <li><a href="">  Bibliografia indicada 2</a></li>
+                        <li><a href="">  Bibliografia indicada 3</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li>
+                <div class="titulo" onclick="expandir_div('video_aula')"><span>Video Aulas</span></div>
+                <div class="texto" id="video_aula">
+                    <ul>
+                        <li><a href="">Video 1</a></li>
+                        <li><a href="">Video 2</a></li>
+                        <li><a href="">Video 3</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li>
+                <div class="titulo" onclick="expandir_div('exercicios')"><span>Exercícios</span></div>
+                <div class="texto" id="exercicios">
+                    <ul>
+                        <li>  LISTA DO CONTEÚDO A</li>
+                        <li>  LISTA DO CONTEÚDO B</li>
+                        <li>  LISTA DO CONTEÚDO C</li>
+                        <li>  LISTA DO CONTEÚDO D</li>
+                    </ul>
+                </div>
+            </li>
+            <li><div class="titulo" onclick="expandir_div('simulados')">
+                <span>Simulados</span></div>
+                <div class="texto" id="simulados">
+                    <ul>
+                        <li>  LINK PARA FORMULÁRIO 1</li>
+                        <li>  LINK PARA FORMULÁRIO 2</li>
+                        <li>  LINK PARA FORMULÁRIO 3</li>
+                        <li>  GABARITO 1</li>
+                        <li>  GABARITO 2</li>
+                        <li>  GABARITO 3</li>
+                    </ul>
+                </div>
+            </li>
+            <li>
+                <div class="titulo" onclick="expandir_div('contato')"><span>Contato de Professores</span></div>
+                <div class="texto" id="contato">
+                    <ul>
+                        <li>
+                            <p>
+                                Professor X <br>
+                                    Sala: <br>
+                                    Email: <br>
+                                    Currículo Latters <br> 
+                            </p>
+                        </li>
+                        <p>
+                            Professor Y <br>
+                                Sala: <br>
+                                Email: <br>
+                                Currículo Latters <br> 
+                        </p>
+                        <li>
+                        </li>
+                        <li>
+                            <p>
+                                Professor Y <br>
+                                    Sala: <br>
+                                    Email: <br>
+                                    Currículo Latters <br> 
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+        </ul>
+    </main>
+</body>
+
+<script>
+    function expandir_div(elemento) {
+        var elemento = document.getElementById(elemento)
+        if (elemento.style.display == 'none') {
+            elemento.style.display = 'block';
+        }
+        else {
+            elemento.style.display = 'none';
+        }
+
+    }
+
+</script>
+</html>

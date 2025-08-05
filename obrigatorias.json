@@ -1,0 +1,366 @@
+{
+    "GGM00137":{
+        "titulo":"FUNDAMENTOS DE CÁLCULO E GEOMETRIA",
+        "requisitos":[],
+        "cor":"verde",
+        "horas":"60",
+        "periodo":"1"
+    },
+    "GMA00154":{
+        "titulo":"CÁLCULO I",
+        "requisitos":[],
+        "cor":"verde",
+        "horas": "60",
+        "periodo": "1"
+    },
+    "GQI00042":{
+        "titulo":"QÚMICA GERAL III",
+        "requisitos":[],
+        "cor":"azul",
+        "horas":"60",
+        "periodo":"1"
+    },
+    "TEM00188":{
+        "titulo":"INTORDUÇÃO À ENGENHARIA MECÂNICA",
+        "requisitos":[],
+        "cor":"rosa",
+        "horas":"30",
+        "periodo":"1"
+    },
+    "TER00108":{
+        "titulo":"ENGENHARIA DE MEIO AMBIENTE",
+        "requisitos":[],
+        "cor":"rosa",
+        "horas":"60",
+        "periodo":"1"
+    },
+    "GAN00140":{
+        "titulo":"ÁLGEBRA LINEAR",
+        "requisitos":["GGM00137"],
+        "cor":"verde",
+        "horas":"60",
+        "periodo":"2"
+    },
+    "GFI00158":{
+        "titulo":"FISICA I",
+        "requisitos":["GGM00137", "GMA00154", "GAN00140"],
+        "cor":"azul",
+        "horas":"60",
+        "periodo":"2"
+    },
+    "GFI00161":{
+        "titulo":"FÍSICA EXPERIMENTAL I",
+        "requisitos":["GGM00137", "GMA00154", "GAN00140"],
+        "cor":"azul",
+        "horas":"30",
+        "periodo":"2"
+    },
+    "GMA00155":{
+        "titulo":"CÁLCULO II",
+        "requisitos":["GGM00137","GMA00154","GAN00140"],
+        "cor":"verde",
+        "horas":"60",
+        "periodo":"2"
+    },
+    "TCC00326":{
+        "titulo":"PROGRAMAÇÃO DE COMPUTADORES",
+        "requisitos":["GMA00154","GAN00140"],
+        "cor":"cinza",
+        "horas":"60",
+        "periodo":"2"
+    },
+    "TDT00076":{
+        "titulo":"FUNDAMENTOS DE DESENHO TECNICO II",
+        "requisitos":["GGM00137"],
+        "cor":"laranja",
+        "horas":"60",
+        "periodo":"2"
+    },
+    "TEM00276":{
+        "titulo":"PROBLEMAS EM ENGENHARIA MECÂNICA I",
+        "requisitos":["GGM00137","GMA00154","TEM00188","GAN00140","GFI00158","GMA00155","TCC00326","TDT00076"],
+        "cor":"azul",
+        "horas":"30",
+        "periodo":"2"
+    },
+    "GFI00160":{
+        "titulo":"FÍSICA III",
+        "requisitos":["GFI00158"],
+        "cor":"azul",
+        "horas":"60",
+        "periodo":"3"
+    },
+    "GFI00163":{
+        "titulo":"FÍSICA EXPERIMENTAL III",
+        "requisitos":["GFI00158","GFI00160","GMA00155"],
+        "cor":"azul",
+        "horas":"60",
+        "periodo":"3"
+    },
+    "GMA00156":{
+        "titulo":"CÁLCULO 3 ",
+        "requisitos":["GAN00140","GMA00155"],
+        "cor":"verde",
+        "horas":"60",
+        "periodo":"3"
+    },
+    "GMA00158":{
+        "titulo":"CÁLCULO 4",
+        "requisitos":["GAN00140","GMA00155"],
+        "cor":"verde",
+        "horas":"60",
+        "periodo":"3"
+    },
+    "TDT00041":{
+        "titulo":"DESENHO DE PROJETOS MECÂNICOS",
+        "requisitos":["TDT00076"],
+        "cor":"laranja",
+        "horas":"60",
+        "periodo":"3"
+    },
+    "TEM00200":{
+        "titulo":"MÉTODOS COMPUTACIONAIS EM ENGENHARIA MECÂNICA",
+        "requisitos":["GAN00140","GMA00155","TCC00326"],
+        "cor":"cinza",
+        "horas":"60",
+        "periodo":"3"
+    },
+    "TEM00277":{
+        "titulo":"PROBLEMAS EM ENGENHARIA MECÂNICA II ",
+        "requisitos":["GAN00140","GFI00158","GMA00155","TCC00326","GFI00160","GMA00158","GMA00156","TEM00200"],
+        "cor":"azul",
+        "horas":"30",
+        "periodo":"3"
+    },
+    "GET00177":{
+        "titulo":"ESTATÍSTICA BÁSICA",
+        "requisitos":["GAN00140","GMA00155"],
+        "cor":"verde",
+        "horas":"60",
+        "periodo":"4"
+    },
+    "GFI00159":{
+        "titulo":"FÍSICA II ",
+        "requisitos":["GFI00158", "GMA00156","GMA00158"],
+        "cor":"azul",
+        "horas":"60",
+        "periodo":"4"
+    },
+    "GFI00162":{
+        "titulo":"FÍSICA EXPERIMENTAL II",
+        "requisitos":["GFI00158", "GMA00158", "GMA00156"],
+        "cor":"azul",
+        "horas":"30",
+        "periodo":"4"
+    },
+    "GMA00162":{
+        "titulo":"CÁLCULO 5",
+        "requisitos":["GMA00158"],
+        "cor":"verde",
+        "horas":"60",
+        "periodo":"4"
+    },
+    "TEM00187":{
+        "titulo":"CIÊNCIA E TECNOLOGIA",
+        "requisitos":["TEM00277"],
+        "cor":"rosa",
+        "horas":"30",
+        "periodo":"4"
+    },
+    "TEM00190":{
+        "titulo":"ESTÁTICA",
+        "requisitos":["GFI00158", "GMA00155", "TEM00276"],
+        "cor":"roxo",
+        "horas":"60",
+        "periodo":"4"
+    },
+    "TEM00275":{
+        "titulo":"TERMODINÂMICA I ",
+        "requisitos":["GMA00155","TEM00276", "GFI00160"],
+        "cor":"vermelho",
+        "horas":"60",
+        "periodo":"4"
+    },
+    "GFI00155":{
+        "titulo":"FÍSICA EXPERIMENTAL IV",
+        "requisitos":["GMA00156","GMA00158","GFI00159","GFI00171"],
+        "cor":"azul",
+        "horas":"60",
+        "periodo":"5"
+    },
+    "GFI00171":{
+        "titulo":"FÍSICA IV ",
+        "requisitos":["GMA00156","GMA00158","GFI00159","GMA00162"],
+        "cor":"azul",
+        "horas":"60",
+        "periodo":"5"
+    },
+    "TEM00184":{
+        "titulo":"MECÂNICA DOS FLUIDOS I",
+        "requisitos":["GMA00162"],
+        "cor":"vermelho",
+        "horas":"60",
+        "periodo":"5"
+    },
+    "TEM00194":{
+        "titulo":"MECÂNICA DOS SÓLIDOS I ",
+        "requisitos":["GMA00158","TEM00190"],
+        "cor":"roxo",
+        "horas":"60",
+        "periodo":"5"
+    },
+    "TEM00209":{
+        "titulo":"DINÂMICA I",
+        "requisitos":["GMA00158","TEM00190"],
+        "cor":"roxo",
+        "horas":"60",
+        "periodo":"5"
+    },
+    "TEM00211":{
+        "titulo":"INTRODUÇÃO À ENGENHARIA DE FABRICAÇÃO",
+        "requisitos":["TEM00275","GMA00158", "TEM00277"],
+        "cor":"laranja",
+        "horas":"60",
+        "periodo":"5"
+    },
+    "TEM00279":{
+        "titulo":"TERMODINÂMICA II",
+        "requisitos":["GMA00158","TEM00277"],
+        "cor":"vermelho",
+        "horas":"60",
+        "periodo":"5"
+    },
+    "TEM00189":{
+        "titulo":"ENGENHARIA DOS MATERIAIS I-A",
+        "requisitos":["TEM00194", "GGM00137", "GMA00154", "GQI00042", "TEM00188", "TER00108", "GAN00140", "GFI00158", "GFI00161", "GMA00155", "TCC00326", "TDT00076", "TEM00276", "GFI00160", "GFI00163", "GMA00156", "GMA00158", "TDT00041", "TEM00200", "TEM00277"],
+        "cor":"marrom",
+        "horas":"60",
+        "periodo":"6"
+    },
+    "TEM00193":{
+        "titulo":"TRANSFERÊNCIA DE CALOR",
+        "requisitos":["TEM00184","TEM00279", "GGM00137", "GMA00154", "GQI00042", "TEM00188", "TER00108", "GAN00140", "GFI00158", "GFI00161", "GMA00155", "TCC00326", "TDT00076", "TEM00276", "GFI00160", "GFI00163", "GMA00156", "GMA00158", "TDT00041", "TEM00200", "TEM00277"],
+        "cor":"vermelho",
+        "horas":"60",
+        "periodo":"6"
+    },
+    "TEM00195":{
+        "titulo":"MECÂNICA DOS SÓLIDOS II",
+        "requisitos":["TEM00194", "GGM00137", "GMA00154", "GQI00042", "TEM00188", "TER00108", "GAN00140", "GFI00158", "GFI00161", "GMA00155", "TCC00326", "TDT00076", "TEM00276", "GFI00160", "GFI00163", "GMA00156", "GMA00158", "TDT00041", "TEM00200", "TEM00277","GET00177","GFI00159","GFI00162","GMA00162","TEM00275","TEM00187"],
+        "cor":"roxo",
+        "horas":"60",
+        "periodo":"6"
+    },
+    "TEM00199":{
+        "titulo":"VIBRAÇÕES E SISTEMAS MECÂNICO",
+        "requisitos":["TEM00194","TEM00209", "GGM00137", "GMA00154", "GQI00042", "TEM00188", "TER00108", "GAN00140", "GFI00158", "GFI00161", "GMA00155", "TCC00326", "TDT00076", "TEM00276", "GFI00160", "GFI00163", "GMA00156", "GMA00158", "TDT00041", "TEM00200", "TEM00277","TEM00275"],
+        "cor":"roxo",
+        "horas":"60",
+        "periodo":"6"
+    },
+    "TEM00205":{
+        "titulo":"METROLOGIA INDUSTRIAL",
+        "requisitos":["TEM00211", "GGM00137", "GMA00154", "GQI00042", "TEM00188", "TER00108", "GAN00140", "GFI00158", "GFI00161", "GMA00155", "TCC00326", "TDT00076", "TEM00276", "GFI00160", "GFI00163", "GMA00156", "GMA00158", "TDT00041", "TEM00200", "TEM00277"],
+        "cor":"laranja",
+        "horas":"60",
+        "periodo":"6"
+    },
+    "TEM00280":{
+        "titulo":"MÁQUINAS TÉRMICAS I",
+        "requisitos":["TEM00279","TEM00193", "GGM00137", "GMA00154", "GQI00042", "TEM00188", "TER00108", "GAN00140", "GFI00158", "GFI00161", "GMA00155", "TCC00326", "TDT00076", "TEM00276", "GFI00160", "GFI00163", "GMA00156", "GMA00158", "TDT00041", "TEM00200", "TEM00277"],
+        "cor":"vermelho",
+        "horas":"60",
+        "periodo":"6"
+    },
+    "TEE00113":{
+        "titulo":"ELETROTÉCNICA",
+        "requisitos":["GET00177","GFI00159","GFI00162","GMA00162","TEM00187","TEM00190"],
+        "cor":"laranja",
+        "horas":"60",
+        "periodo":"7"
+    },
+    "TEM00047":{
+        "titulo":"USINAGEM",
+        "requisitos":["TEM00189","TEM00211"],
+        "cor":"laranja",
+        "horas":"60",
+        "periodo":"7"
+    },
+    "TEM00051":{
+        "titulo":"ENGENHARIA DOS MATERIAIS II-A",
+        "requisitos":["TEM00189"],
+        "cor":"marrom",
+        "horas":"60",
+        "periodo":"7"
+    },
+    "TEM00197":{
+        "titulo":"ELEMENTOS DE MÁQUINAS I ",
+        "requisitos":["TEM00195"],
+        "cor":"laranja",
+        "horas":"60",
+        "periodo":"7"
+    },
+    "TEM00210":{
+        "titulo":"MÁQUINAS HIDRÁULICAS",
+        "requisitos":["TEM00184"],
+        "cor":"laranja",
+        "horas":"60",
+        "periodo":"7"
+    },
+    "TEM00198":{
+        "titulo":"ELEMENTOS DE MÁQUINAS II ",
+        "requisitos":["TEM00051","TEM00197"],
+        "cor":"laranja",
+        "horas":"60",
+        "periodo":"8"
+    },
+    "TEM00203":{
+        "titulo":"FUNDIÇÃO, METALURGIA DO PÓ E MANUFATURA ADITIVA",
+        "requisitos":["TEM00211","TEM00051"],
+        "cor":"laranja",
+        "horas":"60",
+        "periodo":"8"
+    },
+    "TEM00204":{
+        "titulo":"SOLDAGEM E ENSAIOS NÃO DESTRUTIVOS",
+        "requisitos":["TEM00211","TEM00051"],
+        "cor":"laranja",
+        "horas":"60",
+        "periodo":"8"
+    },
+    "TEP00108":{
+        "titulo":"ADMINISTRAÇÃO APLICADA À ENGENHARIA",
+        "requisitos":["GGM00137", "GMA00154", "GQI00042", "TEM00188", "TER00108"],
+        "cor":"rosa",
+        "horas":"60",
+        "periodo":"8"
+    },
+    "TEM00212":{
+        "titulo":"PROJETO DE ENGENHARIA MECÂNICA I ",
+        "requisitos":["GGM00137", "GMA00154", "GQI00042", "TEM00188", "TER00108", "GAN00140", "GFI00158", "GFI00161", "GMA00155", "TCC00326", "TDT00076", "TEM00276", "GFI00160", "GFI00163", "GMA00156", "GMA00158", "TDT00041", "TEM00200", "TEM00277", "GET00177", "GFI00159", "GFI00162", "GMA00162", "TEM00187", "TEM00190", "TEM00275", "GFI00155", "GFI00171", "TEM00184", "TEM00194", "TEM00209", "TEM00211", "TEM00279", "TEM00189", "TEM00193", "TEM00195", "TEM00199", "TEM00205", "TEM00280", "TEE00113", "TEM00047", "TEM00051", "TEM00197", "TEM00210"],
+        "cor":"rosa",
+        "horas":"30",
+        "periodo":"9"
+    },
+    "TEM00214":{
+        "titulo":"ESTÁGIO OBRIGATÓRIO EM ENGENHARIA MECÂNICA I ",
+        "requisitos":["GGM00137", "GMA00154", "GQI00042", "TEM00188", "TER00108", "GAN00140", "GFI00158", "GFI00161", "GMA00155", "TCC00326", "TDT00076", "TEM00276", "GFI00160", "GFI00163", "GMA00156", "GMA00158", "TDT00041", "TEM00200", "TEM00277", "GET00177", "GFI00159", "GFI00162", "GMA00162", "TEM00187", "TEM00190", "TEM00275"],
+        "cor":"rosa",
+        "horas":"160",
+        "periodo":"9"
+    },
+    "TEP00109":{
+        "titulo":"ECONOMIA APLICADA À ENGENHARIA",
+        "requisitos":["GGM00137", "GMA00154", "GQI00042", "TEM00188", "TER00108"],
+        "cor":"rosa",
+        "horas":"60",
+        "periodo":"9"
+    },
+    "TEM00213":{
+        "titulo":"PROJETO DE ENGENHARIA MECÂNICA II",
+        "requisitos":["TEM00212", "GGM00137", "GMA00154", "GQI00042", "TEM00188", "TER00108", "GAN00140", "GFI00158", "GFI00161", "GMA00155", "TCC00326", "TDT00076", "TEM00276", "GFI00160", "GFI00163", "GMA00156", "GMA00158", "TDT00041", "TEM00200", "TEM00277", "GET00177", "GFI00159", "GFI00162", "GMA00162", "TEM00187", "TEM00190", "TEM00275", "GFI00155", "GFI00171", "TEM00184", "TEM00194", "TEM00209", "TEM00211", "TEM00279", "TEM00189", "TEM00193", "TEM00195", "TEM00199", "TEM00205", "TEM00280", "TEE00113", "TEM00047", "TEM00051", "TEM00197", "TEM00210"],
+        "cor":"rosa",
+        "horas":"30",
+        "periodo":"10"
+    }
+}

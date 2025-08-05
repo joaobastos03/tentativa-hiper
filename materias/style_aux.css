@@ -1,0 +1,90 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+header {
+    background-color: black;
+}
+
+nav ul li img {
+    width: 150px;
+    margin: 15px;
+}
+
+nav ul li h1 {
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+    position: relative;
+    transform: translateY(-90%);
+}
+
+nav ul li {
+    position: relative;
+    display: inline-block;
+    margin: 20px;
+}
+
+/* #apostilas, #video_aulas, #exercicios, #simulados, #contato_professores */
+body {
+    background: #cfcfcf;
+}
+
+main {
+    margin-top: 10vh;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+main ul {
+    list-style: none;
+}
+
+.titulo {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    box-sizing: border-box;
+    border: 1px solid #585859;
+    background-color: #A1A2A6;
+    width: 80vw;
+    height: 10vh;
+    padding-left: 15px;
+    transition: 0.5s;
+    margin-bottom: 0.5vh;
+}
+
+.titulo span {
+    font-size: 1.5rem;
+}
+
+.separador {
+    width: 80%;
+    background-color: #585859;
+}
+
+.titulo:hover {
+    color: white;
+    transform: translateY(-20%);
+    text-shadow: 3px 3px 3px rgba(0, 0, 0, 1);
+}
+
+.texto {
+    display: none;
+    padding-left: 5vw;
+    padding-top: 3vh;
+    margin-bottom: 3vh;
+}
+
+.texto ul li{
+    list-style:circle;
+    transition: 0.5s;
+}
+
+.texto ul li:hover {
+    transform: translateY(-15%);
+    font-size: 1.5rem;
+}
