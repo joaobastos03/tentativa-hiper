@@ -56,6 +56,7 @@ main {
     text-decoration: none;
 }
 
+
 .btn {
     margin-bottom: 10px;
     margin-top: 15px;
@@ -210,3 +211,16 @@ nav .links {
     margin: 20px;;
 }
 
+#GGM00137.btn, 
+#TEM00188.btn, 
+#TEM00212.btn, 
+#TEM00213.btn, 
+#TEM00199.btn, 
+#TCC00326.btn, 
+#TDT00076.btn, 
+#TDT00041.btn, 
+#TEM00276.btn, 
+#TEM00277.btn {
+    top: 22%;
+    background-color: blue;
+}

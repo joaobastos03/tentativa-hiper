@@ -6,7 +6,7 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=0.75">
+    <meta name="viewport" content="width=device-width, initial-scale=0.5">
     <title>Fluxograma Completo - Engenharia Mecânica</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -26,10 +26,10 @@
             </ul>
             <div class="links">
               <ul>
-                <li><a href="login-pages\login.php"><button><span>User</span></button></a></li>
-                <li><button><span>Dark</span></button></li>
+                <li><a href="login-pages\login.php"><button><span>Login</span></button></a></li>
+                <li><button><span>Dados</span></button></li>
                 <li><button><span>DeepSeek</span></button></li>
-                <li><button><span>Settings</span></button></li>
+                <a href="settings.php"><li><button><span>Settings</span></button></li></a>
               </ul>
             </div>
         </nav>

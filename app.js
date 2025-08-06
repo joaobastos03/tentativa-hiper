@@ -232,6 +232,7 @@ function inicializarTooltips() {
 //    });
 //}
 
+
 // Função principal que inicializa a aplicação
 function inicializarAplicacao() {
     carregarDadosJSON()
