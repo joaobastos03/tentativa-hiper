@@ -71,8 +71,8 @@ if(!isset($_SESSION['id'])){
             <div class="icon">🔒</div>
             <h1>Acesso Restrito</h1>
             <p>Você precisa estar logado para acessar esta página.</p>
-            <a href="login.php" class="btn">Fazer Login</a>
-            <p style="margin-top: 20px;">Não tem uma conta? <a href="cadastro.php">Cadastre-se</a></p>
+            <a href="login-pages\login.php" class="btn">Fazer Login</a>
+            <p style="margin-top: 20px;">Não tem uma conta? <a href="login-pages\cadastro.php">Cadastre-se</a></p>
         </div>
     </body>
     </html>
