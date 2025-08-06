@@ -33,7 +33,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Configurações do Progresso</title>
-    <link rel="stylesheet" href="style_settings.css">
+    <link rel="stylesheet" href="src\css\style_settings.css">
 </head>
 <body>
     <div class="settings-container">
@@ -534,7 +534,7 @@
         mysqli_close($conn);
         
         // Recarrega a página para mostrar os dados atualizados
-        echo '<script>window.location.href = "settings.php";</script>';
+        echo '<script>window.location.href = "setSucess.php";</script>';
         exit();
     }
 ?>

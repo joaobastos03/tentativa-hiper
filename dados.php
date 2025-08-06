@@ -27,7 +27,7 @@
         $cursadas_array = explode(",", $row['cursadas']);
         
         // Carrega o JSON com as informações das matérias
-        $materias_json = json_decode(file_get_contents('obrigatorias.json'), true);
+        $materias_json = json_decode(file_get_contents('src\json\obrigatorias.json'), true);
         
         // Calcula o total de horas concluídas
         foreach ($cursadas_array as $codigo) {
