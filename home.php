@@ -48,7 +48,7 @@
             <div class="links">
               <ul>
                 <li><a href="login-pages\logout.php"><button><span>Logout</span></button></a></li>
-                <li><button><span>Dados</span></button></li>
+                <a href="dados.php"><li><button><span>Dados</span></button></li></a>
                 <li><button><span>DeepSeek</span></button></li>
                 <li><a href="settings.php"><button><span>Settings</span></button></a>
               </ul>
