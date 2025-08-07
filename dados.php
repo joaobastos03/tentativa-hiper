@@ -7,39 +7,62 @@
     // Totais de horas para cada categoria
     $totalHoras = 3702;       // Total geral do curso
     $totalObrigatorias = 2952; // Horas obrigatórias
-    $totalOptativas = 360;     // Horas optativas
+    $totalOptativas = 360;     // Horas optativas (limite máximo)
     $totalComplementar = 390;  // Horas complementares
     
     // Inicializa contadores
     $horasConcluidas = 0;
     $horasObrigatorias = 0;
-    $horasOptativas = 0;
+    $horasOptativasBrutas = 0; // Total de horas optativas sem limite
+    $horasOptativas = 0;       // Horas optativas válidas (até 360h)
     $horasComplementares = 0;
 
-    // Busca as matérias cursadas no banco de dados
-    $sql = "SELECT cursadas FROM progresso WHERE email = ?";
-    $stmt = $conn->prepare($sql);
-    $stmt->bind_param("s", $email);
-    $stmt->execute();
-    $result = $stmt->get_result();
+    // 1. Busca e cálculo das matérias obrigatórias
+    $sql_obrigatorias = "SELECT cursadas FROM progresso WHERE email = ?";
+    $stmt_obr = $conn->prepare($sql_obrigatorias);
+    $stmt_obr->bind_param("s", $email);
+    $stmt_obr->execute();
+    $result_obr = $stmt_obr->get_result();
 
-    if ($row = $result->fetch_assoc()) {
+    if ($row = $result_obr->fetch_assoc()) {
         $cursadas_array = explode(",", $row['cursadas']);
+        $materias_json = json_decode(file_get_contents('src/js/obrigatorias.json'), true);
         
-        // Carrega o JSON com as informações das matérias
-        $materias_json = json_decode(file_get_contents('src\json\obrigatorias.json'), true);
-        
-        // Calcula o total de horas concluídas
         foreach ($cursadas_array as $codigo) {
             if (isset($materias_json[$codigo])) {
                 $horas = intval($materias_json[$codigo]['horas']);
-                $horasConcluidas += $horas;
                 $horasObrigatorias += $horas;
+                $horasConcluidas += $horas;
             }
         }
     }
-    
-    // Calcula porcentagens (protegendo contra divisão por zero)
+    $stmt_obr->close();
+
+    // 2. Busca e cálculo das matérias optativas (com limite de 360h)
+    $sql_optativas = "SELECT materias FROM optativas WHERE email = ?";
+    $stmt_opt = $conn->prepare($sql_optativas);
+    $stmt_opt->bind_param("s", $email);
+    $stmt_opt->execute();
+    $result_opt = $stmt_opt->get_result();
+
+    if ($row = $result_opt->fetch_assoc()) {
+        $optativas_array = explode(",", $row['materias']);
+        $optativas_json = json_decode(file_get_contents('src/js/optativas.json'), true);
+
+        // Calcula total bruto de horas optativas
+        foreach ($optativas_array as $codigo) {
+            if (isset($optativas_json[$codigo])) {
+                $horasOptativasBrutas += intval($optativas_json[$codigo]['horas']);
+            }
+        }
+        
+        // Aplica o limite máximo de 360 horas
+        $horasOptativas = min($horasOptativasBrutas, $totalOptativas);
+        $horasConcluidas += $horasOptativas;
+    }
+    $stmt_opt->close();
+
+    // 3. Cálculo das porcentagens
     $porcentagemTotal = $totalHoras > 0 ? min(100, ($horasConcluidas / $totalHoras) * 100) : 0;
     $porcentagemObrigatorias = $totalObrigatorias > 0 ? min(100, ($horasObrigatorias / $totalObrigatorias) * 100) : 0;
     $porcentagemOptativas = $totalOptativas > 0 ? min(100, ($horasOptativas / $totalOptativas) * 100) : 0;
@@ -67,6 +90,10 @@
             align-items: center;
             min-height: 100vh;
             padding: 20px;
+        }
+
+        a {
+            text-decoration: none;
         }
 
         .progress-container {
@@ -240,9 +267,11 @@
                 <span><?php echo $totalObrigatorias - $horasObrigatorias; ?>h restantes</span>
             </div>
             <div class="action-buttons">
-                <button class="action-btn obrigatorias-btn" onclick="adicionarHoras('obrigatorias')">
-                    <i class="fas fa-plus"></i> Adicionar Horas
-                </button>
+                <a href="settings.php">
+                    <button class="action-btn obrigatorias-btn" onclick="adicionarHoras('obrigatorias')">
+                        <i class="fas fa-plus"></i> Adicionar Horas
+                    </button>
+                </a>
                 <button class="action-btn btn-secondary" onclick="gerenciarMaterias('obrigatorias')">
                     <i class="fas fa-tasks"></i> Gerenciar
                 </button>
@@ -263,9 +292,11 @@
                 <span><?php echo $totalOptativas - $horasOptativas; ?>h restantes</span>
             </div>
             <div class="action-buttons">
-                <button class="action-btn optativas-btn" onclick="adicionarHoras('optativas')">
-                    <i class="fas fa-plus"></i> Adicionar Horas
-                </button>
+                <a href="optativas.php">
+                    <button class="action-btn optativas-btn" onclick="adicionarHoras('optativas')">
+                        <i class="fas fa-plus"></i> Adicionar Horas
+                    </button>
+                </a>
                 <button class="action-btn btn-secondary" onclick="verDetalhes('optativas')">
                     <i class="fas fa-list"></i> Ver Detalhes
                 </button>
@@ -298,10 +329,10 @@
 
     <script>
         // Funções placeholder para as ações dos botões
-        function adicionarHoras(tipo) {
-            alert(`Abrir formulário para adicionar horas ${tipo}`);
+        //function adicionarHoras(tipo) {
+        //    alert(`Abrir formulário para adicionar horas ${tipo}`);
             // Implementação futura: abrir modal ou redirecionar
-        }
+        //}
         
         function gerenciarMaterias(tipo) {
             alert(`Abrir gerenciador de matérias ${tipo}`);

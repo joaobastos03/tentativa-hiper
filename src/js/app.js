@@ -61,7 +61,7 @@ const estadoApp = {
 
 // Função para carregar o arquivo JSON
 function carregarDadosJSON() {
-    return fetch('obrigatorias.json')
+    return fetch('../obrigatorias.json')
         .then(resposta => {
             if (!resposta.ok) {
                 throw new Error('Erro ao carregar o arquivo JSON');

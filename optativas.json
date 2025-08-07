@@ -1,0 +1,1426 @@
+{
+    "GAN00166": {
+        "titulo": "LÓGICA PARA A CIÊNCIA DA COMPUTAÇÃO",
+        "requisitos": ["GET00177", "GFI00159", "GFI00162", "GMA00162", "TEM00187", "TEM00190"],
+        "cor": "roxo",
+        "horas": "60",
+        "periodo": "NP",
+        "area": "Simulação Computacional"
+    },
+    "GAN00167": {
+        "titulo": "MATEMÁTICA DISCRETA",
+        "requisitos": ["GET00177", "GFI00159", "GFI00162", "GMA00162", "TEM00187", "TEM00190"],
+        "cor": "roxo",
+        "horas": "60",
+        "periodo": "NP",
+        "area": "Simulação Computacional"
+    },
+    "GET00136": {
+        "titulo": "INFERÊNCIA BAYESIANA I",
+        "requisitos": ["GET00177"],
+        "cor": "roxo",
+        "horas": "68",
+        "periodo": "NP",
+        "area": "Simulação Computacional"
+    },
+    "GET00178": {
+        "titulo": "ESTATÍSTICA APLICADA PARA ENGENHARIA",
+        "requisitos": ["GAN00140"],
+        "cor": "roxo",
+        "horas": "60",
+        "periodo": "NP",
+        "area": "Simulação Computacional"
+    },
+    "GFI00174": {
+        "titulo": "MECÂNICA GERAL I",
+        "requisitos": ["GFI00158", "GMA00155"],
+        "cor": "azul",
+        "horas": "96",
+        "periodo": "NP",
+        "area": "Projetos Mecânicos"
+    },
+    "GFI00186": {
+        "titulo": "MECÂNICA ANALÍTICA",
+        "requisitos": ["GFI00174"],
+        "cor": "azul",
+        "horas": "96",
+        "periodo": "NP",
+        "area": "Projetos Mecânicos"
+    },
+    "GFI00187": {
+        "titulo": "TEORIA ELETROMAGNÉTICA I",
+        "requisitos": ["GFI00159", "GMA00162"],
+        "cor": "cinza",
+        "horas": "96",
+        "periodo": "NP",
+        "area": "Automação e Controle"
+    },
+    "GFI00194": {
+        "titulo": "MECÂNICA QUÂNTICA I",
+        "requisitos": ["GFI00174"],
+        "cor": "azul",
+        "horas": "96",
+        "periodo": "NP",
+        "area": "Projetos Mecânicos"
+    },
+    "GFI00210": {
+        "titulo": "TERMODINÂMICA",
+        "requisitos": ["GFI00160", "GMA00156"],
+        "cor": "vermelho",
+        "horas": "72",
+        "periodo": "NP",
+        "area": "Termociências"
+    },
+    "GFI00214": {
+        "titulo": "FÍSICA ESTATÍSTICA",
+        "requisitos": ["GFI00210"],
+        "cor": "vermelho",
+        "horas": "72",
+        "periodo": "NP",
+        "area": "Termociências"
+    },
+    "GFI00220": {
+        "titulo": "ELETROMAGNETISMO I",
+        "requisitos": ["GFI00159", "GMA00162"],
+        "cor": "cinza",
+        "horas": "60",
+        "periodo": "NP",
+        "area": "Automação e Controle"
+    },
+    "GGM00159": {
+        "titulo": "GEOMETRIA DESCRITIVA",
+        "requisitos": [],
+        "cor": "azul",
+        "horas": "60",
+        "periodo": "NP",
+        "area": "Projetos Mecânicos"
+    },
+    "GLC00292": {
+        "titulo": "LIBRAS I",
+        "requisitos": ["GET00177", "GFI00159", "GFI00162", "GMA00162", "TEM00187", "TEM00190"],
+        "cor": "rosa",
+        "horas": "30",
+        "periodo": "NP",
+        "area": "Empreendedorismo e Inovação Tecnológica"
+    },
+    "GMA00032": {
+        "titulo": "MÉTODOS MATEMÁTICOS II",
+        "requisitos": ["GMA00162"],
+        "cor": "roxo",
+        "horas": "60",
+        "periodo": "NP",
+        "area": "Simulação Computacional"
+    },
+    "STA00173": {
+        "titulo": "GESTÃO ESTRATÉGICA",
+        "requisitos": [],
+        "cor": "rosa",
+        "horas": "60",
+        "periodo": "NP",
+        "area": "Empreendedorismo e Inovação Tecnológica"
+    },
+    "TCC00168": {
+        "titulo": "MÉTODOS NUMÉRICOS",
+        "requisitos": ["TCC00326"],
+        "cor": "roxo",
+        "horas": "68",
+        "periodo": "NP",
+        "area": "Simulação Computacional"
+    },
+    "TCC00216": {
+        "titulo": "APLICAÇÃO DE MICROCONTROLADORES",
+        "requisitos": ["TCC00326"],
+        "cor": "cinza",
+        "horas": "60",
+        "periodo": "NP",
+        "area": "Automação e Controle"
+    },
+    "TCC00217": {
+        "titulo": "INTRODUÇÃO AOS MICROCONTROLADORES",
+        "requisitos": ["TCC00326"],
+        "cor": "cinza",
+        "horas": "60",
+        "periodo": "NP",
+        "area": "Automação e Controle"
+    },
+    "TCC00226": {
+        "titulo": "DESENVOLVIMENTO WEB",
+        "requisitos": ["TCC00326"],
+        "cor": "roxo",
+        "horas": "68",
+        "periodo": "NP",
+        "area": "Simulação Computacional"
+    },
+    "TCC00283": {
+        "titulo": "INTRODUÇÃO AO MATLAB",
+        "requisitos": ["TCC00326"],
+        "cor": "roxo",
+        "horas": "68",
+        "periodo": "NP",
+        "area": "Simulação Computacional"
+    },
+    "TCC00285": {
+        "titulo": "ANÁLISE E PROJETO DE ALGORITMOS",
+        "requisitos": ["TCC00326", "GAN00167"],
+        "cor": "roxo",
+        "horas": "64",
+        "periodo": "NP",
+        "area": "Simulação Computacional"
+    },
+    "TCC00286": {
+        "titulo": "ARQUITETURAS DE COMPUTADORES",
+        "requisitos": ["TET00280"],
+        "cor": "roxo",
+        "horas": "64",
+        "periodo": "NP",
+        "area": "Simulação Computacional"
+    },
+    "TCC00287": {
+        "titulo": "BANCO DE DADOS I",
+        "requisitos": ["TCC00348"],
+        "cor": "roxo",
+        "horas": "64",
+        "periodo": "NP",
+        "area": "Simulação Computacional"
+    },
+    "TCC00291": {
+        "titulo": "COMPUTAÇÃO GRÁFICA",
+        "requisitos": ["GAN00140", "TCC00348"],
+        "cor": "roxo",
+        "horas": "64",
+        "periodo": "NP",
+        "area": "Simulação Computacional"
+    },
+    "TCC00292": {
+        "titulo": "ENGENHARIA DE SOFTWARE I",
+        "requisitos": ["TCC00328"],
+        "cor": "roxo",
+        "horas": "64",
+        "periodo": "NP",
+        "area": "Simulação Computacional"
+    },
+    "TCC00296": {
+        "titulo": "FUNDAMENTOS DE ARQUITETURAS DE COMPUTADORES",
+        "requisitos": ["GET00177", "GFI00159", "GFI00162", "GMA00162", "TEM00187", "TEM00190"],
+        "cor": "roxo",
+        "horas": "64",
+        "periodo": "NP",
+        "area": "Simulação Computacional"
+    },
+    "TCC00297": {
+        "titulo": "INTELIGÊNCIA ARTIFICIAL",
+        "requisitos": ["GAN00166", "TCC00348"],
+        "cor": "roxo",
+        "horas": "64",
+        "periodo": "NP",
+        "area": "Simulação Computacional"
+    },
+    "TCC00304": {
+        "titulo": "LINGUAGENS DE PROGRAMAÇÃO",
+        "requisitos": ["GAN00166", "TCC00347"],
+        "cor": "roxo",
+        "horas": "64",
+        "periodo": "NP",
+        "area": "Simulação Computacional"
+    },
+    "TCC00307": {
+        "titulo": "PROGRAMAÇÃO CIENTÍFICA",
+        "requisitos": ["TEM00200"],
+        "cor": "roxo",
+        "horas": "64",
+        "periodo": "NP",
+        "area": "Simulação Computacional"
+    },
+    "TCC00313": {
+        "titulo": "REDES DE COMPUTADORES I",
+        "requisitos": ["TCC00316"],
+        "cor": "roxo",
+        "horas": "64",
+        "periodo": "NP",
+        "area": "Simulação Computacional"
+    },
+    "TCC00316": {
+        "titulo": "SISTEMAS OPERACIONAIS",
+        "requisitos": ["TCC00286"],
+        "cor": "roxo",
+        "horas": "64",
+        "periodo": "NP",
+        "area": "Simulação Computacional"
+    },
+    "TCC00325": {
+        "titulo": "MÉTODOS NUMÉRICOS",
+        "requisitos": ["TCC00326"],
+        "cor": "roxo",
+        "horas": "60",
+        "periodo": "NP",
+        "area": "Simulação Computacional"
+    },
+    "TCC00328": {
+        "titulo": "PROGRAMAÇÃO ORIENTADA A OBJETOS",
+        "requisitos": ["TCC00347"],
+        "cor": "roxo",
+        "horas": "68",
+        "periodo": "NP",
+        "area": "Simulação Computacional"
+    },
+    "TCC00347": {
+        "titulo": "PROGRAMAÇÃO ESTRUTURADA",
+        "requisitos": ["TCC00326"],
+        "cor": "roxo",
+        "horas": "64",
+        "periodo": "NP",
+        "area": "Simulação Computacional"
+    },
+    "TCC00348": {
+        "titulo": "ESTRUTURAS DE DADOS E SEUS ALGORITIMOS",
+        "requisitos": ["TCC00347"],
+        "cor": "roxo",
+        "horas": "64",
+        "periodo": "NP",
+        "area": "Simulação Computacional"
+    },
+    "TOT00006": {
+        "titulo": "FENÔMENOS DE TRANSPORTE",
+        "requisitos": ["TEM00200", "TEM00193"],
+        "cor": "vermelho",
+        "horas": "60",
+        "periodo": "NP",
+        "area": "Termociências"
+    },
+    "TOT00035": {
+        "titulo": "DESENHO DE INSTALAÇÕES INDUSTRIAIS",
+        "requisitos": ["TDT00041"],
+        "cor": "azul",
+        "horas": "45",
+        "periodo": "NP",
+        "area": "Projetos Mecânicos"
+    },
+    "TOT00036": {
+        "titulo": "MODELAGEM 3D ASSISTIDA POR COMPUTADOR",
+        "requisitos": ["TDT00076", "TCC00286"],
+        "cor": "azul",
+        "horas": "60",
+        "periodo": "NP",
+        "area": "Projetos Mecânicos"
+    },
+    "TOT00037": {
+        "titulo": "SISTEMA DE PRODUÇÃO OFFSHORE",
+        "requisitos": ["TEM00184"],
+        "cor": "laranja",
+        "horas": "60",
+        "periodo": "NP",
+        "area": "Materiais e Processos de Fabricação"
+    },
+    "TOT00042": {
+        "titulo": "DESENHO DE PROJETOS DE INSTALAÇÕES INDUSTRIAIS",
+        "requisitos": ["TDT00041"],
+        "cor": "azul",
+        "horas": "60",
+        "periodo": "NP",
+        "area": "Projetos Mecânicos"
+    },
+    "TOT00043": {
+        "titulo": "PROJETO ASSISTIDO POR COMPUTADOR II",
+        "requisitos": ["TDT00076"],
+        "cor": "azul",
+        "horas": "60",
+        "periodo": "NP",
+        "area": "Projetos Mecânicos"
+    },
+    "TOT00045": {
+        "titulo": "COMPUTAÇÃO GRÁFICA 1",
+        "requisitos": ["TCC00326"],
+        "cor": "roxo",
+        "horas": "34",
+        "periodo": "NP",
+        "area": "Simulação Computacional"
+    },
+    "TOT00046": {
+        "titulo": "COMPUTAÇÃO GRÁFICA 2",
+        "requisitos": ["TCC00326"],
+        "cor": "roxo",
+        "horas": "68",
+        "periodo": "NP",
+        "area": "Simulação Computacional"
+    },
+    "TOT00055": {
+        "titulo": "PROJETO ASSISTIDO POR COMPUTADOR I",
+        "requisitos": ["TDT00076"],
+        "cor": "azul",
+        "horas": "60",
+        "periodo": "NP",
+        "area": "Projetos Mecânicos"
+    },
+    "TEC00209": {
+        "titulo": "PROPRIEDADE INDUSTRIAL",
+        "requisitos": ["TEM00187"],
+        "cor": "rosa",
+        "horas": "60",
+        "periodo": "NP",
+        "area": "Empreendedorismo e Inovação Tecnológica"
+    },
+    "TEC00210": {
+        "titulo": "PROJETO ASSISTIDO POR COMPUTADOR",
+        "requisitos": [],
+        "cor": "azul",
+        "horas": "60",
+        "periodo": "NP",
+        "area": "Projetos Mecânicos"
+    },
+    "TEC00214": {
+        "titulo": "ESTRUTURAS OFFSHORE",
+        "requisitos": ["TEM00184", "TEM00194", "TEM00209"],
+        "cor": "azul",
+        "horas": "60",
+        "periodo": "NP",
+        "area": "Projetos Mecânicos"
+    },
+    "TEC00220": {
+        "titulo": "ESTRUTURAS METÁLICAS E EM MADEIRA I",
+        "requisitos": [],
+        "cor": "azul",
+        "horas": "75",
+        "periodo": "NP",
+        "area": "Projetos Mecânicos"
+    },
+    "TEC00221": {
+        "titulo": "GESTÃO INFORMATIZADA DE EMPREENDIMENTOS",
+        "requisitos": ["TEM00187"],
+        "cor": "rosa",
+        "horas": "45",
+        "periodo": "NP",
+        "area": "Empreendedorismo e Inovação Tecnológica"
+    },
+    "TEC00244": {
+        "titulo": "ANÁLISE DE ESTRUTURAS ISOSTÁTICAS",
+        "requisitos": ["TEM00194"],
+        "cor": "azul",
+        "horas": "60",
+        "periodo": "NP",
+        "area": "Projetos Mecânicos"
+    },
+    "TEC00251": {
+        "titulo": "MATERIAIS COMPÓSITOS",
+        "requisitos": ["TEM00189"],
+        "cor": "laranja",
+        "horas": "30",
+        "periodo": "NP",
+        "area": "Materiais e Processos de Fabricação"
+    },
+    "TEC00276": {
+        "titulo": "ESTRUTURAS EM AÇO E MADEIRA",
+        "requisitos": ["TEM00194"],
+        "cor": "azul",
+        "horas": "75",
+        "periodo": "NP",
+        "area": "Projetos Mecânicos"
+    },
+    "TEC00297": {
+        "titulo": "ANÁLISE DE ESTRUTURAS HIPERESTÁTICAS",
+        "requisitos": ["TEM00195"],
+        "cor": "azul",
+        "horas": "75",
+        "periodo": "NP",
+        "area": "Projetos Mecânicos"
+    },
+    "TEE00114": {
+        "titulo": "CIRCUITOS ELÉTRICOS DE CORRENTE CONTÍNUA E ALTERNADA",
+        "requisitos": ["GMA00158", "GFI00159"],
+        "cor": "cinza",
+        "horas": "90",
+        "periodo": "NP",
+        "area": "Automação e Controle"
+    },
+    "TEE00120": {
+        "titulo": "CONVERSÃO ELETROMECÂNICA DE ENERGIA E TRANSFORMADORES",
+        "requisitos": ["GFI00220"],
+        "cor": "cinza",
+        "horas": "60",
+        "periodo": "NP",
+        "area": "Automação e Controle"
+    },
+    "TEE00125": {
+        "titulo": "MÁQUINA CC E MOTORES MONOFÁSICOS E BIFÁSICOS",
+        "requisitos": ["GET00177", "GFI00158", "GFI00162", "GMA00162", "TEM00187", "TEM00190"],
+        "cor": "cinza",
+        "horas": "60",
+        "periodo": "NP",
+        "area": "Automação e Controle"
+    },
+    "TEE00126": {
+        "titulo": "ELETRÔNICA BÁSICA",
+        "requisitos": ["TEM00187", "TEM00190"],
+        "cor": "cinza",
+        "horas": "60",
+        "periodo": "NP",
+        "area": "Automação e Controle"
+    },
+    "TEE00127": {
+        "titulo": "ELETRÔNICA DE POTÊNCIA",
+        "requisitos": ["TEE00114"],
+        "cor": "cinza",
+        "horas": "60",
+        "periodo": "NP",
+        "area": "Automação e Controle"
+    },
+    "TEE00128": {
+        "titulo": "ELETRÔNICA DIGITAL",
+        "requisitos": ["TEE00126", "TEE00143"],
+        "cor": "cinza",
+        "horas": "30",
+        "periodo": "NP",
+        "area": "Automação e Controle"
+    },
+    "TEE00132": {
+        "titulo": "MATERIAIS ELÉTRICOS",
+        "requisitos": ["TEE00114"],
+        "cor": "cinza",
+        "horas": "60",
+        "periodo": "NP",
+        "area": "Automação e Controle"
+    },
+    "TEE00133": {
+        "titulo": "MEDIDAS ELÉTRICAS",
+        "requisitos": ["GFI00169", "TEM00169"],
+        "cor": "cinza",
+        "horas": "60",
+        "periodo": "NP",
+        "area": "Automação e Controle"
+    },
+    "TEE00136": {
+        "titulo": "ANÁLISE DE SISTEMAS DE CONTROLE",
+        "requisitos": ["TEE00114"],
+        "cor": "cinza",
+        "horas": "60",
+        "periodo": "NP",
+        "area": "Automação e Controle"
+    },
+    "TEE00143": {
+        "titulo": "SINAIS E SISTEMAS",
+        "requisitos": ["GMA00162"],
+        "cor": "cinza",
+        "horas": "60",
+        "periodo": "NP",
+        "area": "Automação e Controle"
+    },
+    "TEE00164": {
+        "titulo": "INTRODUÇÃO À AUTOMAÇÃO DE SUBESTAÇÕES",
+        "requisitos": [],
+        "cor": "cinza",
+        "horas": "60",
+        "periodo": "NP",
+        "area": "Automação e Controle"
+    },
+    "TEE00186": {
+        "titulo": "MÉTODOS MATRICIAIS, ESTOCÁSTICOS E DE OTIMIZAÇÃO PARA ENGENHARIA ELÉTRICA",
+        "requisitos": ["TEM00200", "GET00177", "TEE00143"],
+        "cor": "cinza",
+        "horas": "60",
+        "periodo": "NP",
+        "area": "Automação e Controle"
+    },
+    "TEM00031": {
+        "titulo": "FERRAMENTAS MATEMÁTICAS E NUMÉRICAS APLICADAS À ENGENHARIA",
+        "requisitos": ["TEM00200", "GMA00162"],
+        "cor": "roxo",
+        "horas": "60",
+        "periodo": "NP",
+        "area": "Simulação Computacional"
+    },
+    "TEM00038": {
+        "titulo": "ELEMENTOS FINITOS PARA CONFORMAÇÃO MECÂNICA",
+        "requisitos": ["TEM00200", "TEM00195"],
+        "cor": "roxo",
+        "horas": "45",
+        "periodo": "NP",
+        "area": "Simulação Computacional"
+    },
+    "TEM00050": {
+        "titulo": "SELEÇÃO DE PROCESSOS DE FABRICAÇÃO I",
+        "requisitos": ["TEM00211"],
+        "cor": "laranja",
+        "horas": "45",
+        "periodo": "NP",
+        "area": "Materiais e Processos de Fabricação"
+    },
+    "TEM00186": {
+        "titulo": "EXERCÍCIO PROFISSIONAL E CIDADANIA NA ENGENHARIA MECÂNICA",
+        "requisitos": [],
+        "cor": "rosa",
+        "horas": "30",
+        "periodo": "NP",
+        "area": "Empreendedorismo e Inovação Tecnológica"
+    },
+    "TEM00192": {
+        "titulo": "MECÂNICA DOS FLUIDOS II",
+        "requisitos": ["TEM00184"],
+        "cor": "vermelho",
+        "horas": "75",
+        "periodo": "NP",
+        "area": "Termociências"
+    },
+    "TEM00196": {
+        "titulo": "DINÂMICA II",
+        "requisitos": ["TEM00209"],
+        "cor": "azul",
+        "horas": "60",
+        "periodo": "NP",
+        "area": "Projetos Mecânicos"
+    },
+    "TEM00201": {
+        "titulo": "PROJETO DE MÁQUINAS",
+        "requisitos": ["TEM00198"],
+        "cor": "azul",
+        "horas": "60",
+        "periodo": "NP",
+        "area": "Projetos Mecânicos"
+    },
+    "TEM00207": {
+        "titulo": "CONFORMAÇÃO MECÂNICA DOS MATERIAIS",
+        "requisitos": ["GET00177", "GFI00159", "GFI00162", "GMA00162", "TEM00187", "TEM00190"],
+        "cor": "laranja",
+        "horas": "60",
+        "periodo": "NP",
+        "area": "Materiais e Processos de Fabricação"
+    },
+    "TEM00222": {
+        "titulo": "PROCESSAMENTO DE POLÍMEROS",
+        "requisitos": ["TEM00189"],
+        "cor": "laranja",
+        "horas": "60",
+        "periodo": "NP",
+        "area": "Materiais e Processos de Fabricação"
+    },
+    "TEM00225": {
+        "titulo": "SELEÇÃO E ESPECIFICAÇÃO DE MATERIAIS",
+        "requisitos": ["TEM00189"],
+        "cor": "laranja",
+        "horas": "45",
+        "periodo": "NP",
+        "area": "Materiais e Processos de Fabricação"
+    },
+    "TEM00232": {
+        "titulo": "TUBULAÇÕES INDUSTRIAIS",
+        "requisitos": ["TEM00184"],
+        "cor": "laranja",
+        "horas": "60",
+        "periodo": "NP",
+        "area": "Materiais e Processos de Fabricação"
+    },
+    "TEM00233": {
+        "titulo": "QUALIDADE NA FABRICAÇÃO MECÂNICA",
+        "requisitos": ["TEM00211"],
+        "cor": "laranja",
+        "horas": "45",
+        "periodo": "NP",
+        "area": "Materiais e Processos de Fabricação"
+    },
+    "TEM00235": {
+        "titulo": "TÓPICOS ESPECIAIS EM PROJETOS DE MÁQUINAS",
+        "requisitos": ["TEM00198"],
+        "cor": "azul",
+        "horas": "60",
+        "periodo": "NP",
+        "area": "Projetos Mecânicos"
+    },
+    "TEM00236": {
+        "titulo": "REFRIGERAÇÃO E AR CONDICIONADO",
+        "requisitos": ["TEM00193", "TEM00280"],
+        "cor": "vermelho",
+        "horas": "60",
+        "periodo": "NP",
+        "area": "Termociências"
+    },
+    "TEM00237": {
+        "titulo": "SISTEMA INTEGRADO DE MANUFATURA",
+        "requisitos": ["TEM00211"],
+        "cor": "laranja",
+        "horas": "60",
+        "periodo": "NP",
+        "area": "Materiais e Processos de Fabricação"
+    },
+    "TEM00238": {
+        "titulo": "TECNOLOGIA DO COMANDO NUMÉRICO",
+        "requisitos": ["TEM00047"],
+        "cor": "laranja",
+        "horas": "45",
+        "periodo": "NP",
+        "area": "Materiais e Processos de Fabricação"
+    },
+    "TEM00239": {
+        "titulo": "AERODINÂMICA COMPUTACIONAL",
+        "requisitos": ["TEM00200"],
+        "cor": "roxo",
+        "horas": "60",
+        "periodo": "NP",
+        "area": "Simulação Computacional"
+    },
+    "TEM00241": {
+        "titulo": "CONTROLE DE SISTEMAS MECÂNICOS",
+        "requisitos": ["TEM00249"],
+        "cor": "cinza",
+        "horas": "60",
+        "periodo": "NP",
+        "area": "Automação e Controle"
+    },
+    "TEM00243": {
+        "titulo": "INTRODUÇÃO AOS MANIPULADORES ROBÓTICOS",
+        "requisitos": ["TEM00249"],
+        "cor": "cinza",
+        "horas": "60",
+        "periodo": "NP",
+        "area": "Automação e Controle"
+    },
+    "TEM00244": {
+        "titulo": "INTRODUÇÃO AO PROJETO AERONÁUTICO",
+        "requisitos": ["TEM00184"],
+        "cor": "azul",
+        "horas": "60",
+        "periodo": "NP",
+        "area": "Projetos Mecânicos"
+    },
+    "TEM00245": {
+        "titulo": "APROVEITAMENTO ENERGÉTICO",
+        "requisitos": ["TEM00280"],
+        "cor": "verde",
+        "horas": "45",
+        "periodo": "NP",
+        "area": "Energia"
+    },
+    "TEM00246": {
+        "titulo": "DINÂMICA DOS FLUIDOS COMPUTACIONAL",
+        "requisitos": ["TEM00200"],
+        "cor": "roxo",
+        "horas": "60",
+        "periodo": "NP",
+        "area": "Simulação Computacional"
+    },
+    "TEM00248": {
+        "titulo": "INTRODUÇÃO À TÉCNICA DOS ELEMENTOS FINTOS",
+        "requisitos": ["TEM00200"],
+        "cor": "roxo",
+        "horas": "60",
+        "periodo": "NP",
+        "area": "Simulação Computacional"
+    },
+    "TEM00249": {
+        "titulo": "MANUTENÇÃO DE SISTEMAS MECÂNICOS",
+        "requisitos": ["TEM00209"],
+        "cor": "marrom",
+        "horas": "60",
+        "periodo": "NP",
+        "area": "Manutenção e Confiabilidade"
+    },
+    "TEM00251": {
+        "titulo": "CONSTRUÇÕES MECÂNICAS SOLDADAS",
+        "requisitos": ["TEM00204"],
+        "cor": "laranja",
+        "horas": "60",
+        "periodo": "NP",
+        "area": "Materiais e Processos de Fabricação"
+    },
+    "TEM00257": {
+        "titulo": "ENGENHARIA DOS MATERIAIS IV",
+        "requisitos": ["TEM00051"],
+        "cor": "laranja",
+        "horas": "60",
+        "periodo": "NP",
+        "area": "Materiais e Processos de Fabricação"
+    },
+    "TEM00258": {
+        "titulo": "TÓPICOS ESPECIAIS EM ENGENHARIA MECÂNICA I",
+        "requisitos": ["7º período completo"],
+        "cor": "rosa",
+        "horas": "60",
+        "periodo": "NP",
+        "area": "Empreendedorismo e Inovação Tecnológica"
+    },
+    "TEM00259": {
+        "titulo": "TÓPICOS ESPECIAIS EM ENGENHARIA MECÂNICA II",
+        "requisitos": ["7º período completo"],
+        "cor": "rosa",
+        "horas": "60",
+        "periodo": "NP",
+        "area": "Empreendedorismo e Inovação Tecnológica"
+    },
+    "TEM00260": {
+        "titulo": "TÓPICOS ESPECIAIS EM ENGENHARIA MECÂNICA III",
+        "requisitos": ["7º período completo"],
+        "cor": "rosa",
+        "horas": "60",
+        "periodo": "NP",
+        "area": "Empreendedorismo e Inovação Tecnológica"
+    },
+    "TEM00261": {
+        "titulo": "TÓPICOS ESPECIAIS EM FENÔMENOS DE TRANSPORTE",
+        "requisitos": ["TEM00193"],
+        "cor": "vermelho",
+        "horas": "60",
+        "periodo": "NP",
+        "area": "Termociências"
+    },
+    "TEM00262": {
+        "titulo": "TÓPICOS ESPECIAIS EM ENGENHARIA TÉRMICA",
+        "requisitos": ["TEM00280"],
+        "cor": "vermelho",
+        "horas": "60",
+        "periodo": "NP",
+        "area": "Termociências"
+    },
+    "TEM00263": {
+        "titulo": "TÓPICOS ESPECIAIS EM PROCESSOS DE FABRICAÇÃO",
+        "requisitos": ["TEM00211"],
+        "cor": "laranja",
+        "horas": "60",
+        "periodo": "NP",
+        "area": "Materiais e Processos de Fabricação"
+    },
+    "TEM00264": {
+        "titulo": "TÓPICOS ESPECIAIS EM MECÂNICA DOS SÓLIDOS",
+        "requisitos": ["TEM00195"],
+        "cor": "azul",
+        "horas": "60",
+        "periodo": "NP",
+        "area": "Projetos Mecânicos"
+    },
+    "TEM00268": {
+        "titulo": "AERODINÂMICA",
+        "requisitos": ["TEM00184"],
+        "cor": "vermelho",
+        "horas": "60",
+        "periodo": "NP",
+        "area": "Termociências"
+    },
+    "TEM00269": {
+        "titulo": "FUNDAMENTOS DE INSTRUMENTAÇÃO E CONTROLE",
+        "requisitos": ["TEM00184", "TEE00113"],
+        "cor": "cinza",
+        "horas": "60",
+        "periodo": "NP",
+        "area": "Automação e Controle"
+    },
+    "TEM00270": {
+        "titulo": "MÉTODOS EXPERIMENTAIS EM ENGENHARIA MECÂNICA",
+        "requisitos": ["TEM00184", "TEE00113"],
+        "cor": "marrom",
+        "horas": "60",
+        "periodo": "NP",
+        "area": "Manutenção e Confiabilidade"
+    },
+    "TEM00271": {
+        "titulo": "ESCOAMENTOS COMPRESSÍVEIS",
+        "requisitos": ["TEM00184"],
+        "cor": "vermelho",
+        "horas": "60",
+        "periodo": "NP",
+        "area": "Termociências"
+    },
+    "TEM00272": {
+        "titulo": "EDIFICAÇÕES METÁLICAS",
+        "requisitos": ["TEM00195"],
+        "cor": "azul",
+        "horas": "60",
+        "periodo": "NP",
+        "area": "Projetos Mecânicos"
+    },
+    "TEM00273": {
+        "titulo": "INTRODUÇÃO AOS MATERIAIS POLIMÉRICOS E SEUS COMPÓSITOS",
+        "requisitos": ["TEM00189"],
+        "cor": "laranja",
+        "horas": "60",
+        "periodo": "NP",
+        "area": "Materiais e Processos de Fabricação"
+    },
+    "TEM00274": {
+        "titulo": "METALURGIA FÍSICA DE AÇOS E LIGAS ESPECIAIS",
+        "requisitos": ["TEM00051"],
+        "cor": "laranja",
+        "horas": "60",
+        "periodo": "NP",
+        "area": "Materiais e Processos de Fabricação"
+    },
+    "TEM00281": {
+        "titulo": "TROCADORES DE CALOR I",
+        "requisitos": ["TEM00193"],
+        "cor": "vermelho",
+        "horas": "60",
+        "periodo": "NP",
+        "area": "Termociências"
+    },
+    "TEM00282": {
+        "titulo": "TÓPICOS DE EXTENSÃO EM ENGENHARIA MECÂNICA",
+        "requisitos": ["GET00177", "GFI00159", "GFI00162", "GMA00162", "TEM00187", "TEM00190", "TEM00193"],
+        "cor": "rosa",
+        "horas": "60",
+        "periodo": "NP",
+        "area": "Empreendedorismo e Inovação Tecnológica"
+    },
+    "TEM00283": {
+        "titulo": "TÓPICOS DE EXTENSÃO EM ENGENHARIA TÉRMICA",
+        "requisitos": ["GET00177", "GFI00159", "GFI00162", "GMA00162", "TEM00187", "TEM00190", "TEM00279", "TEM00280"],
+        "cor": "rosa",
+        "horas": "60",
+        "periodo": "NP",
+        "area": "Empreendedorismo e Inovação Tecnológica"
+    },
+    "TEM00284": {
+        "titulo": "TÓPICOS DE EXTENSÃO EM FENÔMENOS DE TRANSPORTE",
+        "requisitos": ["GET00177", "GFI00159", "GFI00162", "GMA00162", "TEM00187", "TEM00190", "TEM00184"],
+        "cor": "rosa",
+        "horas": "60",
+        "periodo": "NP",
+        "area": "Empreendedorismo e Inovação Tecnológica"
+    },
+    "TEM00285": {
+        "titulo": "TÓPICOS DE EXTENSÃO EM MECÂNICA DOS SÓLIDOS",
+        "requisitos": ["GET00177", "GFI00159", "GFI00162", "GMA00162", "TEM00187", "TEM00190", "TEM00194"],
+        "cor": "rosa",
+        "horas": "60",
+        "periodo": "NP",
+        "area": "Empreendedorismo e Inovação Tecnológica"
+    },
+    "TEM00286": {
+        "titulo": "TÓPICOS DE EXTENSÃO EM PROJETOS DE MÁQUINAS",
+        "requisitos": ["GET00177", "GFI00159", "GFI00162", "GMA00162", "TEM00187", "TEM00190", "TEM00197"],
+        "cor": "rosa",
+        "horas": "60",
+        "periodo": "NP",
+        "area": "Empreendedorismo e Inovação Tecnológica"
+    },
+    "TEM00287": {
+        "titulo": "TÓPICOS DE EXTENSÃO EM PROCESSOS DE FABRICAÇÃO",
+        "requisitos": ["GET00177", "GFI00159", "GFI00162", "GMA00162", "TEM00187", "TEM00190", "TEM00211"],
+        "cor": "rosa",
+        "horas": "60",
+        "periodo": "NP",
+        "area": "Empreendedorismo e Inovação Tecnológica"
+    },
+    "TEM00288": {
+        "titulo": "TERMOMECÂNICA DOS MEIOS CONTÍNUOS",
+        "requisitos": ["GAN00140", "TEM00184"],
+        "cor": "vermelho",
+        "horas": "60",
+        "periodo": "NP",
+        "area": "Termociências"
+    },
+    "TEM00289": {
+        "titulo": "MÉTODOS MATEMÁTICOS EM ENGENHARIA MECÂNICA I",
+        "requisitos": ["GMA00162"],
+        "cor": "roxo",
+        "horas": "60",
+        "periodo": "NP",
+        "area": "Simulação Computacional"
+    },
+    "TEM00290": {
+        "titulo": "MÉTODOS MATEMÁTICOS EM ENGENHARIA MECÂNICA II",
+        "requisitos": ["GMA00162"],
+        "cor": "roxo",
+        "horas": "60",
+        "periodo": "NP",
+        "area": "Simulação Computacional"
+    },
+    "TEM00291": {
+        "titulo": "ANÁLISE DE ESTABILIDADE LINEAR",
+        "requisitos": ["TEM00184"],
+        "cor": "vermelho",
+        "horas": "60",
+        "periodo": "NP",
+        "area": "Termociências"
+    },
+    "TEM00292": {
+        "titulo": "COMPUTAÇÃO SIMBÓLICA",
+        "requisitos": ["TEM00200", "GMA00162"],
+        "cor": "roxo",
+        "horas": "60",
+        "periodo": "NP",
+        "area": "Simulação Computacional"
+    },
+    "TEM00293": {
+        "titulo": "MÉTODOS HÍBRIDOS ANALÍTICO-NUMÉRICOS",
+        "requisitos": ["TEM00200", "GMA00162"],
+        "cor": "roxo",
+        "horas": "60",
+        "periodo": "NP",
+        "area": "Simulação Computacional"
+    },
+    "TEM00294": {
+        "titulo": "SISTEMAS TÉRMICOS",
+        "requisitos": ["TEM00193", "TEM00280"],
+        "cor": "vermelho",
+        "horas": "60",
+        "periodo": "NP",
+        "area": "Termociências"
+    },
+    "TEM00295": {
+        "titulo": "TRANSFERÊNCIA DE CALOR POR CONDUÇÃO",
+        "requisitos": ["TEM00193"],
+        "cor": "vermelho",
+        "horas": "60",
+        "periodo": "NP",
+        "area": "Termociências"
+    },
+    "TEM00296": {
+        "titulo": "TRANSFERÊNCIA DE CALOR POR RADIAÇÃO",
+        "requisitos": ["TEM00193"],
+        "cor": "vermelho",
+        "horas": "60",
+        "periodo": "NP",
+        "area": "Termociências"
+    },
+    "TEM00297": {
+        "titulo": "TRANSFERÊNCIA DE CALOR POR CONVECÇÃO",
+        "requisitos": ["TEM00193"],
+        "cor": "vermelho",
+        "horas": "60",
+        "periodo": "NP",
+        "area": "Termociências"
+    },
+    "TEM00298": {
+        "titulo": "TRANSIENTES EM FLUIDOS",
+        "requisitos": ["TEM00184"],
+        "cor": "vermelho",
+        "horas": "60",
+        "periodo": "NP",
+        "area": "Termociências"
+    },
+    "TEM00299": {
+        "titulo": "MÉTODOS NUMÉRICOS EM ENGENHARIA MECÂNICA",
+        "requisitos": ["TEM00200"],
+        "cor": "roxo",
+        "horas": "60",
+        "periodo": "NP",
+        "area": "Simulação Computacional"
+    },
+    "TEM00300": {
+        "titulo": "MÉTODOS ÓPTICOS APLICADOS À MECÂNICADOS DOS SÓLIDOS",
+        "requisitos": ["TEM00195"],
+        "cor": "azul",
+        "horas": "60",
+        "periodo": "NP",
+        "area": "Projetos Mecânicos"
+    },
+    "TEM00301": {
+        "titulo": "MOTORES DE COMBUSTÃO INTERNA",
+        "requisitos": [],
+        "cor": "vermelho",
+        "horas": "60",
+        "periodo": "NP",
+        "area": "Termociências"
+    },
+    "TEM00302": {
+        "titulo": "ASPECTOS PRÁTICOS DA ENGENHARIA MECÂNICA E GERENCIAMENTO DE PROJETOS E CIÊNCIA DE DADOS INTRODUÇÃO À TECNOLOGIA DE JUNTAS COLADAS",
+        "requisitos": [],
+        "cor": "rosa",
+        "horas": "60",
+        "periodo": "NP",
+        "area": "Empreendedorismo e Inovação Tecnológica"
+    },
+    "TEM00303": {
+        "titulo": "INTRODUÇÃO AOS MATERIAIS COMPÓSITOS",
+        "requisitos": [],
+        "cor": "laranja",
+        "horas": "60",
+        "periodo": "NP",
+        "area": "Materiais e Processos de Fabricação"
+    },
+    "TEM00304": {
+        "titulo": "MOTORES DE COMBUSTÃO INTERNA I",
+        "requisitos": ["TEM00280"],
+        "cor": "vermelho",
+        "horas": "60",
+        "periodo": "NP",
+        "area": "Termociências"
+    },
+    "TEP00005": {
+        "titulo": "FUNDAMENTOS DE ENGENHARIA DO TRABALHO",
+        "requisitos": ["GET00177", "GFI00159", "GFI00162", "GMA00162", "TEM00187", "TEM00190"],
+        "cor": "rosa",
+        "horas": "60",
+        "periodo": "NP",
+        "area": "Empreendedorismo e Inovação Tecnológica"
+    },
+    "TEP00110": {
+        "titulo": "ENGENHARIA ECONÔMICA",
+        "requisitos": ["GMA00155"],
+        "cor": "rosa",
+        "horas": "30",
+        "periodo": "NP",
+        "area": "Empreendedorismo e Inovação Tecnológica"
+    },
+    "TEP00111": {
+        "titulo": "GERENCIAMENTO DE PROJETOS I",
+        "requisitos": ["TEP00115"],
+        "cor": "rosa",
+        "horas": "60",
+        "periodo": "NP",
+        "area": "Empreendedorismo e Inovação Tecnológica"
+    },
+    "TEP00112": {
+        "titulo": "PLANEJAMENTO E CONTROLE DE PRODUÇÃO I",
+        "requisitos": ["TEP00115"],
+        "cor": "rosa",
+        "horas": "60",
+        "periodo": "NP",
+        "area": "Empreendedorismo e Inovação Tecnológica"
+    },
+    "TEP00114": {
+        "titulo": "ENGENHARIA DE MÉTODOS I",
+        "requisitos": ["GET00177", "TEP00133"],
+        "cor": "rosa",
+        "horas": "60",
+        "periodo": "NP",
+        "area": "Empreendedorismo e Inovação Tecnológica"
+    },
+    "TEP00115": {
+        "titulo": "ENGENHARIA DE MÉTODOS II",
+        "requisitos": ["TEP00114"],
+        "cor": "rosa",
+        "horas": "60",
+        "periodo": "NP",
+        "area": "Empreendedorismo e Inovação Tecnológica"
+    },
+    "TEP00116": {
+        "titulo": "ESTUDOS DE MOVIMENTOS E TEMPOS",
+        "requisitos": ["TEP00133"],
+        "cor": "rosa",
+        "horas": "60",
+        "periodo": "NP",
+        "area": "Empreendedorismo e Inovação Tecnológica"
+    },
+    "TEP00117": {
+        "titulo": "PESQUISA OPERACIONAL I",
+        "requisitos": ["GAN00140", "GMA00155", "TCO00205"],
+        "cor": "rosa",
+        "horas": "60",
+        "periodo": "NP",
+        "area": "Empreendedorismo e Inovação Tecnológica"
+    },
+    "TEP00118": {
+        "titulo": "PESQUISA OPERACIONAL II",
+        "requisitos": ["TEP00117"],
+        "cor": "rosa",
+        "horas": "60",
+        "periodo": "NP",
+        "area": "Empreendedorismo e Inovação Tecnológica"
+    },
+    "TEP00119": {
+        "titulo": "CONFIABILIDADE INDUSTRIAL",
+        "requisitos": ["TEP00120"],
+        "cor": "marrom",
+        "horas": "60",
+        "periodo": "NP",
+        "area": "Manutenção e Confiabilidade"
+    },
+    "TEP00120": {
+        "titulo": "TÉCNICAS DE CONTROLE DE QUALIDADE",
+        "requisitos": ["GET00177"],
+        "cor": "marrom",
+        "horas": "60",
+        "periodo": "NP",
+        "area": "Manutenção e Confiabilidade"
+    },
+    "TEP00126": {
+        "titulo": "AUTOMAÇÃO DA PRODUÇÃO",
+        "requisitos": ["TCC00326", "TEM00211"],
+        "cor": "cinza",
+        "horas": "60",
+        "periodo": "NP",
+        "area": "Automação e Controle"
+    },
+    "TEP00133": {
+        "titulo": "ORGANIZAÇÃO DO TRABALHO",
+        "requisitos": ["TEP00005", "TEP00118"],
+        "cor": "rosa",
+        "horas": "60",
+        "periodo": "NP",
+        "area": "Empreendedorismo e Inovação Tecnológica"
+    },
+    "TEP00139": {
+        "titulo": "ARRANJO FÍSICO INDUSTRIAL",
+        "requisitos": ["TDT00041", "GET00177", "TEP00114", "TEP00119"],
+        "cor": "rosa",
+        "horas": "60",
+        "periodo": "NP",
+        "area": "Empreendedorismo e Inovação Tecnológica"
+    },
+    "TEP00146": {
+        "titulo": "ADMINISTRAÇÃO FINANCEIRA I",
+        "requisitos": ["TEP00109"],
+        "cor": "rosa",
+        "horas": "30",
+        "periodo": "NP",
+        "area": "Empreendedorismo e Inovação Tecnológica"
+    },
+    "TEP00151": {
+        "titulo": "CONTABILIDADE",
+        "requisitos": ["TEP00146"],
+        "cor": "rosa",
+        "horas": "60",
+        "periodo": "NP",
+        "area": "Empreendedorismo e Inovação Tecnológica"
+    },
+    "TEP00161": {
+        "titulo": "VIABILIDADE ECONÔMICA DE PROJETOS",
+        "requisitos": ["TEP00111", "TEP00146"],
+        "cor": "rosa",
+        "horas": "60",
+        "periodo": "NP",
+        "area": "Empreendedorismo e Inovação Tecnológica"
+    },
+    "TEP00163": {
+        "titulo": "HIGIENE E SEGURANÇA INDUSTRIAS I",
+        "requisitos": ["TEP00005"],
+        "cor": "marrom",
+        "horas": "60",
+        "periodo": "NP",
+        "area": "Manutenção e Confiabilidade"
+    },
+    "TEP00171": {
+        "titulo": "FUNDAMENTOS DE ENGENHARIA DE MANUTENÇÃO",
+        "requisitos": ["TEM00184", "TEM00211", "TEP00120"],
+        "cor": "marrom",
+        "horas": "60",
+        "periodo": "NP",
+        "area": "Manutenção e Confiabilidade"
+    },
+    "TEP00176": {
+        "titulo": "PROJETO DE EXTENSÃO I - ESCRITÓRIO ESCOLA DE ENGENHARIA E DESIGN (ESD)",
+        "requisitos": ["TEM00187"],
+        "cor": "rosa",
+        "horas": "80",
+        "periodo": "NP",
+        "area": "Empreendedorismo e Inovação Tecnológica"
+    },
+    "TEQ00091": {
+        "titulo": "ENGENHARIA VERDE",
+        "requisitos": ["GQI00042", "GET00177", "GFI00169", "GFI00162", "GMA00182", "TEM00187", "TEM00190"],
+        "cor": "rosa",
+        "horas": "60",
+        "periodo": "NP",
+        "area": "Empreendedorismo e Inovação Tecnológica"
+    },
+    "TEQ00095": {
+        "titulo": "TERMODINAMICA QUÍMICA APLICADA",
+        "requisitos": ["TEM00279"],
+        "cor": "vermelho",
+        "horas": "60",
+        "periodo": "NP",
+        "area": "Termociências"
+    },
+    "TEQ00098": {
+        "titulo": "TRANSFERÊNCIA DE MASSA",
+        "requisitos": ["TEM00184", "TEQ00127"],
+        "cor": "vermelho",
+        "horas": "60",
+        "periodo": "NP",
+        "area": "Termociências"
+    },
+    "TEQ00102": {
+        "titulo": "CONTROLE DE PROCESSOS",
+        "requisitos": [],
+        "cor": "cinza",
+        "horas": "60",
+        "periodo": "NP",
+        "area": "Automação e Controle"
+    },
+    "TEQ00127": {
+        "titulo": "TÓPICOS DE MATEMÁTICA EM ENGENHARIA QUÍMICA",
+        "requisitos": [],
+        "cor": "vermelho",
+        "horas": "60",
+        "periodo": "NP",
+        "area": "Termociências"
+    },
+    "TEQ00135": {
+        "titulo": "OPERAÇÕES UNITÁRIAS I",
+        "requisitos": ["TEQ00095", "TEQ00098"],
+        "cor": "vermelho",
+        "horas": "60",
+        "periodo": "NP",
+        "area": "Termociências"
+    },
+    "TEQ00136": {
+        "titulo": "OPERAÇÕES UNITÁRIAS II",
+        "requisitos": [],
+        "cor": "vermelho",
+        "horas": "60",
+        "periodo": "NP",
+        "area": "Termociências"
+    },
+    "TEQ00137": {
+        "titulo": "OPERAÇÕES UNITÁRIAS III",
+        "requisitos": ["TEM00193", "TEQ00138"],
+        "cor": "vermelho",
+        "horas": "60",
+        "periodo": "NP",
+        "area": "Termociências"
+    },
+    "TEQ00138": {
+        "titulo": "OPERAÇÕES UNITÁRIAS IV",
+        "requisitos": ["TEM00193"],
+        "cor": "vermelho",
+        "horas": "60",
+        "periodo": "NP",
+        "area": "Termociências"
+    },
+    "TEQ00140": {
+        "titulo": "ENGENHARIA DO MEIO AMBIENTE",
+        "requisitos": ["GQI00042", "TER00108", "GET00177", "GF00159", "GF00162", "GM400162", "TEM00187", "TEM00190"],
+        "cor": "rosa",
+        "horas": "60",
+        "periodo": "NP",
+        "area": "Empreendedorismo e Inovação Tecnológica"
+    },
+    "TEQ00141": {
+        "titulo": "SISTEMAS DE CONTROLE E INSTRUMENTAÇÃO",
+        "requisitos": ["TEM00187", "TEM00190"],
+        "cor": "cinza",
+        "horas": "45",
+        "periodo": "NP",
+        "area": "Automação e Controle"
+    },
+    "TEQ00160": {
+        "titulo": "PROPRIEDADES DE FLUIDOS DE PETRÓLEO",
+        "requisitos": ["TEE00113"],
+        "cor": "vermelho",
+        "horas": "60",
+        "periodo": "NP",
+        "area": "Termociências"
+    },
+    "TEQ00163": {
+        "titulo": "CORROSÃO",
+        "requisitos": ["TEQ00168", "TEQ00170"],
+        "cor": "laranja",
+        "horas": "60",
+        "periodo": "NP",
+        "area": "Materiais e Processos de Fabricação"
+    },
+    "TEQ00164": {
+        "titulo": "REVESTIMENTOS ANTICORROSIVOS",
+        "requisitos": ["TEM00189"],
+        "cor": "laranja",
+        "horas": "60",
+        "periodo": "NP",
+        "area": "Materiais e Processos de Fabricação"
+    },
+    "TEQ00168": {
+        "titulo": "ENGENHARIA DE PERFURAÇÃO",
+        "requisitos": ["GFI00160"],
+        "cor": "laranja",
+        "horas": "60",
+        "periodo": "NP",
+        "area": "Materiais e Processos de Fabricação"
+    },
+    "TEQ00170": {
+        "titulo": "ENGENHARIA DE RESERVATÓRIOS",
+        "requisitos": ["TEM00184"],
+        "cor": "laranja",
+        "horas": "60",
+        "periodo": "NP",
+        "area": "Materiais e Processos de Fabricação"
+    },
+    "TEQ00196": {
+        "titulo": "FLUÍDOS E ESCOAMENTOS NA INDÚSTRIA DO PETRÓLEO",
+        "requisitos": ["TEQ00170"],
+        "cor": "vermelho",
+        "horas": "45",
+        "periodo": "NP",
+        "area": "Termociências"
+    },
+    "TEQ00198": {
+        "titulo": "ABANDONO DE POÇOS",
+        "requisitos": ["TEQ00168", "TEQ00170"],
+        "cor": "laranja",
+        "horas": "60",
+        "periodo": "NP",
+        "area": "Materiais e Processos de Fabricação"
+    },
+    "TER00031": {
+        "titulo": "ENGENHARIA DE SEGURANÇA DO TRABALHO INTEGRADA AO MEIO AMBIENTE",
+        "requisitos": ["TER00108"],
+        "cor": "marrom",
+        "horas": "45",
+        "periodo": "NP",
+        "area": "Manutenção e Confiabilidade"
+    },
+    "TER00076": {
+        "titulo": "ALTERNATIVAS ENERGÉTICAS",
+        "requisitos": [],
+        "cor": "verde",
+        "horas": "45",
+        "periodo": "NP",
+        "area": "Energia"
+    },
+    "TER00077": {
+        "titulo": "DESENVOLVIMENTO DE PRODUTOS SUSTENTÁVEIS I",
+        "requisitos": ["GET00177", "TEM00187", "TEM00194"],
+        "cor": "rosa",
+        "horas": "45",
+        "periodo": "NP",
+        "area": "Empreendedorismo e Inovação Tecnológica"
+    },
+    "TER00093": {
+        "titulo": "AVALIAÇÃO DE IMPACTOS E POLUIÇÃO AMBIENTAL",
+        "requisitos": [],
+        "cor": "rosa",
+        "horas": "30",
+        "periodo": "NP",
+        "area": "Empreendedorismo e Inovação Tecnológica"
+    },
+    "TET00279": {
+        "titulo": "REDES LOCAIS E DE ACESSO",
+        "requisitos": ["GET00177", "GFI00159", "GFI00162", "GMA00162", "TEM00187", "TEM00190"],
+        "cor": "roxo",
+        "horas": "60",
+        "periodo": "NP",
+        "area": "Simulação Computacional"
+    },
+    "TET00280": {
+        "titulo": "CIRCUITOS DIGITAIS I",
+        "requisitos": ["GET00177", "GFI00159", "GFI00162", "GMA00162", "TEM00187", "TEM00190"],
+        "cor": "roxo",
+        "horas": "75",
+        "periodo": "NP",
+        "area": "Simulação Computacional"
+    },
+    "TET00281": {
+        "titulo": "ELETROMAGNETISMO I: CAMPOS ESTÁTICOS",
+        "requisitos": ["GFI00159", "GMA00162"],
+        "cor": "cinza",
+        "horas": "60",
+        "periodo": "NP",
+        "area": "Automação e Controle"
+    },
+    "TET00283": {
+        "titulo": "CIRCUITOS ELÉTRICOS NO DOMÍNIO DO TEMPO",
+        "requisitos": ["GFI00159", "GMA00162"],
+        "cor": "cinza",
+        "horas": "75",
+        "periodo": "NP",
+        "area": "Automação e Controle"
+    },
+    "TET00284": {
+        "titulo": "INTERCONEXÃO DE REDES I",
+        "requisitos": ["TET00279"],
+        "cor": "roxo",
+        "horas": "60",
+        "periodo": "NP",
+        "area": "Simulação Computacional"
+    },
+    "TET00287": {
+        "titulo": "SINAIS E SISTEMAS I",
+        "requisitos": ["GMA00162"],
+        "cor": "cinza",
+        "horas": "60",
+        "periodo": "NP",
+        "area": "Automação e Controle"
+    },
+    "TET00294": {
+        "titulo": "FUNDAMENTOS DE PROCESSAMENTO DIGITAL DE SINAIS",
+        "requisitos": ["TET00287"],
+        "cor": "cinza",
+        "horas": "75",
+        "periodo": "NP",
+        "area": "Automação e Controle"
+    }
+}

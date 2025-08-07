@@ -7,7 +7,8 @@
     $enfaseSalva = "";
 
     // Carrega os dados salvos do banco de dados
-    $sql = "SELECT cursadas, enfase FROM progresso WHERE email = ?";
+    //$sql = "SELECT cursadas, enfase FROM progresso WHERE email = ?";
+    $sql = "SELECT cursadas FROM progresso WHERE email = ?";
     $stmt = mysqli_prepare($conn, $sql);
     mysqli_stmt_bind_param($stmt, "s", $email);
     mysqli_stmt_execute($stmt);
@@ -15,7 +16,7 @@
 
     if ($row = mysqli_fetch_assoc($result)) {
         $disciplinasSalvas = explode(",", $row['cursadas']);
-        $enfaseSalva = $row['enfase'];
+        //$enfaseSalva = $row['enfase'];
     }
     mysqli_stmt_close($stmt);
 
@@ -471,22 +472,22 @@
             </div>
 
             <!-- Seção de Ênfase -->
-            <div class="enfase-section">
+<!--            <div class="enfase-section">
                 <h3 class="section-title">Ênfase da Formação</h3>
                 <div class="select-wrapper">
                     <select name="enfase" id="enfase" class="enfase-select">
                         <option value="">Selecione sua ênfase</option>
-                        <option value="projetos mecanicos" <?= selected("projetos mecanicos", $enfaseSalva) ?>>Projetos Mecânicos</option>
-                        <option value="fabricacao" <?= selected("fabricacao", $enfaseSalva) ?>>Materiais e Processos de Fabricação</option>
-                        <option value="termociencias" <?= selected("termociencias", $enfaseSalva) ?>>Termociências</option>
-                        <option value="automacao" <?= selected("automacao", $enfaseSalva) ?>>Automação e Controle</option>
-                        <option value="manutencao" <?= selected("manutencao", $enfaseSalva) ?>>Manutenção e Confiabilidade</option>
-                        <option value="simulacao" <?= selected("simulacao", $enfaseSalva) ?>>Simulação Computacional e Modelagem</option>
-                        <option value="empreendedorismo" <?= selected("empreendedorismo", $enfaseSalva) ?>>Empreendedorismo e Inovação Tecnológica</option>
-                        <option value="energia" <?= selected("energia", $enfaseSalva) ?>>Energia</option>
+                        <option value="projetos mecanicos" >>Projetos Mecânicos</option>
+                        <option value="fabricacao" >Materiais e Processos de Fabricação</option>
+                        <option value="termociencias" >Termociências</option>
+                        <option value="automacao" >Automação e Controle</option>
+                        <option value="manutencao" >Manutenção e Confiabilidade</option>
+                        <option value="simulacao" >Simulação Computacional e Modelagem</option>
+                        <option value="empreendedorismo" >Empreendedorismo e Inovação Tecnológica</option>
+                        <option value="energia">Energia</option>
                     </select>
                 </div>
-            </div>
+            </div> -->
 
             <div class="form-actions">
                 <button type="submit" class="save-button">
@@ -505,7 +506,7 @@
     if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $cursadasArray = $_POST["obrigatorias"] ?? [];
         $cursadasString = implode(",", $cursadasArray);
-        $enfase = $_POST["enfase"];
+        //$enfase = $_POST["enfase"];
 
         // Verifica se o usuário já tem dados salvos
         $sql_check = "SELECT * FROM progresso WHERE email = ?";
@@ -516,16 +517,20 @@
 
         if (mysqli_num_rows($result) > 0) {
             // Atualiza
-            $sql_update = "UPDATE progresso SET cursadas = ?, enfase = ? WHERE email = ?";
+            //$sql_update = "UPDATE progresso SET cursadas = ?, enfase = ? WHERE email = ?";
+            $sql_update = "UPDATE progresso SET cursadas = ? WHERE email = ?";
             $stmt_update = mysqli_prepare($conn, $sql_update);
-            mysqli_stmt_bind_param($stmt_update, "sss", $cursadasString, $enfase, $email);
+            //mysqli_stmt_bind_param($stmt_update, "sss", $cursadasString, $enfase, $email);
+            mysqli_stmt_bind_param($stmt_update, "ss", $cursadasString, $email);
             mysqli_stmt_execute($stmt_update);
             mysqli_stmt_close($stmt_update);
         } else {
             // Insere
-            $sql_insert = "INSERT INTO progresso (email, cursadas, enfase) VALUES (?, ?, ?)";
+            //$sql_insert = "INSERT INTO progresso (email, cursadas, enfase) VALUES (?, ?, ?)";
+            $sql_insert = "INSERT INTO progresso (email, cursadas) VALUES (?, ?)";
             $stmt_insert = mysqli_prepare($conn, $sql_insert);
-            mysqli_stmt_bind_param($stmt_insert, "sss", $email, $cursadasString, $enfase);
+            //mysqli_stmt_bind_param($stmt_insert, "sss", $email, $cursadasString, $enfase);
+            mysqli_stmt_bind_param($stmt_insert, "sss", $email, $cursadasString);
             mysqli_stmt_execute($stmt_insert);
             mysqli_stmt_close($stmt_insert);
         }
