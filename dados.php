@@ -67,6 +67,34 @@
     $porcentagemObrigatorias = $totalObrigatorias > 0 ? min(100, ($horasObrigatorias / $totalObrigatorias) * 100) : 0;
     $porcentagemOptativas = $totalOptativas > 0 ? min(100, ($horasOptativas / $totalOptativas) * 100) : 0;
     $porcentagemComplementar = $totalComplementar > 0 ? min(100, ($horasComplementares / $totalComplementar) * 100) : 0;
+
+    // 4. Preparar dados para o gráfico de ênfases
+    $emphasisDistribution = [
+        'Projetos Mecânicos' => 0,
+        'Materiais e Processos de Fabricação' => 0,
+        'Termociências' => 0,
+        'Automação e Controle' => 0,
+        'Manutenção e Confiabilidade' => 0,
+        'Simulação Computacional' => 0,
+        'Empreendedorismo e Inovação Tecnológica' => 0,
+        'Energia' => 0
+    ];
+
+    if (isset($optativas_array)) {
+        foreach ($optativas_array as $codigo) {
+            if (isset($optativas_json[$codigo])) {
+                $area = $optativas_json[$codigo]['area'];
+                if (isset($emphasisDistribution[$area])) {
+                    $emphasisDistribution[$area]++;
+                }
+            }
+        }
+    }
+
+    // Filtrar apenas áreas com pelo menos 1 disciplina
+    $chartData = array_filter($emphasisDistribution, function($count) {
+        return $count > 0;
+    });
 ?>
 
 <!DOCTYPE html>
@@ -86,7 +114,7 @@
         body {
             background-color: #f5f7fa;
             display: flex;
-            justify-content: center;
+            flex-direction: column;
             align-items: center;
             min-height: 100vh;
             padding: 20px;
@@ -96,9 +124,15 @@
             text-decoration: none;
         }
 
-        .progress-container {
+        .container {
             width: 100%;
             max-width: 800px;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .progress-container, .profile-section {
             background-color: white;
             border-radius: 16px;
             box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
@@ -110,10 +144,22 @@
             margin-bottom: 30px;
         }
 
-        .header h1 {
+        .header h1, .header h2 {
             color: #2d3748;
-            font-size: 28px;
             margin-bottom: 8px;
+        }
+
+        .header h1 {
+            font-size: 28px;
+        }
+
+        .header h2 {
+            font-size: 22px;
+        }
+
+        .header p {
+            color: #718096;
+            font-size: 14px;
         }
 
         .progress-section {
@@ -227,113 +273,183 @@
         .complementar-btn { background-color: #dd6b20; }
         .complementar-btn:hover { background-color: #c05621; }
 
+        /* Estilos para o gráfico de ênfases */
+        .chart-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 30px;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+
+        .chart-wrapper {
+            width: 250px;
+            height: 250px;
+            position: relative;
+        }
+
+        .legend-container {
+            max-width: 300px;
+        }
+
+        .legend-title {
+            font-size: 16px;
+            margin-bottom: 15px;
+            color: #2d3748;
+        }
+
+        .legend-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px;
+        }
+
+        .legend-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 8px;
+            font-size: 13px;
+        }
+        
+        .legend-color {
+            width: 16px;
+            height: 16px;
+            border-radius: 4px;
+            margin-right: 8px;
+        }
+
         /* Ícones do Font Awesome */
         @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css");
     </style>
 </head>
 <body>
-    <div class="progress-container">
-        <div class="header">
-            <h1>Progresso Acadêmico</h1>
-            <p>Resumo das horas concluídas por categoria</p>
-        </div>
+    <div class="container">
+        <div class="progress-container">
+            <div class="header">
+                <h1>Progresso Acadêmico</h1>
+                <p>Resumo das horas concluídas por categoria</p>
+            </div>
 
-        <!-- Progresso Total -->
-        <div class="progress-section">
-            <div class="progress-title">
-                <h3>Progresso Geral</h3>
-                <span class="percentage"><?php echo number_format($porcentagemTotal, 1); ?>%</span>
+            <!-- Progresso Total -->
+            <div class="progress-section">
+                <div class="progress-title">
+                    <h3>Progresso Geral</h3>
+                    <span class="percentage"><?php echo number_format($porcentagemTotal, 1); ?>%</span>
+                </div>
+                <div class="progress-bar">
+                    <div class="progress-fill total" style="width: <?php echo $porcentagemTotal; ?>%"></div>
+                </div>
+                <div class="progress-details">
+                    <span><?php echo $horasConcluidas; ?>h de <?php echo $totalHoras; ?>h</span>
+                    <span><?php echo $totalHoras - $horasConcluidas; ?>h restantes</span>
+                </div>
             </div>
-            <div class="progress-bar">
-                <div class="progress-fill total" style="width: <?php echo $porcentagemTotal; ?>%"></div>
-            </div>
-            <div class="progress-details">
-                <span><?php echo $horasConcluidas; ?>h de <?php echo $totalHoras; ?>h</span>
-                <span><?php echo $totalHoras - $horasConcluidas; ?>h restantes</span>
-            </div>
-        </div>
 
-        <!-- Obrigatórias -->
-        <div class="progress-section">
-            <div class="progress-title">
-                <h3>Matérias Obrigatórias</h3>
-                <span class="percentage"><?php echo number_format($porcentagemObrigatorias, 1); ?>%</span>
+            <!-- Obrigatórias -->
+            <div class="progress-section">
+                <div class="progress-title">
+                    <h3>Matérias Obrigatórias</h3>
+                    <span class="percentage"><?php echo number_format($porcentagemObrigatorias, 1); ?>%</span>
+                </div>
+                <div class="progress-bar">
+                    <div class="progress-fill obrigatorias" style="width: <?php echo $porcentagemObrigatorias; ?>%"></div>
+                </div>
+                <div class="progress-details">
+                    <span><?php echo $horasObrigatorias; ?>h de <?php echo $totalObrigatorias; ?>h</span>
+                    <span><?php echo $totalObrigatorias - $horasObrigatorias; ?>h restantes</span>
+                </div>
+                <div class="action-buttons">
+                    <a href="settings.php">
+                        <button class="action-btn obrigatorias-btn">
+                            <i class="fas fa-plus"></i> Adicionar Horas
+                        </button>
+                    </a>
+                    <button class="action-btn btn-secondary" onclick="gerenciarMaterias('obrigatorias')">
+                        <i class="fas fa-tasks"></i> Gerenciar
+                    </button>
+                </div>
             </div>
-            <div class="progress-bar">
-                <div class="progress-fill obrigatorias" style="width: <?php echo $porcentagemObrigatorias; ?>%"></div>
+
+            <!-- Optativas -->
+            <div class="progress-section">
+                <div class="progress-title">
+                    <h3>Matérias Optativas</h3>
+                    <span class="percentage"><?php echo number_format($porcentagemOptativas, 1); ?>%</span>
+                </div>
+                <div class="progress-bar">
+                    <div class="progress-fill optativas" style="width: <?php echo $porcentagemOptativas; ?>%"></div>
+                </div>
+                <div class="progress-details">
+                    <span><?php echo $horasOptativas; ?>h de <?php echo $totalOptativas; ?>h</span>
+                    <span><?php echo $totalOptativas - $horasOptativas; ?>h restantes</span>
+                </div>
+                <div class="action-buttons">
+                    <a href="optativas.php">
+                        <button class="action-btn optativas-btn">
+                            <i class="fas fa-plus"></i> Adicionar Horas
+                        </button>
+                    </a>
+                    <button class="action-btn btn-secondary" onclick="verDetalhes('optativas')">
+                        <i class="fas fa-list"></i> Ver Detalhes
+                    </button>
+                </div>
             </div>
-            <div class="progress-details">
-                <span><?php echo $horasObrigatorias; ?>h de <?php echo $totalObrigatorias; ?>h</span>
-                <span><?php echo $totalObrigatorias - $horasObrigatorias; ?>h restantes</span>
-            </div>
-            <div class="action-buttons">
-                <a href="settings.php">
-                    <button class="action-btn obrigatorias-btn" onclick="adicionarHoras('obrigatorias')">
+
+            <!-- Complementares -->
+            <div class="progress-section">
+                <div class="progress-title">
+                    <h3>Atividades Complementares</h3>
+                    <span class="percentage"><?php echo number_format($porcentagemComplementar, 1); ?>%</span>
+                </div>
+                <div class="progress-bar">
+                    <div class="progress-fill complementar" style="width: <?php echo $porcentagemComplementar; ?>%"></div>
+                </div>
+                <div class="progress-details">
+                    <span><?php echo $horasComplementares; ?>h de <?php echo $totalComplementar; ?>h</span>
+                    <span><?php echo $totalComplementar - $horasComplementares; ?>h restantes</span>
+                </div>
+                <div class="action-buttons">
+                    <button class="action-btn complementar-btn" onclick="adicionarHoras('complementares')">
                         <i class="fas fa-plus"></i> Adicionar Horas
                     </button>
-                </a>
-                <button class="action-btn btn-secondary" onclick="gerenciarMaterias('obrigatorias')">
-                    <i class="fas fa-tasks"></i> Gerenciar
-                </button>
-            </div>
-        </div>
-
-        <!-- Optativas -->
-        <div class="progress-section">
-            <div class="progress-title">
-                <h3>Matérias Optativas</h3>
-                <span class="percentage"><?php echo number_format($porcentagemOptativas, 1); ?>%</span>
-            </div>
-            <div class="progress-bar">
-                <div class="progress-fill optativas" style="width: <?php echo $porcentagemOptativas; ?>%"></div>
-            </div>
-            <div class="progress-details">
-                <span><?php echo $horasOptativas; ?>h de <?php echo $totalOptativas; ?>h</span>
-                <span><?php echo $totalOptativas - $horasOptativas; ?>h restantes</span>
-            </div>
-            <div class="action-buttons">
-                <a href="optativas.php">
-                    <button class="action-btn optativas-btn" onclick="adicionarHoras('optativas')">
-                        <i class="fas fa-plus"></i> Adicionar Horas
+                    <button class="action-btn btn-secondary" onclick="enviarCertificado()">
+                        <i class="fas fa-upload"></i> Enviar Certificado
                     </button>
-                </a>
-                <button class="action-btn btn-secondary" onclick="verDetalhes('optativas')">
-                    <i class="fas fa-list"></i> Ver Detalhes
-                </button>
+                </div>
             </div>
         </div>
 
-        <!-- Complementares -->
-        <div class="progress-section">
-            <div class="progress-title">
-                <h3>Atividades Complementares</h3>
-                <span class="percentage"><?php echo number_format($porcentagemComplementar, 1); ?>%</span>
+        <!-- Perfil de Aluno - Gráfico de Ênfases -->
+        <div class="profile-section">
+            <div class="header">
+                <h2>Perfil de Aluno</h2>
+                <p>Distribuição das ênfases nas disciplinas optativas selecionadas</p>
             </div>
-            <div class="progress-bar">
-                <div class="progress-fill complementar" style="width: <?php echo $porcentagemComplementar; ?>%"></div>
-            </div>
-            <div class="progress-details">
-                <span><?php echo $horasComplementares; ?>h de <?php echo $totalComplementar; ?>h</span>
-                <span><?php echo $totalComplementar - $horasComplementares; ?>h restantes</span>
-            </div>
-            <div class="action-buttons">
-                <button class="action-btn complementar-btn" onclick="adicionarHoras('complementares')">
-                    <i class="fas fa-plus"></i> Adicionar Horas
-                </button>
-                <button class="action-btn btn-secondary" onclick="enviarCertificado()">
-                    <i class="fas fa-upload"></i> Enviar Certificado
-                </button>
-            </div>
+            
+            <?php if (!empty($chartData)): ?>
+                <div class="chart-container">
+                    <div class="chart-wrapper">
+                        <canvas id="emphasisChart"></canvas>
+                    </div>
+                    
+                    <div class="legend-container">
+                        <h3 class="legend-title">Distribuição de Ênfases</h3>
+                        <div id="chartLegend" class="legend-grid"></div>
+                    </div>
+                </div>
+            <?php else: ?>
+                <p style="text-align: center; color: #718096; margin-top: 20px;">
+                    Nenhuma disciplina optativa selecionada ainda. 
+                    <a href="optativas.php" style="color: #3182ce;">Adicione disciplinas optativas</a> para ver seu perfil.
+                </p>
+            <?php endif; ?>
         </div>
     </div>
 
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script>
         // Funções placeholder para as ações dos botões
-        //function adicionarHoras(tipo) {
-        //    alert(`Abrir formulário para adicionar horas ${tipo}`);
-            // Implementação futura: abrir modal ou redirecionar
-        //}
-        
         function gerenciarMaterias(tipo) {
             alert(`Abrir gerenciador de matérias ${tipo}`);
             // Implementação futura
@@ -348,6 +464,68 @@
             alert('Abrir formulário de envio de certificado');
             // Implementação futura
         }
+
+        // Configuração do gráfico de ênfases
+        document.addEventListener('DOMContentLoaded', function() {
+            <?php if (!empty($chartData)): ?>
+                const ctx = document.getElementById('emphasisChart').getContext('2d');
+                const chartData = {
+                    labels: <?php echo json_encode(array_keys($chartData)); ?>,
+                    datasets: [{
+                        data: <?php echo json_encode(array_values($chartData)); ?>,
+                        backgroundColor: [
+                            '#3182ce', // azul - Projetos Mecânicos
+                            '#ed8936', // laranja - Materiais
+                            '#e53e3e', // vermelho - Termociências
+                            '#718096', // cinza - Automação
+                            '#b7791f', // marrom - Manutenção
+                            '#805ad5', // roxo - Simulação
+                            '#d53f8c', // rosa - Empreendedorismo
+                            '#38a169'  // verde - Energia
+                        ],
+                        borderWidth: 1
+                    }]
+                };
+                
+                const emphasisChart = new Chart(ctx, {
+                    type: 'pie',
+                    data: chartData,
+                    options: {
+                        responsive: true,
+                        maintainAspectRatio: false,
+                        plugins: {
+                            legend: {
+                                display: false
+                            },
+                            tooltip: {
+                                callbacks: {
+                                    label: function(context) {
+                                        const label = context.label || '';
+                                        const value = context.raw || 0;
+                                        const total = context.dataset.data.reduce((a, b) => a + b, 0);
+                                        const percentage = Math.round((value / total) * 100);
+                                        return `${label}: ${value} (${percentage}%)`;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                });
+                
+                // Criar legenda manualmente
+                const legendContainer = document.getElementById('chartLegend');
+                const legendItems = chartData.labels.map((label, index) => {
+                    return `
+                        <div class="legend-item">
+                            <div class="legend-color" style="background-color: ${chartData.datasets[0].backgroundColor[index]}"></div>
+                            <span>${label} (${chartData.datasets[0].data[index]})</span>
+                        </div>
+                    `;
+                });
+                
+                legendContainer.innerHTML = legendItems.join('');
+            <?php endif; ?>
+        });
     </script>
 </body>
 </html>
