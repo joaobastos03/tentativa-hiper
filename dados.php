@@ -26,7 +26,7 @@
 
     if ($row = $result_obr->fetch_assoc()) {
         $cursadas_array = explode(",", $row['cursadas']);
-        $materias_json = json_decode(file_get_contents('src/js/obrigatorias.json'), true);
+        $materias_json = json_decode(file_get_contents('obrigatorias.json'), true);
         
         foreach ($cursadas_array as $codigo) {
             if (isset($materias_json[$codigo])) {
@@ -47,7 +47,7 @@
 
     if ($row = $result_opt->fetch_assoc()) {
         $optativas_array = explode(",", $row['materias']);
-        $optativas_json = json_decode(file_get_contents('src/js/optativas.json'), true);
+        $optativas_json = json_decode(file_get_contents('optativas.json'), true);
 
         // Calcula total bruto de horas optativas
         foreach ($optativas_array as $codigo) {

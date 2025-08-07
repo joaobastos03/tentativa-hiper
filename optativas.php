@@ -22,11 +22,11 @@
     }
 
     // Load elective courses data from JSON
-    $optativasJson = file_get_contents('src\js\optativas.json');
+    $optativasJson = file_get_contents('optativas.json');
     $optativasData = json_decode($optativasJson, true);
 
     // Load mandatory courses data from JSON
-    $obrigatoriasJson = file_get_contents('src\js\obrigatorias.json');
+    $obrigatoriasJson = file_get_contents('obrigatorias.json');
     $obrigatoriasData = json_decode($obrigatoriasJson, true);
 
     // Group courses by area
