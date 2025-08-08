@@ -1,5 +1,5 @@
 <?php
-    $dbHost = 'mysql.railway.internal';
+    $dbHost = 'tramway.proxy.rlwy.net';
     $dbUsername = 'root';
     $dbPassword = 'mUQyCplkYOrCpJOqfMZrJttPKFKrOygY';
     $dbName = 'teste_railway';
