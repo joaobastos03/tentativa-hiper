@@ -1,5 +1,5 @@
 <?php
-    include('login-pages\database.php');
+    include('database.php');
 ?>
 
 <!DOCTYPE html>
