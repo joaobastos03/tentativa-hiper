@@ -1,8 +1,8 @@
 <?php
-    $dbHost = 'LocalHost';
+    $dbHost = 'mUQyCplkYOrCpJOqfMZrJttPKFKrOygY';
     $dbUsername = 'root';
-    $dbPassword = '';
-    $dbName = 'hiperfluxograma';
+    $dbPassword = 'mUQyCplkYOrCpJOqfMZrJttPKFKrOygY';
+    $dbName = 'teste_railway';
 
     try {
     $conn = mysqli_connect($dbHost, $dbUsername, $dbPassword, $dbName);
