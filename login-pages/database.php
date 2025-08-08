@@ -1,5 +1,5 @@
 <?php
-    $dbHost = 'mUQyCplkYOrCpJOqfMZrJttPKFKrOygY';
+    $dbHost = 'mysql.railway.internal';
     $dbUsername = 'root';
     $dbPassword = 'mUQyCplkYOrCpJOqfMZrJttPKFKrOygY';
     $dbName = 'teste_railway';
