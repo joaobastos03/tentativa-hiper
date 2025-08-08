@@ -14,7 +14,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/framework7/6.3.0/css/framework7.bundle.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/framework7/6.3.0/js/framework7.bundle.min.js"></script>
-    <script src="src/js/app.js"></script>
+    <script src="app.js"></script>
 </head>
 <body>
 
@@ -28,8 +28,8 @@
               <ul>
                 <li><a href="login-pages\login.php"><button><span>Login</span></button></a></li>
                 <a href="dados.php"><li><button><span>Dados</span></button></li></a>
-                <li><button><span>DeepSeek</span></button></li>
-                <a href="settings.php"><li><button><span>Settings</span></button></li></a>
+                <a href=""><li><button><span>DeepSeek</span></button></li></a>
+                <a href="manutencao.php"><li><button><span>Settings</span></button></li></a>
               </ul>
             </div>
         </nav>

@@ -49,8 +49,8 @@
               <ul>
                 <li><a href="login-pages\logout.php"><button><span>Logout</span></button></a></li>
                 <a href="dados.php"><li><button><span>Dados</span></button></li></a>
-                <li><button><span>DeepSeek</span></button></li>
-                <li><a href="settings.php"><button><span>Settings</span></button></a>
+                <a href="manutencao.php"><li><button><span>Monitoria</span></button></li></a>
+                <li><a href="manutencao.php"><button><span>Configurações</span></button></a>
               </ul>
             </div>
         </nav>
