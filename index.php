@@ -22,7 +22,7 @@
         <nav>
             <ul>
                 <li><img src="src\imagens\logo pet mec.png" alt=""></li>
-                <li><h1><span>HIPER</span>FLUasdafafasdXOGRAMA</h1></li>
+                <li><h1><span>HIPER</span>FLUXOGRAMA</h1></li>
             </ul>
             <div class="links">
               <ul>
