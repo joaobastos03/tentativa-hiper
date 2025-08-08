@@ -1,6 +1,6 @@
 <?php
 // Configurações seguras para conexão MySQL no Railway
-$dbHost = 'tramway.proxy.rlwy.net';
+$dbHost = 'mysql.railway.internal';
 $dbPort = '21857'; // Porta fornecida pelo Railway
 $dbUsername = 'root';
 $dbPassword = 'mUQyCplkYOrCpJOqfMZrJttPKFKrOygY';
