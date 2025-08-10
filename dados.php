@@ -39,7 +39,7 @@
     $stmt_obr->close();
 
     // 2. Busca e cálculo das matérias optativas (com limite de 360h)
-    $sql_optativas = "SELECT materias FROM optativas WHERE email = ?";
+    $sql_optativas = "SELECT cursadas FROM optativas WHERE email = ?";
     $stmt_opt = $conn->prepare($sql_optativas);
     $stmt_opt->bind_param("s", $email);
     $stmt_opt->execute();
