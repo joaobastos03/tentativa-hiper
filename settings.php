@@ -506,35 +506,30 @@
     if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $cursadasArray = $_POST["obrigatorias"] ?? [];
         $cursadasString = implode(",", $cursadasArray);
-        //$enfase = $_POST["enfase"];
-
+    
         // Verifica se o usuário já tem dados salvos
         $sql_check = "SELECT * FROM progresso WHERE email = ?";
         $stmt_check = mysqli_prepare($conn, $sql_check);
         mysqli_stmt_bind_param($stmt_check, "s", $email);
         mysqli_stmt_execute($stmt_check);
         $result = mysqli_stmt_get_result($stmt_check);
-
+    
         if (mysqli_num_rows($result) > 0) {
             // Atualiza
-            //$sql_update = "UPDATE progresso SET cursadas = ?, enfase = ? WHERE email = ?";
             $sql_update = "UPDATE progresso SET cursadas = ? WHERE email = ?";
             $stmt_update = mysqli_prepare($conn, $sql_update);
-            //mysqli_stmt_bind_param($stmt_update, "sss", $cursadasString, $enfase, $email);
             mysqli_stmt_bind_param($stmt_update, "ss", $cursadasString, $email);
             mysqli_stmt_execute($stmt_update);
             mysqli_stmt_close($stmt_update);
         } else {
             // Insere
-            //$sql_insert = "INSERT INTO progresso (email, cursadas, enfase) VALUES (?, ?, ?)";
             $sql_insert = "INSERT INTO progresso (email, cursadas) VALUES (?, ?)";
             $stmt_insert = mysqli_prepare($conn, $sql_insert);
-            //mysqli_stmt_bind_param($stmt_insert, "sss", $email, $cursadasString, $enfase);
-            mysqli_stmt_bind_param($stmt_insert, "sss", $email, $cursadasString);
+            mysqli_stmt_bind_param($stmt_insert, "ss", $email, $cursadasString);
             mysqli_stmt_execute($stmt_insert);
             mysqli_stmt_close($stmt_insert);
         }
-
+    
         mysqli_stmt_close($stmt_check);
         mysqli_close($conn);
         
