@@ -224,3 +224,47 @@ nav .links {
     top: 22%;
     background-color: blue;
 }
+
+/* Aviso de orientação para mobile */
+.orientation-warning {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    color: white;
+    z-index: 9999;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    font-size: 1.5rem;
+}
+
+.orientation-warning.show {
+    display: flex;
+}
+
+.orientation-warning img {
+    width: 100px;
+    margin: 20px 0;
+    animation: rotate 2s infinite;
+}
+
+@keyframes rotate {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(90deg); }
+}
+
+@media screen and (orientation: portrait) and (max-width: 768px) {
+    .orientation-warning.show {
+        display: flex;
+    }
+    
+    body {
+        overflow: hidden;
+    }
+}

@@ -287,6 +287,17 @@ function inicializarTooltips() {
 //    });
 //}
 
+function checkOrientation() {
+    const warning = document.querySelector('.orientation-warning');
+    const isMobile = window.matchMedia("(max-width: 768px)").matches;
+    
+    if (isMobile && window.innerHeight > window.innerWidth) {
+        warning.classList.add('show');
+    } else {
+        warning.classList.remove('show');
+    }
+}
+
 // Função principal que inicializa a aplicação
 function inicializarAplicacao() {
     carregarDadosJSON()
@@ -376,3 +387,6 @@ document.head.appendChild(style);
 
 // Inicia a aplicação quando o DOM estiver totalmente carregado
 document.addEventListener('DOMContentLoaded', inicializarAplicacao);
+window.addEventListener('load', checkOrientation);
+window.addEventListener('resize', checkOrientation);
+window.addEventListener('orientationchange', checkOrientation);
