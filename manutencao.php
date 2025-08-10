@@ -105,7 +105,7 @@
             </div>
             
             <a href="dashboard.php" class="btn">
-                <i class="fas fa-arrow-left"></i> Voltar ao Dashboard
+                <a href="home.php"><i class="fas fa-arrow-left"></i> Voltar ao Dashboard</a>
             </a>
         </div>
     </div>

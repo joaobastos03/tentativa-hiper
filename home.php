@@ -1,5 +1,5 @@
 <?php
-    include("login-pages\protect.php");
+    include("login-pages/protect.php");
     include("login-pages/database.php");
 
     $email = $_SESSION["email"];
