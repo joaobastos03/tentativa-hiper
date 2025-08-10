@@ -387,6 +387,6 @@ document.head.appendChild(style);
 
 // Inicia a aplicação quando o DOM estiver totalmente carregado
 document.addEventListener('DOMContentLoaded', inicializarAplicacao);
-window.addEventListener('load', checkOrientation);
-window.addEventListener('resize', checkOrientation);
-window.addEventListener('orientationchange', checkOrientation);
+//window.addEventListener('load', checkOrientation);
+//window.addEventListener('resize', checkOrientation);
+//window.addEventListener('orientationchange', checkOrientation);

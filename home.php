@@ -39,11 +39,11 @@
 </head>
 <body>
 
-    <div class="orientation-warning">
+    <!--<div class="orientation-warning">
         <h2>Por favor, gire seu dispositivo</h2>
         <p>Para uma melhor experiência, use o modo paisagem (horizontal)</p>
         <img src="src/imagens/rotate-icon.png" alt="Gire o dispositivo">
-    </div>
+    </div> -->
 
     <header>
         <nav>
