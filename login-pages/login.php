@@ -72,7 +72,8 @@
                         $_SESSION['id'] = $user['id'];
                         $_SESSION['name'] = $user['nome'];
                         $_SESSION['email'] = $user['email'];
-                        echo '<script>window.location.href = "../home.php";</script>';
+                        header("Location: ../home.php");
+                        exit();
                     }
                 }
                 else{
