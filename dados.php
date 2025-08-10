@@ -46,7 +46,7 @@
     $result_opt = $stmt_opt->get_result();
 
     if ($row = $result_opt->fetch_assoc()) {
-        $optativas_array = explode(",", $row['materias']);
+        $optativas_array = explode(",", $row['cursadas']);
         $optativas_json = json_decode(file_get_contents('optativas.json'), true);
 
         // Calcula total bruto de horas optativas
