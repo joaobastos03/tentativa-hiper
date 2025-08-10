@@ -27,7 +27,7 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=0.75">
+    <meta name="viewport" content="width=device-width, initial-scale=0.5">
     <title>Fluxograma Completo - Engenharia Mecânica</title>
     <link rel="stylesheet" href="src\css\style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -50,7 +50,7 @@
                 <li><a href="login-pages\logout.php"><button><span>Logout</span></button></a></li>
                 <a href="dados.php"><li><button><span>Dados</span></button></li></a>
                 <a href="manutencao.php"><li><button><span>Monitoria</span></button></li></a>
-                <li><a href="manutencao.php"><button><span>Configurações</span></button></a>
+                <li><a href="manutencao.php"><button><span>Config.</span></button></a>
               </ul>
             </div>
         </nav>
