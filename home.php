@@ -1,6 +1,6 @@
 <?php
     include("login-pages\protect.php");
-    include("login-pages\database.php");
+    include("login-pages/database.php");
 
     $email = $_SESSION["email"];
     $sql = "SELECT cursadas FROM progresso WHERE email = ?";
