@@ -6,7 +6,7 @@
     $disciplinasSalvas = [];
 
     // Carrega os dados salvos do banco de dados da tabela optativas
-    $sql = "SELECT materias FROM optativas WHERE email = ?";
+    $sql = "SELECT cursadas FROM optativas WHERE email = ?";
     $stmt = mysqli_prepare($conn, $sql);
     mysqli_stmt_bind_param($stmt, "s", $email);
     mysqli_stmt_execute($stmt);
