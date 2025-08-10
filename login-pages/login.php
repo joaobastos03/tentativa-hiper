@@ -1,5 +1,7 @@
 <?php
-    include("database.php")
+  session_start();
+  include("database.php")
+
 ?>
 
 <!--<!DOCTYPE html>
