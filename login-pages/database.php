@@ -4,7 +4,7 @@ $dbHost = 'mysql.railway.internal';
 $dbPort = '21857'; // Porta fornecida pelo Railway
 $dbUsername = 'root';
 $dbPassword = 'mUQyCplkYOrCpJOqfMZrJttPKFKrOygY';
-$dbName = 'railway'; // Note que o nome do banco é 'railway' e não 'teste_railway'
+$dbName = 'teste_railway'; // Note que o nome do banco é 'railway' e não 'teste_railway'
 
 try {
     // Conexão com especificação de porta
