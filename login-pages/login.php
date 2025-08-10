@@ -72,7 +72,7 @@
                         $_SESSION['id'] = $user['id'];
                         $_SESSION['name'] = $user['nome'];
                         $_SESSION['email'] = $user['email'];
-                        header("Location: ../home.php");
+                        echo '<script>window.location.href = "../home.php";</script>';
                     }
                 }
                 else{
