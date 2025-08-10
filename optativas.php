@@ -201,7 +201,7 @@
             mysqli_stmt_close($stmt_update);
         } else {
             // Insere novo registro
-            $sql_insert = "INSERT INTO optativas (email, materias) VALUES (?, ?)";
+            $sql_insert = "INSERT INTO optativas (email, cursadas) VALUES (?, ?)";
             $stmt_insert = mysqli_prepare($conn, $sql_insert);
             mysqli_stmt_bind_param($stmt_insert, "ss", $email, $optativasString);
             mysqli_stmt_execute($stmt_insert);
