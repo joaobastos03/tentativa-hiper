@@ -137,10 +137,9 @@
             catch(mysqli_sql_exception){
                 echo"Falha no cadastro de usuário". $mysqli_error;
             }
+            echo '<script>window.location.href = "sucessoCadastro.php";</script>';
+          }
 
-            header("Location: sucessoCadastro.php");
-        }
-  
     }
 
     mysqli_close($conn);
