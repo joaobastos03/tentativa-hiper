@@ -13,7 +13,7 @@
     $result = mysqli_stmt_get_result($stmt);
 
     if ($row = mysqli_fetch_assoc($result)) {
-        $disciplinasSalvas = explode(",", $row['materias']);
+        $disciplinasSalvas = explode(",", $row['cursadas']);
     }
     mysqli_stmt_close($stmt);
 
@@ -194,7 +194,7 @@
 
         if (mysqli_num_rows($result) > 0) {
             // Atualiza os dados existentes
-            $sql_update = "UPDATE optativas SET materias = ? WHERE email = ?";
+            $sql_update = "UPDATE optativas SET cursadas = ? WHERE email = ?";
             $stmt_update = mysqli_prepare($conn, $sql_update);
             mysqli_stmt_bind_param($stmt_update, "ss", $optativasString, $email);
             mysqli_stmt_execute($stmt_update);
