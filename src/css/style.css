@@ -360,13 +360,26 @@ footer {
     .links ul li {
         margin: 5px 0;
     }
+
+    
 }
 
-@media screen and (orientation: portrait) {
+/* Quando a altura for maior que a largura (modo retrato) */
+@media screen and (max-aspect-ratio: 1/1) {
   #rotate-message {
     display: block;
   }
   #site-content {
     display: none;
+  }
+}
+
+/* Quando a largura for maior que a altura (modo paisagem) */
+@media screen and (min-aspect-ratio: 1/1) {
+  #rotate-message {
+    display: none;
+  }
+  #site-content {
+    display: block;
   }
 }
