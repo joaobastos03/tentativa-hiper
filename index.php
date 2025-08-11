@@ -30,7 +30,7 @@
               <ul>
                 <li><a href="login-pages\login.php"><button><span>Login</span></button></a></li>
                 <a href="dados.php"><li><button><span>Dados</span></button></li></a>
-                <a href=""><li><button><span>Monitoria</span></button></li></a>
+                <a href="manutencao.php"><li><button><span>Monitoria</span></button></li></a>
                 <a href="manutencao.php"><li><button><span>Config.</span></button></li></a>
               </ul>
             </div>
