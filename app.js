@@ -1,5 +1,5 @@
 // Configurações completas de estilo para cada cor disponível
-console.log("oi")
+console.log("oiiiii")
 
 const estilosPorCor = {
     verde: {
