@@ -104,7 +104,7 @@
                 <!--<p><i class="fas fa-phone"></i> (11) 1234-5678</p> -->
             </div>
 
-            <a href="home.php" class="btn"><i class="fas fa-arrow-left"></i> Voltar ao Dashboard</a>
+            <a href="index.php" class="btn"><i class="fas fa-arrow-left"></i> Voltar ao Dashboard</a>
         </div>
     </div>
 </body>
