@@ -100,13 +100,11 @@
             
             <div class="contact-info">
                 <p>Se precisar de assistência, entre em contato conosco:</p>
-                <p><i class="fas fa-envelope"></i>uffhiperfluxograma@gmail.com</p>
+                <p><i class="fas fa-envelope"></i> uffhiperfluxograma@gmail.com</p>
                 <!--<p><i class="fas fa-phone"></i> (11) 1234-5678</p> -->
             </div>
-            
-            <a href="dashboard.php" class="btn">
-                <a href="home.php"><i class="fas fa-arrow-left"></i> Voltar ao Dashboard</a>
-            </a>
+
+            <a href="home.php" class="btn"><i class="fas fa-arrow-left"></i> Voltar ao Dashboard</a>
         </div>
     </div>
 </body>
