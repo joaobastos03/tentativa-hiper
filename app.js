@@ -4,18 +4,18 @@ console.log("oi")
 const estilosPorCor = {
     verde: {
         background: 'linear-gradient(#1CA64C, #148C3E, #034018)',
-        border: '1px solid #1CA64C',
-        boxShadowHighlight: '0px 0px 50px 25px #1CA64C',
+        border: '1px solid #7AD3A6',
+        boxShadowHighlight: '0px 0px 50px 25px #7AD3A6',
         backgroundColorNormal: '#7AD3A6'
     },
     azul: {
-        background: 'linear-gradient(#64dce7, #6674DE)',
+        background: 'linear-gradient(#48A1D9, #3a8bbd, #2a75a1)',
         border: '1px solid #64dce7',
         boxShadowHighlight: '0px 0px 50px 25px #64dce7',
         backgroundColorNormal: '#48A1D9'
     },
     marrom: {
-        background: 'linear-gradient(#98684A, #9B5D46, #422E2D)',
+        background: 'linear-gradient(#98684A, #7a5339, #5a3d2a)',
         border: '1px solid #98684A',
         boxShadowHighlight: '0px 0px 50px 25px #6b3a15',
         backgroundColorNormal: '#98684A'
@@ -27,19 +27,19 @@ const estilosPorCor = {
         backgroundColorNormal: '#F5726F'
     },
     rosa: {
-        background: 'linear-gradient(#360DFF, #6D0CE8, #B400FE, #E60CE8, #FF0D8B)',
+        background: 'linear-gradient( #D94C8A, #BD3A73, #A12A5F)',
         border: '1px solid #CD9DFF',
         boxShadowHighlight: '0px 0px 50px 25px #de5dde',
         backgroundColorNormal: '#CD9DFF'
     },
     roxo: {
-        background: 'linear-gradient(#FE3574, #FF6C5A)',
-        border: '1px solid #FE3574',
-        boxShadowHighlight: '0px 0px 50px 25px #FE3574',
+        background: 'linear-gradient(#6F71E8, #5a5cc7, #4547a6)',
+        border: '1px solid #6F71E8',
+        boxShadowHighlight: '0px 0px 50px 25px #6F71E8',
         backgroundColorNormal: '#6F71E8'
     },
     cinza: {
-        background: 'linear-gradient(#A6A6A6, #595959, #262626)',
+        background: 'linear-gradient(#737372, #5a5a59, #414140)',
         border: '1px solid #A6A6A6',
         boxShadowHighlight: '0px 0px 50px 25px #737372',
         backgroundColorNormal: '#737372'
@@ -106,6 +106,13 @@ function aplicarEstilosDinamicos(dadosJSON) {
                     const tooltipText = `${materia.titulo}\nPeríodo: ${materia.periodo}\nCarga Horária: ${materia.horas}h`;
                     elementoMateria.setAttribute('data-tooltip', tooltipText);
                 }
+
+                const btn = elementoMateria.querySelector('.btn');
+                const idsEspeciais = ['GGM00137', 'TEM00188', 'TEM00212', 'TEM00213', 'TEM00199', 'TCC00326', 'TDT00076', 'TDT00041', 'TEM00276', 'TEM00277'];
+                if (btn && idsEspeciais.includes(codigoMateria)) {
+                    btn.style.top = '20%';
+                }
+
             }
         }
     }
