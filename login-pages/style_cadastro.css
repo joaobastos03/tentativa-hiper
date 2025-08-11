@@ -6,37 +6,31 @@
 }
 
 body {
-  background: linear-gradient(135deg, #4facfe, #00f2fe, #235aa6);
-  height: 120vh;
+  background: linear-gradient(135deg, #4facfe, #00f2fe);
+  min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 20px;
 }
 
 .login-box {
   background-color: #ffffff;
-  padding: 40px;
+  padding: 30px;
   border-radius: 12px;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
   width: 100%;
-  max-width: 35vw;
+  max-width: 400px;
 }
 
 .login-box h2 {
   text-align: center;
-  margin-bottom: 30px;
+  margin-bottom: 25px;
   color: #333;
 }
 
 .form-group {
-  margin-bottom: 20px;
-}
-
-label {
-  display: block;
-  margin-bottom: 6px;
-  font-size: 14px;
-  color: #444;
+  margin-bottom: 15px;
 }
 
 input[type="email"],
@@ -47,15 +41,36 @@ input[type="text"] {
   border: 1px solid #ccc;
   border-radius: 8px;
   font-size: 16px;
-  transition: 0.3s;
 }
 
-input[type="email"]:focus,
-input[type="password"]:focus,
-input[type="text"]:focus {
-  border-color: #235aa6;
-  outline: none;
-  box-shadow: 0 0 6px rgba(0, 191, 255, 0.5);
+select {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+}
+
+.radio-group {
+  margin-bottom: 15px;
+}
+
+.radio-group label {
+  display: block;
+  margin-bottom: 8px;
+}
+
+.radio-options {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.radio-options label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
 }
 
 .login-button {
@@ -63,22 +78,17 @@ input[type="text"]:focus {
   padding: 12px;
   background-color: #235aa6;
   color: white;
-  font-size: 16px;
   border: none;
   border-radius: 8px;
   cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-
-.login-button:hover {
-  background-color: #009adf;
+  font-size: 16px;
+  margin-top: 10px;
 }
 
 .footer-text {
   text-align: center;
   margin-top: 20px;
   font-size: 14px;
-  color: #666;
 }
 
 .footer-text a {
@@ -86,40 +96,32 @@ input[type="text"]:focus {
   text-decoration: none;
 }
 
-.footer-text a:hover {
-  text-decoration: underline;
-}
-
-@media (max-width: 500px) {
-  .login-box {
-    padding: 30px 20px;
+/* Media Queries para Mobile */
+@media (max-width: 480px) {
+  body {
+    padding: 15px;
+    align-items: flex-start;
   }
-}
 
-select {
-  width: 100%;
-  padding: 12px 16px;
-  border: 1px solid #ccc;
-  border-radius: 8px;
-  font-size: 16px;
-  background-color: white;
-  appearance: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  background-image: url("data:image/svg+xml;charset=US-ASCII,%3Csvg width='10' height='6' viewBox='0 0 10 6' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 0L5 6L10 0H0Z' fill='%2300bfff'/%3E%3C/svg%3E");
-  background-repeat: no-repeat;
-  background-position: right 12px center;
-  background-size: 10px 6px;
-  cursor: pointer;
-  transition: border-color 0.3s ease;
-}
+  .login-box {
+    padding: 25px 20px;
+    margin-top: 20px;
+  }
 
-select:focus {
-  border-color: #235aa6;
-  outline: none;
-  box-shadow: 0 0 8px rgba(0, 191, 255, 0.5);
-}
+  input[type="email"],
+  input[type="password"],
+  input[type="text"],
+  select {
+    padding: 10px;
+    font-size: 14px;
+  }
 
-select:invalid {
-  color: #666;
+  .radio-options label {
+    font-size: 13px;
+  }
+
+  .login-button {
+    padding: 10px;
+    font-size: 15px;
+  }
 }
