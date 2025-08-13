@@ -4,6 +4,8 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
+    cursor: default;
+    user-select: none;
 }
 
 body {
@@ -11,6 +13,7 @@ body {
     background-color: #BABBBF;
     transition: all 0.3s ease;
 }
+
 
 /* Layout Principal */
 header {
