@@ -129,6 +129,9 @@ nav .links ul li span {
 
 /* Conteúdo Principal */
 main {
+    transform: scale(0.8);
+    transform-origin: top left;
+    width: 125%;
     padding: 20px 0;
     min-height: calc(100vh - 200px);
 }
