@@ -89,7 +89,7 @@
                 </div>
                 <div class="box" id="TDT00076" data-requisitos='["GGM00137"]'>
                     <div class="titulo">FUNDAMENTOS DE DESENHO TÉCNICO II</div>
-                    <a href="materias/desenho-tecnico.html" class="btn">Acesse</a>
+                    <a href="materias/destec.html" class="btn">Acesse</a>
                 </div>
                 <div class="box" id="TEM00276" data-requisitos='["GGM00137","GMA00154","TEM00188","GAN00140","GFI00158","GMA00155","TCC00326","TDT00076"]'>
                     <div class="titulo">PROBLEMAS EM ENGENHARIA MECÂNICA I</div>
@@ -109,19 +109,19 @@
                 </div>
                 <div class="box" id="GMA00156" data-requisitos='["GAN00140","GMA00155"]'>
                     <div class="titulo">CÁLCULO III</div>
-                    <a href="materias/calculo3.html" class="btn">Acesse</a>
+                    <a href="materias/c3.html" class="btn">Acesse</a>
                 </div>
                 <div class="box" id="GMA00158" data-requisitos='["GAN00140","GMA00155"]'>
                     <div class="titulo">CÁLCULO IV</div>
-                    <a href="materias/calculo4.html" class="btn">Acesse</a>
+                    <a href="materias/c4.html" class="btn">Acesse</a>
                 </div>
                 <div class="box" id="TDT00041" data-requisitos='["TDT00076"]'>
                     <div class="titulo">DESENHO DE PROJETOS MECÂNICOS</div>
-                    <a href="materias/desenho-projetos.html" class="btn">Acesse</a>
+                    <a href="materias/dpm.html" class="btn">Acesse</a>
                 </div>
                 <div class="box" id="TEM00200" data-requisitos='["GAN00140","GMA00155","TCC00326"]'>
                     <div class="titulo">MÉTODOS COMPUTACIONAIS</div>
-                    <a href="materias/metodos-computacionais.html" class="btn">Acesse</a>
+                    <a href="materias/metcomp.html" class="btn">Acesse</a>
                 </div>
                 <div class="box" id="TEM00277" data-requisitos='["GAN00140","GFI00158","GMA00155","TCC00326","GFI00160","GMA00158","GMA00156","TEM00200"]'>
                     <div class="titulo">PROBLEMAS EM ENGENHARIA MECÂNICA II</div>
@@ -145,11 +145,11 @@
                 </div>
                 <div class="box" id="GMA00162" data-requisitos='["GMA00158"]'>
                     <div class="titulo">CÁLCULO V</div>
-                    <a href="materias/calculo5.html" class="btn">Acesse</a>
+                    <a href="materias/c5.html" class="btn">Acesse</a>
                 </div>
                 <div class="box" id="TEM00187" data-requisitos='["TEM00277"]'>
                     <div class="titulo">CIÊNCIA E TECNOLOGIA</div>
-                    <a href="materias/ciencia-tecnologia.html" class="btn">Acesse</a>
+                    <a href="materias/cienciaTec.html" class="btn">Acesse</a>
                 </div>
                 <div class="box" id="TEM00190" data-requisitos='["GFI00158","GMA00155","TEM00276"]'>
                     <div class="titulo">ESTÁTICA</div>
@@ -157,7 +157,7 @@
                 </div>
                 <div class="box" id="TEM00275" data-requisitos='["GMA00155","TEM00276","GFI00160"]'>
                     <div class="titulo">TERMODINÂMICA I</div>
-                    <a href="materias/termodinamica1.html" class="btn">Acesse</a>
+                    <a href="materias/termo1.html" class="btn">Acesse</a>
                 </div>
             </div>
 
@@ -173,23 +173,23 @@
                 </div>
                 <div class="box" id="TEM00184" data-requisitos='["GMA00162"]'>
                     <div class="titulo">MECÂNICA DOS FLUIDOS I</div>
-                    <a href="materias/mecanica-fluidos.html" class="btn">Acesse</a>
+                    <a href="materias/mecflu.html" class="btn">Acesse</a>
                 </div>
                 <div class="box" id="TEM00194" data-requisitos='["GMA00158","TEM00190"]'>
                     <div class="titulo">MECÂNICA DOS SÓLIDOS I</div>
-                    <a href="materias/mecanica-solidos1.html" class="btn">Acesse</a>
+                    <a href="materias/mecsol1.html" class="btn">Acesse</a>
                 </div>
                 <div class="box" id="TEM00209" data-requisitos='["GMA00158","TEM00190"]'>
                     <div class="titulo">DINÂMICA I</div>
-                    <a href="materias/dinamica1.html" class="btn">Acesse</a>
+                    <a href="materias/dinamica.html" class="btn">Acesse</a>
                 </div>
                 <div class="box" id="TEM00211" data-requisitos='["TEM00275","GMA00158","TEM00277"]'>
                     <div class="titulo">INTRODUÇÃO À ENGENHARIA DE FABRICAÇÃO</div>
-                    <a href="materias/intro-fabricacao.html" class="btn">Acesse</a>
+                    <a href="materias/fabricacao.html" class="btn">Acesse</a>
                 </div>
                 <div class="box" id="TEM00279" data-requisitos='["GMA00158","TEM00277"]'>
                     <div class="titulo">TERMODINÂMICA II</div>
-                    <a href="materias/termodinamica2.html" class="btn">Acesse</a>
+                    <a href="materias/termo2.html" class="btn">Acesse</a>
                 </div>
             </div>
 
@@ -201,11 +201,11 @@
                 </div>
                 <div class="box" id="TEM00193" data-requisitos='["TEM00184","TEM00279","1 periodo completo","2 periodo completo","3 periodo completo","4 periodo completo"]'>
                     <div class="titulo">TRANSFERÊNCIA DE CALOR</div>
-                    <a href="materias/transferencia-calor.html" class="btn">Acesse</a>
+                    <a href="materias/transcal.html" class="btn">Acesse</a>
                 </div>
                 <div class="box" id="TEM00195" data-requisitos='["TEM00194","1 periodo completo","2 periodo completo","3 periodo completo","4 periodo completo"]'>
                     <div class="titulo">MECÂNICA DOS SÓLIDOS II</div>
-                    <a href="materias/mecanica-solidos2.html" class="btn">Acesse</a>
+                    <a href="materias/mecsol2.html" class="btn">Acesse</a>
                 </div>
                 <div class="box" id="TEM00199" data-requisitos='["TEM00194","TEM00209","1 periodo completo","2 periodo completo","3 periodo completo","4 periodo completo"]'>
                     <div class="titulo">VIBRAÇÕES E SISTEMAS MECÂNICOS</div>
@@ -217,7 +217,7 @@
                 </div>
                 <div class="box" id="TEM00280" data-requisitos='["TEM00279","TEM00193","1 periodo completo","2 periodo completo","3 periodo completo","4 periodo completo"]'>
                     <div class="titulo">MÁQUINAS TÉRMICAS I</div>
-                    <a href="materias/maquinas-termicas.html" class="btn">Acesse</a>
+                    <a href="materias/maq1.html" class="btn">Acesse</a>
                 </div>
                 <div class="box-empty"></div>
             </div>
@@ -238,7 +238,7 @@
                 </div>
                 <div class="box" id="TEM00197" data-requisitos='["TEM00195"]'>
                     <div class="titulo">ELEMENTOS DE MÁQUINAS I</div>
-                    <a href="materias/elementos-maquinas1.html" class="btn">Acesse</a>
+                    <a href="materias/elemaq1.html" class="btn">Acesse</a>
                 </div>
                 <div class="box" id="TEM00210" data-requisitos='["TEM00184"]'>
                     <div class="titulo">MÁQUINAS HIDRÁULICAS</div>
@@ -252,7 +252,7 @@
             <div class="coluna">
                 <div class="box" id="TEM00198" data-requisitos='["TEM00051","TEM00197"]'>
                     <div class="titulo">ELEMENTOS DE MÁQUINAS II</div>
-                    <a href="materias/elementos-maquinas2.html" class="btn">Acesse</a>
+                    <a href="materias/elemaq2.html" class="btn">Acesse</a>
                 </div>
                 <div class="box" id="TEM00203" data-requisitos='["TEM00211","TEM00051"]'>
                     <div class="titulo">FUNDIÇÃO E MANUFATURA ADITIVA</div>
@@ -264,7 +264,7 @@
                 </div>
                 <div class="box" id="TEP00108" data-requisitos='["1 periodo completo","2 periodo completo","3 periodo completo","4 periodo completo"]'>
                     <div class="titulo">ADMINISTRAÇÃO APLICADA</div>
-                    <a href="materias/administracao.html" class="btn">Acesse</a>
+                    <a href="materias/adm.html" class="btn">Acesse</a>
                 </div>
                 <div class="box-empty"></div>
                 <div class="box-empty"></div>
@@ -275,7 +275,7 @@
             <div class="coluna">
                 <div class="box" id="TEM00212" data-requisitos='["1 periodo completo","2 periodo completo","3 periodo completo","4 periodo completo","5 periodo completo","6 periodo completo","7 periodo completo"]'>
                     <div class="titulo">PROJETO DE ENGENHARIA MECÂNICA I</div>
-                    <a href="materias/projeto1.html" class="btn">Acesse</a>
+                    <a href="materias/pcc1.html" class="btn">Acesse</a>
                 </div>
                 <div class="box" id="TEM00214" data-requisitos='["1 periodo completo","2 periodo completo","3 periodo completo","4 periodo completo","5 periodo completo","6 periodo completo"]'>
                     <div class="titulo">ESTÁGIO OBRIGATÓRIO</div>
@@ -295,7 +295,7 @@
             <div class="coluna">
                 <div class="box" id="TEM00213" data-requisitos='["TEM00212","1 periodo completo","2 periodo completo","3 periodo completo","4 periodo completo","5 periodo completo","6 periodo completo","7 periodo completo"]'>
                     <div class="titulo">PROJETO DE ENGENHARIA MECÂNICA II</div>
-                    <a href="materias/projeto2.html" class="btn">Acesse</a>
+                    <a href="materias/pcc2.html" class="btn">Acesse</a>
                 </div>
                 <div class="box-empty"></div>
                 <div class="box-empty"></div>
