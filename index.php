@@ -77,7 +77,7 @@
                 </div>
                 <div class="box" id="GFI00161" data-requisitos='["GGM00137","GMA00154","GAN00140"]'>
                     <div class="titulo">FÍSICA EXPERIMENTAL I</div>
-                    <a href="materias/fisica-exp1.html" class="btn">Acesse</a>
+                    <a href="materias/fisexp1.html" class="btn">Acesse</a>
                 </div>
                 <div class="box" id="GMA00155" data-requisitos='["GMA00154","GGM00137","GAN00140"]'>
                     <div class="titulo">CÁLCULO II</div>
@@ -105,7 +105,7 @@
                 </div>
                 <div class="box" id="GFI00163" data-requisitos='["GFI00158","GFI00160","GMA00155"]'>
                     <div class="titulo">FÍSICA EXPERIMENTAL III</div>
-                    <a href="materias/fisica-exp3.html" class="btn">Acesse</a>
+                    <a href="materias/fisexp3.html" class="btn">Acesse</a>
                 </div>
                 <div class="box" id="GMA00156" data-requisitos='["GAN00140","GMA00155"]'>
                     <div class="titulo">CÁLCULO III</div>
@@ -141,7 +141,7 @@
                 </div>
                 <div class="box" id="GFI00162" data-requisitos='["GFI00158","GMA00158","GMA00156","GMA00162"]'>
                     <div class="titulo">FÍSICA EXPERIMENTAL II</div>
-                    <a href="materias/fisica-exp2.html" class="btn">Acesse</a>
+                    <a href="materias/fisexp2.html" class="btn">Acesse</a>
                 </div>
                 <div class="box" id="GMA00162" data-requisitos='["GMA00158"]'>
                     <div class="titulo">CÁLCULO V</div>
@@ -165,7 +165,7 @@
             <div class="coluna">
                 <div class="box" id="GFI00155" data-requisitos='["GMA00156","GMA00158","GFI00159","GFI00171"]'>
                     <div class="titulo">FÍSICA EXPERIMENTAL IV</div>
-                    <a href="materias/fisica-exp4.html" class="btn">Acesse</a>
+                    <a href="materias/fisexp4.html" class="btn">Acesse</a>
                 </div>
                 <div class="box" id="GFI00171" data-requisitos='["GMA00156","GMA00158","GFI00159","GMA00162"]'>
                     <div class="titulo">FÍSICA IV</div>
