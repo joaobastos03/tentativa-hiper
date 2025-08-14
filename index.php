@@ -55,7 +55,7 @@
                 </div>
                 <div class="box" id="TEM00188" data-requisitos='[]'>
                     <div class="titulo">INTRODUÇÃO À ENGENHARIA MECÂNICA</div>
-                    <a href="materias/introducao.html" class="btn">Acesse</a>
+                    <a href="materias/intro.html" class="btn">Acesse</a>
                 </div>
                 <div class="box" id="TER00108" data-requisitos='[]'>
                     <div class="titulo">ENGENHARIA DE MEIO AMBIENTE</div>
