@@ -1,0 +1,26 @@
+[
+    {
+        "id": 1,
+        "codigo": "GGM00137",
+        "materia": "Mecânica dos Sólidos I",
+        "pergunta": "Qual é o tipo de esforço representado nesta imagem?",
+        "imagem": "../src/imagens/torcao.jpg",
+        "resposta": "Torção. O material está sendo submetido a um momento torsor."
+    },
+    {
+        "id": 2,
+        "codigo": "TEM00275",
+        "materia": "Termodinâmica I",
+        "pergunta": "O que enuncia a Segunda Lei da Termodinâmica?",
+        "imagem": "../src/imagens/carnot.png",
+        "resposta": "A entropia de um sistema isolado tende a aumentar."
+    },
+    {
+        "id": 3,
+        "codigo": "TEM00189",
+        "materia": "Engenharia dos Materiais",
+        "pergunta": "O que representa a região linear no gráfico Tensão x Deformação?",
+        "imagem": "../src/imagens/tensao.png",
+        "resposta": "Região Elástica (Lei de Hooke)."
+    }
+]
