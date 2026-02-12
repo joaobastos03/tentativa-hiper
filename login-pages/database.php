@@ -1,10 +1,17 @@
 <?php
 // Configurações seguras para conexão MySQL no Railway
-$dbHost = 'tramway.proxy.rlwy.net';
-$dbPort = '21857'; // Porta fornecida pelo Railway
+//$dbHost = 'tramway.proxy.rlwy.net';
+//$dbPort = '21857'; // Porta fornecida pelo Railway
+//$dbUsername = 'root';
+//$dbPassword = 'mUQyCplkYOrCpJOqfMZrJttPKFKrOygY';
+//$dbName = 'teste_railway'; // Note que o nome do banco é 'railway' e não 'teste_railway'
+
+$dbHost = '127.0.0.1';
+$dbPort = '3306';
 $dbUsername = 'root';
-$dbPassword = 'mUQyCplkYOrCpJOqfMZrJttPKFKrOygY';
-$dbName = 'teste_railway'; // Note que o nome do banco é 'railway' e não 'teste_railway'
+$dbPassword = '';
+$dbName = 'hiperfluxograma';
+
 
 try {
     // Conexão com especificação de porta
