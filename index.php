@@ -20,19 +20,24 @@
 
 
 <div id="site-content">
-        <header>
-        <nav>
-            <ul>
-                <li><img src="src\imagens\logo pet mec.png" alt=""></li>
-                <li><h1><span>HIPER</span>FLUXOGRAMA</h1></li>
+    <header class="modern-header">
+        <nav class="navbar">
+            <a href="home.php" class="brand-logo">
+                <img src="src/imagens/logo pet mec.png" alt="Logo PET MEC">
+                <div class="brand-text">
+                    <h1><span>HIPER</span>FLUXOGRAMA</h1>
+                </div>
+            </a>
+
+            <ul class="nav-menu">
+                <li><a href="login-pages/login.php" class="nav-link">Login</a></li>
+                <li><a href="manutencao.php" class="nav-link">Monitoria</a></li>
+                <li><a href="flashcard/flashcard.php" class="nav-link">Praticar</a></li>
+                <li><a href="manutencao.php" class="nav-link">Sobre</a></li>
             </ul>
-            <div class="links">
-              <ul>
-                <li><a href="login-pages\login.php"><button><span>Login</span></button></a></li>
-                <a href="dados.php"><li><button><span>Dados</span></button></li></a>
-                <a href="login-pages\login.php"><li><button><span>Monitoria</span></button></li></a>
-                <a href="manutencao.php"><li><button><span>Config.</span></button></li></a>
-              </ul>
+
+            <div class="mobile-toggle">
+                <i class="fas fa-bars"></i>
             </div>
         </nav>
     </header>
@@ -307,17 +312,74 @@
         </div>
     </main>
 
-    <footer>
-        <div id="direitos">
-            <h4>Todos os direitos reservados / PETMEC / Universidade Federal Fluminense</h4>
+    <footer class="main-footer">
+
+        <div class="footer-content">
+
+            <!-- Marca / Descrição -->
+            <div class="footer-section brand-section">
+                <h3><span>Hiper</span>Fluxograma</h3>
+                <p>
+                    Plataforma desenvolvida para organização acadêmica e 
+                    gerenciamento eficiente de conteúdos. Estrutura moderna,
+                    intuitiva e pensada para alta performance.
+                </p>
+            </div>
+
+            <!-- Links -->
+            <div class="footer-section links-section">
+                <h4>Navegação</h4>
+                <ul>
+                    <li><a href="index.php">Início</a></li>
+                    <li><a href="#">Matérias</a></li>
+                    <li><a href="#">Calendário</a></li>
+                    <li><a href="#">Configurações</a></li>
+                </ul>
+            </div>
+
+            <!-- Contato / Social -->
+            <div class="footer-section">
+                <h4>Conecte-se</h4>
+
+                <div class="social-icons">
+                    <a href="#" aria-label="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="#" aria-label="LinkedIn">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="#" aria-label="Instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </div>
+
+            </div>
+
         </div>
+
+        <!-- Parte inferior -->
+        <div class="footer-bottom">
+            <div>
+                © <?php echo date("Y"); ?> HiperFluxograma. Todos os direitos reservados.
+            </div>
+
+            <div class="credits">
+                Desenvolvido com foco em organização e eficiência.
+            </div>
+        </div>
+
     </footer>
+
     <script>
         var app = new Framework7({
             panel: {
                 swipe: 'left'
             }
         });
+        function toggleMenu() {
+        const nav = document.getElementById('navLinks');
+        nav.classList.toggle('active');
+        }
     </script>
 </body>
 </html>

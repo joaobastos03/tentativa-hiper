@@ -1,26 +1,834 @@
 [
-    {
-        "id": 1,
-        "codigo": "GGM00137",
-        "materia": "Mecânica dos Sólidos I",
-        "pergunta": "Qual é o tipo de esforço representado nesta imagem?",
-        "imagem": "../src/imagens/torcao.jpg",
-        "resposta": "Torção. O material está sendo submetido a um momento torsor."
-    },
-    {
-        "id": 2,
-        "codigo": "TEM00275",
-        "materia": "Termodinâmica I",
-        "pergunta": "O que enuncia a Segunda Lei da Termodinâmica?",
-        "imagem": "../src/imagens/carnot.png",
-        "resposta": "A entropia de um sistema isolado tende a aumentar."
-    },
-    {
-        "id": 3,
-        "codigo": "TEM00189",
-        "materia": "Engenharia dos Materiais",
-        "pergunta": "O que representa a região linear no gráfico Tensão x Deformação?",
-        "imagem": "../src/imagens/tensao.png",
-        "resposta": "Região Elástica (Lei de Hooke)."
-    }
+  {
+    "id": 1,
+    "codigo": "GGM00137",
+    "materia": "FUNDAMENTOS DE CÁLCULO E GEOMETRIA",
+    "pergunta": "O que é a derivada e como ela se relaciona com a taxa de variação em Fundamentos De Cálculo E Geometria?",
+    "imagem": "",
+    "resposta": "Derivada é o limite da razão incremental; modela taxa instantânea de variação e inclinação da tangente."
+  },
+  {
+    "id": 2,
+    "codigo": "GGM00137",
+    "materia": "FUNDAMENTOS DE CÁLCULO E GEOMETRIA",
+    "pergunta": "Qual é a ideia por trás da integral definida e que grandeza física ela pode representar em Fundamentos De Cálculo E Geometria?",
+    "imagem": "",
+    "resposta": "Integral definida acumula uma quantidade ao longo de um intervalo; pode representar área, trabalho, massa, carga, etc."
+  },
+  {
+    "id": 3,
+    "codigo": "GMA00154",
+    "materia": "CÁLCULO I",
+    "pergunta": "O que é a derivada e como ela se relaciona com a taxa de variação em Cálculo I?",
+    "imagem": "",
+    "resposta": "Derivada é o limite da razão incremental; modela taxa instantânea de variação e inclinação da tangente."
+  },
+  {
+    "id": 4,
+    "codigo": "GMA00154",
+    "materia": "CÁLCULO I",
+    "pergunta": "Qual é a ideia por trás da integral definida e que grandeza física ela pode representar em Cálculo I?",
+    "imagem": "",
+    "resposta": "Integral definida acumula uma quantidade ao longo de um intervalo; pode representar área, trabalho, massa, carga, etc."
+  },
+  {
+    "id": 5,
+    "codigo": "GQI00042",
+    "materia": "QÚMICA GERAL III",
+    "pergunta": "Qual é o conceito central que você precisa dominar em Qúmica Geral Iii?",
+    "imagem": "",
+    "resposta": "Identificar as leis/definições fundamentais da disciplina e saber aplicá-las em exercícios e problemas reais."
+  },
+  {
+    "id": 6,
+    "codigo": "GQI00042",
+    "materia": "QÚMICA GERAL III",
+    "pergunta": "Qual é um erro comum ao estudar Qúmica Geral Iii e como evitar?",
+    "imagem": "",
+    "resposta": "Memorizar fórmulas sem entender hipóteses; evite checando unidades, condições de validade e fazendo exemplos do zero."
+  },
+  {
+    "id": 7,
+    "codigo": "TEM00188",
+    "materia": "INTORDUÇÃO À ENGENHARIA MECÂNICA",
+    "pergunta": "Qual é o conceito central que você precisa dominar em Intordução À Engenharia Mecânica?",
+    "imagem": "",
+    "resposta": "Identificar as leis/definições fundamentais da disciplina e saber aplicá-las em exercícios e problemas reais."
+  },
+  {
+    "id": 8,
+    "codigo": "TEM00188",
+    "materia": "INTORDUÇÃO À ENGENHARIA MECÂNICA",
+    "pergunta": "Qual é um erro comum ao estudar Intordução À Engenharia Mecânica e como evitar?",
+    "imagem": "",
+    "resposta": "Memorizar fórmulas sem entender hipóteses; evite checando unidades, condições de validade e fazendo exemplos do zero."
+  },
+  {
+    "id": 9,
+    "codigo": "TER00108",
+    "materia": "ENGENHARIA DE MEIO AMBIENTE",
+    "pergunta": "O que é um impacto ambiental significativo em Engenharia De Meio Ambiente?",
+    "imagem": "",
+    "resposta": "Efeito relevante sobre meio físico/biótico/socioeconômico, avaliável por magnitude, duração, reversibilidade e abrangência."
+  },
+  {
+    "id": 10,
+    "codigo": "TER00108",
+    "materia": "ENGENHARIA DE MEIO AMBIENTE",
+    "pergunta": "Qual a diferença entre mitigação e compensação ambiental em Engenharia De Meio Ambiente?",
+    "imagem": "",
+    "resposta": "Mitigação reduz/evita o impacto; compensação busca equilibrar impactos inevitáveis com ações equivalentes."
+  },
+  {
+    "id": 11,
+    "codigo": "GAN00140",
+    "materia": "ÁLGEBRA LINEAR",
+    "pergunta": "O que significa uma matriz ser invertível em Álgebra Linear?",
+    "imagem": "",
+    "resposta": "Existe uma matriz inversa; equivalentemente, determinante ≠ 0, posto máximo e sistema linear com solução única."
+  },
+  {
+    "id": 12,
+    "codigo": "GAN00140",
+    "materia": "ÁLGEBRA LINEAR",
+    "pergunta": "Qual é a interpretação geométrica de autovalores e autovetores em Álgebra Linear?",
+    "imagem": "",
+    "resposta": "Autovetor mantém direção sob a transformação linear; autovalor é o fator de escala associado a essa direção."
+  },
+  {
+    "id": 13,
+    "codigo": "GFI00158",
+    "materia": "FISICA I",
+    "pergunta": "Qual é o conceito central que você precisa dominar em Fisica I?",
+    "imagem": "",
+    "resposta": "Identificar as leis/definições fundamentais da disciplina e saber aplicá-las em exercícios e problemas reais."
+  },
+  {
+    "id": 14,
+    "codigo": "GFI00158",
+    "materia": "FISICA I",
+    "pergunta": "Qual é um erro comum ao estudar Fisica I e como evitar?",
+    "imagem": "",
+    "resposta": "Memorizar fórmulas sem entender hipóteses; evite checando unidades, condições de validade e fazendo exemplos do zero."
+  },
+  {
+    "id": 15,
+    "codigo": "GFI00161",
+    "materia": "FÍSICA EXPERIMENTAL I",
+    "pergunta": "Qual é o papel da incerteza de medição em Física Experimental I?",
+    "imagem": "",
+    "resposta": "Quantificar a confiabilidade do resultado; envolve resolução do instrumento, repetibilidade e propagação de incertezas."
+  },
+  {
+    "id": 16,
+    "codigo": "GFI00161",
+    "materia": "FÍSICA EXPERIMENTAL I",
+    "pergunta": "Por que calibrar instrumentos é importante em Física Experimental I?",
+    "imagem": "",
+    "resposta": "Garante rastreabilidade e reduz erro sistemático, aumentando a validade dos dados experimentais."
+  },
+  {
+    "id": 17,
+    "codigo": "GMA00155",
+    "materia": "CÁLCULO II",
+    "pergunta": "O que é a derivada e como ela se relaciona com a taxa de variação em Cálculo Ii?",
+    "imagem": "",
+    "resposta": "Derivada é o limite da razão incremental; modela taxa instantânea de variação e inclinação da tangente."
+  },
+  {
+    "id": 18,
+    "codigo": "GMA00155",
+    "materia": "CÁLCULO II",
+    "pergunta": "Qual é a ideia por trás da integral definida e que grandeza física ela pode representar em Cálculo Ii?",
+    "imagem": "",
+    "resposta": "Integral definida acumula uma quantidade ao longo de um intervalo; pode representar área, trabalho, massa, carga, etc."
+  },
+  {
+    "id": 19,
+    "codigo": "TCC00326",
+    "materia": "PROGRAMAÇÃO DE COMPUTADORES",
+    "pergunta": "O que é uma função e por que ela melhora a organização do código em Programação De Computadores?",
+    "imagem": "",
+    "resposta": "Bloco reutilizável com entradas/saídas; reduz repetição, facilita testes e manutenção."
+  },
+  {
+    "id": 20,
+    "codigo": "TCC00326",
+    "materia": "PROGRAMAÇÃO DE COMPUTADORES",
+    "pergunta": "Explique a diferença entre algoritmo e estrutura de dados em Programação De Computadores.",
+    "imagem": "",
+    "resposta": "Algoritmo é um procedimento; estrutura de dados é a forma de organizar informações (listas, pilhas, árvores) para operar eficientemente."
+  },
+  {
+    "id": 21,
+    "codigo": "TDT00076",
+    "materia": "FUNDAMENTOS DE DESENHO TECNICO II",
+    "pergunta": "Qual é a função de vistas ortográficas e cortes em Fundamentos De Desenho Tecnico Ii?",
+    "imagem": "",
+    "resposta": "Representar geometria 3D de forma padronizada; cortes revelam detalhes internos e evitam ambiguidades."
+  },
+  {
+    "id": 22,
+    "codigo": "TDT00076",
+    "materia": "FUNDAMENTOS DE DESENHO TECNICO II",
+    "pergunta": "O que são tolerâncias dimensionais e por que são críticas em Fundamentos De Desenho Tecnico Ii?",
+    "imagem": "",
+    "resposta": "Limites aceitáveis de variação; garantem montagem, intercambiabilidade e controle de qualidade."
+  },
+  {
+    "id": 23,
+    "codigo": "TEM00276",
+    "materia": "PROBLEMAS EM ENGENHARIA MECÂNICA I",
+    "pergunta": "Qual é o objetivo principal da disciplina Problemas Em Engenharia Mecânica I?",
+    "imagem": "",
+    "resposta": "Consolidar fundamentos e aplicá-los em situações práticas, com foco em metodologia, documentação e tomada de decisão."
+  },
+  {
+    "id": 24,
+    "codigo": "TEM00276",
+    "materia": "PROBLEMAS EM ENGENHARIA MECÂNICA I",
+    "pergunta": "Quais entregáveis típicos você deve produzir em Problemas Em Engenharia Mecânica I?",
+    "imagem": "",
+    "resposta": "Relatórios, análises, apresentação de resultados, justificativas técnicas e, quando aplicável, protótipos/implementações."
+  },
+  {
+    "id": 25,
+    "codigo": "GFI00160",
+    "materia": "FÍSICA III",
+    "pergunta": "Qual é a diferença entre grandezas escalares e vetoriais em Física Iii?",
+    "imagem": "",
+    "resposta": "Escalares têm apenas magnitude; vetores têm magnitude e direção (ex.: velocidade, força)."
+  },
+  {
+    "id": 26,
+    "codigo": "GFI00160",
+    "materia": "FÍSICA III",
+    "pergunta": "Como você escolhe um sistema de referência para resolver problemas em Física Iii?",
+    "imagem": "",
+    "resposta": "Defina eixos coerentes com a geometria/forças, adote sinais, escreva as equações (ex.: Newton, energia) nesse referencial."
+  },
+  {
+    "id": 27,
+    "codigo": "GFI00163",
+    "materia": "FÍSICA EXPERIMENTAL III",
+    "pergunta": "Qual é o papel da incerteza de medição em Física Experimental Iii?",
+    "imagem": "",
+    "resposta": "Quantificar a confiabilidade do resultado; envolve resolução do instrumento, repetibilidade e propagação de incertezas."
+  },
+  {
+    "id": 28,
+    "codigo": "GFI00163",
+    "materia": "FÍSICA EXPERIMENTAL III",
+    "pergunta": "Por que calibrar instrumentos é importante em Física Experimental Iii?",
+    "imagem": "",
+    "resposta": "Garante rastreabilidade e reduz erro sistemático, aumentando a validade dos dados experimentais."
+  },
+  {
+    "id": 29,
+    "codigo": "GMA00156",
+    "materia": "CÁLCULO 3",
+    "pergunta": "O que é a derivada e como ela se relaciona com a taxa de variação em Cálculo 3?",
+    "imagem": "",
+    "resposta": "Derivada é o limite da razão incremental; modela taxa instantânea de variação e inclinação da tangente."
+  },
+  {
+    "id": 30,
+    "codigo": "GMA00156",
+    "materia": "CÁLCULO 3",
+    "pergunta": "Qual é a ideia por trás da integral definida e que grandeza física ela pode representar em Cálculo 3?",
+    "imagem": "",
+    "resposta": "Integral definida acumula uma quantidade ao longo de um intervalo; pode representar área, trabalho, massa, carga, etc."
+  },
+  {
+    "id": 31,
+    "codigo": "GMA00158",
+    "materia": "CÁLCULO 4",
+    "pergunta": "O que é a derivada e como ela se relaciona com a taxa de variação em Cálculo 4?",
+    "imagem": "",
+    "resposta": "Derivada é o limite da razão incremental; modela taxa instantânea de variação e inclinação da tangente."
+  },
+  {
+    "id": 32,
+    "codigo": "GMA00158",
+    "materia": "CÁLCULO 4",
+    "pergunta": "Qual é a ideia por trás da integral definida e que grandeza física ela pode representar em Cálculo 4?",
+    "imagem": "",
+    "resposta": "Integral definida acumula uma quantidade ao longo de um intervalo; pode representar área, trabalho, massa, carga, etc."
+  },
+  {
+    "id": 33,
+    "codigo": "TDT00041",
+    "materia": "DESENHO DE PROJETOS MECÂNICOS",
+    "pergunta": "Qual é a função de vistas ortográficas e cortes em Desenho De Projetos Mecânicos?",
+    "imagem": "",
+    "resposta": "Representar geometria 3D de forma padronizada; cortes revelam detalhes internos e evitam ambiguidades."
+  },
+  {
+    "id": 34,
+    "codigo": "TDT00041",
+    "materia": "DESENHO DE PROJETOS MECÂNICOS",
+    "pergunta": "O que são tolerâncias dimensionais e por que são críticas em Desenho De Projetos Mecânicos?",
+    "imagem": "",
+    "resposta": "Limites aceitáveis de variação; garantem montagem, intercambiabilidade e controle de qualidade."
+  },
+  {
+    "id": 35,
+    "codigo": "TEM00200",
+    "materia": "MÉTODOS COMPUTACIONAIS EM ENGENHARIA MECÂNICA",
+    "pergunta": "O que é uma função e por que ela melhora a organização do código em Métodos Computacionais Em Engenharia Mecânica?",
+    "imagem": "",
+    "resposta": "Bloco reutilizável com entradas/saídas; reduz repetição, facilita testes e manutenção."
+  },
+  {
+    "id": 36,
+    "codigo": "TEM00200",
+    "materia": "MÉTODOS COMPUTACIONAIS EM ENGENHARIA MECÂNICA",
+    "pergunta": "Explique a diferença entre algoritmo e estrutura de dados em Métodos Computacionais Em Engenharia Mecânica.",
+    "imagem": "",
+    "resposta": "Algoritmo é um procedimento; estrutura de dados é a forma de organizar informações (listas, pilhas, árvores) para operar eficientemente."
+  },
+  {
+    "id": 37,
+    "codigo": "TEM00277",
+    "materia": "PROBLEMAS EM ENGENHARIA MECÂNICA II",
+    "pergunta": "Qual é o objetivo principal da disciplina Problemas Em Engenharia Mecânica Ii?",
+    "imagem": "",
+    "resposta": "Consolidar fundamentos e aplicá-los em situações práticas, com foco em metodologia, documentação e tomada de decisão."
+  },
+  {
+    "id": 38,
+    "codigo": "TEM00277",
+    "materia": "PROBLEMAS EM ENGENHARIA MECÂNICA II",
+    "pergunta": "Quais entregáveis típicos você deve produzir em Problemas Em Engenharia Mecânica Ii?",
+    "imagem": "",
+    "resposta": "Relatórios, análises, apresentação de resultados, justificativas técnicas e, quando aplicável, protótipos/implementações."
+  },
+  {
+    "id": 39,
+    "codigo": "GET00177",
+    "materia": "ESTATÍSTICA BÁSICA",
+    "pergunta": "Qual a diferença entre média, mediana e moda em Estatística Básica?",
+    "imagem": "",
+    "resposta": "Média é soma/n; mediana é o valor central; moda é o valor mais frequente."
+  },
+  {
+    "id": 40,
+    "codigo": "GET00177",
+    "materia": "ESTATÍSTICA BÁSICA",
+    "pergunta": "O que significa um intervalo de confiança em Estatística Básica?",
+    "imagem": "",
+    "resposta": "Faixa que, com certo nível de confiança, contém o parâmetro populacional estimado (sob hipóteses do modelo)."
+  },
+  {
+    "id": 41,
+    "codigo": "GFI00159",
+    "materia": "FÍSICA II",
+    "pergunta": "Qual é a diferença entre grandezas escalares e vetoriais em Física Ii?",
+    "imagem": "",
+    "resposta": "Escalares têm apenas magnitude; vetores têm magnitude e direção (ex.: velocidade, força)."
+  },
+  {
+    "id": 42,
+    "codigo": "GFI00159",
+    "materia": "FÍSICA II",
+    "pergunta": "Como você escolhe um sistema de referência para resolver problemas em Física Ii?",
+    "imagem": "",
+    "resposta": "Defina eixos coerentes com a geometria/forças, adote sinais, escreva as equações (ex.: Newton, energia) nesse referencial."
+  },
+  {
+    "id": 43,
+    "codigo": "GFI00162",
+    "materia": "FÍSICA EXPERIMENTAL II",
+    "pergunta": "Qual é o papel da incerteza de medição em Física Experimental Ii?",
+    "imagem": "",
+    "resposta": "Quantificar a confiabilidade do resultado; envolve resolução do instrumento, repetibilidade e propagação de incertezas."
+  },
+  {
+    "id": 44,
+    "codigo": "GFI00162",
+    "materia": "FÍSICA EXPERIMENTAL II",
+    "pergunta": "Por que calibrar instrumentos é importante em Física Experimental Ii?",
+    "imagem": "",
+    "resposta": "Garante rastreabilidade e reduz erro sistemático, aumentando a validade dos dados experimentais."
+  },
+  {
+    "id": 45,
+    "codigo": "GMA00162",
+    "materia": "CÁLCULO 5",
+    "pergunta": "O que é a derivada e como ela se relaciona com a taxa de variação em Cálculo 5?",
+    "imagem": "",
+    "resposta": "Derivada é o limite da razão incremental; modela taxa instantânea de variação e inclinação da tangente."
+  },
+  {
+    "id": 46,
+    "codigo": "GMA00162",
+    "materia": "CÁLCULO 5",
+    "pergunta": "Qual é a ideia por trás da integral definida e que grandeza física ela pode representar em Cálculo 5?",
+    "imagem": "",
+    "resposta": "Integral definida acumula uma quantidade ao longo de um intervalo; pode representar área, trabalho, massa, carga, etc."
+  },
+  {
+    "id": 47,
+    "codigo": "TEM00187",
+    "materia": "CIÊNCIA E TECNOLOGIA",
+    "pergunta": "Qual é o objetivo principal da disciplina Ciência E Tecnologia?",
+    "imagem": "",
+    "resposta": "Consolidar fundamentos e aplicá-los em situações práticas, com foco em metodologia, documentação e tomada de decisão."
+  },
+  {
+    "id": 48,
+    "codigo": "TEM00187",
+    "materia": "CIÊNCIA E TECNOLOGIA",
+    "pergunta": "Quais entregáveis típicos você deve produzir em Ciência E Tecnologia?",
+    "imagem": "",
+    "resposta": "Relatórios, análises, apresentação de resultados, justificativas técnicas e, quando aplicável, protótipos/implementações."
+  },
+  {
+    "id": 49,
+    "codigo": "TEM00190",
+    "materia": "ESTÁTICA",
+    "pergunta": "Quais são as condições de equilíbrio em Estática (2D)?",
+    "imagem": "",
+    "resposta": "ΣFx = 0, ΣFy = 0 e ΣMz = 0."
+  },
+  {
+    "id": 50,
+    "codigo": "TEM00190",
+    "materia": "ESTÁTICA",
+    "pergunta": "Como identificar o diagrama de corpo livre (DCL) correto em Estática?",
+    "imagem": "",
+    "resposta": "Isolar o corpo, substituir apoios por reações, incluir forças externas e pares, e indicar sentidos/locais de aplicação."
+  },
+  {
+    "id": 51,
+    "codigo": "TEM00275",
+    "materia": "TERMODINÂMICA I",
+    "pergunta": "O que enuncia a Segunda Lei da Termodinâmica?",
+    "imagem": "../src/imagens/carnot.png",
+    "resposta": "A entropia de um sistema isolado tende a aumentar."
+  },
+  {
+    "id": 52,
+    "codigo": "TEM00275",
+    "materia": "TERMODINÂMICA I",
+    "pergunta": "Defina sistema, vizinhança e fronteira em Termodinâmica I.",
+    "imagem": "",
+    "resposta": "Sistema é a porção estudada; vizinhança é o resto; fronteira separa ambos e pode permitir troca de massa/energia."
+  },
+  {
+    "id": 53,
+    "codigo": "GFI00155",
+    "materia": "FÍSICA EXPERIMENTAL IV",
+    "pergunta": "Qual é o papel da incerteza de medição em Física Experimental Iv?",
+    "imagem": "",
+    "resposta": "Quantificar a confiabilidade do resultado; envolve resolução do instrumento, repetibilidade e propagação de incertezas."
+  },
+  {
+    "id": 54,
+    "codigo": "GFI00155",
+    "materia": "FÍSICA EXPERIMENTAL IV",
+    "pergunta": "Por que calibrar instrumentos é importante em Física Experimental Iv?",
+    "imagem": "",
+    "resposta": "Garante rastreabilidade e reduz erro sistemático, aumentando a validade dos dados experimentais."
+  },
+  {
+    "id": 55,
+    "codigo": "GFI00171",
+    "materia": "FÍSICA IV",
+    "pergunta": "Qual é a diferença entre grandezas escalares e vetoriais em Física Iv?",
+    "imagem": "",
+    "resposta": "Escalares têm apenas magnitude; vetores têm magnitude e direção (ex.: velocidade, força)."
+  },
+  {
+    "id": 56,
+    "codigo": "GFI00171",
+    "materia": "FÍSICA IV",
+    "pergunta": "Como você escolhe um sistema de referência para resolver problemas em Física Iv?",
+    "imagem": "",
+    "resposta": "Defina eixos coerentes com a geometria/forças, adote sinais, escreva as equações (ex.: Newton, energia) nesse referencial."
+  },
+  {
+    "id": 57,
+    "codigo": "TEM00184",
+    "materia": "MECÂNICA DOS FLUIDOS I",
+    "pergunta": "O que é a equação de Bernoulli e quando ela é aplicável em Mecânica Dos Fluidos I?",
+    "imagem": "",
+    "resposta": "Relação de conservação de energia mecânica em escoamentos incompressíveis, estacionários e sem perdas significativas."
+  },
+  {
+    "id": 58,
+    "codigo": "TEM00184",
+    "materia": "MECÂNICA DOS FLUIDOS I",
+    "pergunta": "Qual é o significado físico do número de Reynolds em Mecânica Dos Fluidos I?",
+    "imagem": "",
+    "resposta": "Compara forças inerciais e viscosas; indica regime laminar/turbulento e influencia perdas de carga."
+  },
+  {
+    "id": 59,
+    "codigo": "TEM00194",
+    "materia": "MECÂNICA DOS SÓLIDOS I",
+    "pergunta": "Qual é o tipo de esforço representado nesta imagem?",
+    "imagem": "../src/imagens/torcao.jpg",
+    "resposta": "Torção. O material está sendo submetido a um momento torsor."
+  },
+  {
+    "id": 60,
+    "codigo": "TEM00194",
+    "materia": "MECÂNICA DOS SÓLIDOS I",
+    "pergunta": "O que é tensão normal e tensão de cisalhamento em Mecânica Dos Sólidos I?",
+    "imagem": "",
+    "resposta": "Tensão normal atua perpendicular à seção; cisalhamento atua tangencialmente."
+  },
+  {
+    "id": 61,
+    "codigo": "TEM00209",
+    "materia": "DINÂMICA I",
+    "pergunta": "Qual é a diferença entre cinemática e dinâmica em Dinâmica I?",
+    "imagem": "",
+    "resposta": "Cinemática descreve movimento; dinâmica relaciona movimento às forças/torques (leis de Newton)."
+  },
+  {
+    "id": 62,
+    "codigo": "TEM00209",
+    "materia": "DINÂMICA I",
+    "pergunta": "Quando usar conservação de energia ao invés de ΣF = m·a em Dinâmica I?",
+    "imagem": "",
+    "resposta": "Quando forças conservativas predominam e você quer relacionar posições/velocidades sem detalhar forças internas."
+  },
+  {
+    "id": 63,
+    "codigo": "TEM00211",
+    "materia": "INTRODUÇÃO À ENGENHARIA DE FABRICAÇÃO",
+    "pergunta": "Qual é a diferença entre processo de fabricação por remoção e por conformação em Introdução À Engenharia De Fabricação?",
+    "imagem": "",
+    "resposta": "Remoção retira material (usinagem); conformação altera forma sem remover significativamente (laminação, forjamento)."
+  },
+  {
+    "id": 64,
+    "codigo": "TEM00211",
+    "materia": "INTRODUÇÃO À ENGENHARIA DE FABRICAÇÃO",
+    "pergunta": "Por que parâmetros de processo (velocidade, avanço, temperatura) importam em Introdução À Engenharia De Fabricação?",
+    "imagem": "",
+    "resposta": "Afetam acabamento, tolerâncias, tensões residuais, microestrutura e custo/tempo de produção."
+  },
+  {
+    "id": 65,
+    "codigo": "TEM00279",
+    "materia": "TERMODINÂMICA II",
+    "pergunta": "Defina sistema, vizinhança e fronteira em Termodinâmica Ii.",
+    "imagem": "",
+    "resposta": "Sistema é a porção estudada; vizinhança é o resto; fronteira separa ambos e pode permitir troca de massa/energia."
+  },
+  {
+    "id": 66,
+    "codigo": "TEM00279",
+    "materia": "TERMODINÂMICA II",
+    "pergunta": "Qual é a diferença entre processo isobárico, isocórico e isotérmico em Termodinâmica Ii?",
+    "imagem": "",
+    "resposta": "Isobárico: P constante; isocórico: V constante; isotérmico: T constante."
+  },
+  {
+    "id": 67,
+    "codigo": "TEM00189",
+    "materia": "ENGENHARIA DOS MATERIAIS I-A",
+    "pergunta": "O que representa a região linear no gráfico Tensão x Deformação?",
+    "imagem": "../src/imagens/tensao.png",
+    "resposta": "Região elástica (Lei de Hooke): tensão proporcional à deformação."
+  },
+  {
+    "id": 68,
+    "codigo": "TEM00189",
+    "materia": "ENGENHARIA DOS MATERIAIS I-A",
+    "pergunta": "O que diferencia comportamento elástico de plástico em Engenharia Dos Materiais I-A?",
+    "imagem": "",
+    "resposta": "Elástico é reversível (retorna ao estado inicial); plástico é irreversível após exceder o limite de escoamento."
+  },
+  {
+    "id": 69,
+    "codigo": "TEM00193",
+    "materia": "TRANSFERÊNCIA DE CALOR",
+    "pergunta": "Quais são os três mecanismos de transferência de calor em Transferência De Calor?",
+    "imagem": "",
+    "resposta": "Condução, convecção e radiação."
+  },
+  {
+    "id": 70,
+    "codigo": "TEM00193",
+    "materia": "TRANSFERÊNCIA DE CALOR",
+    "pergunta": "Como a Lei de Fourier aparece na modelagem de condução em Transferência De Calor?",
+    "imagem": "",
+    "resposta": "Fluxo de calor é proporcional ao gradiente de temperatura e à condutividade térmica, com sinal negativo."
+  },
+  {
+    "id": 71,
+    "codigo": "TEM00195",
+    "materia": "MECÂNICA DOS SÓLIDOS II",
+    "pergunta": "O que é tensão normal e tensão de cisalhamento em Mecânica Dos Sólidos Ii?",
+    "imagem": "",
+    "resposta": "Tensão normal atua perpendicular à seção; cisalhamento atua tangencialmente."
+  },
+  {
+    "id": 72,
+    "codigo": "TEM00195",
+    "materia": "MECÂNICA DOS SÓLIDOS II",
+    "pergunta": "Qual é a relação entre momento fletor e tensão de flexão em Mecânica Dos Sólidos Ii?",
+    "imagem": "",
+    "resposta": "σ = M·y/I (hipótese de flexão pura e seções planas), mostrando variação linear com a distância ao eixo neutro."
+  },
+  {
+    "id": 73,
+    "codigo": "TEM00199",
+    "materia": "VIBRAÇÕES E SISTEMAS MECÂNICO",
+    "pergunta": "O que é frequência natural e por que ela importa em Vibrações E Sistemas Mecânico?",
+    "imagem": "",
+    "resposta": "É a frequência de oscilação livre; excitação próxima dela pode causar ressonância e amplitudes elevadas."
+  },
+  {
+    "id": 74,
+    "codigo": "TEM00199",
+    "materia": "VIBRAÇÕES E SISTEMAS MECÂNICO",
+    "pergunta": "Como o amortecimento afeta a resposta de um sistema vibratório em Vibrações E Sistemas Mecânico?",
+    "imagem": "",
+    "resposta": "Reduz amplitudes, dissipa energia e altera a largura/pico da curva de resposta em frequência."
+  },
+  {
+    "id": 75,
+    "codigo": "TEM00205",
+    "materia": "METROLOGIA INDUSTRIAL",
+    "pergunta": "Qual a diferença entre precisão e exatidão em Metrologia Industrial?",
+    "imagem": "",
+    "resposta": "Precisão: baixa dispersão; exatidão: proximidade do valor verdadeiro."
+  },
+  {
+    "id": 76,
+    "codigo": "TEM00205",
+    "materia": "METROLOGIA INDUSTRIAL",
+    "pergunta": "O que é rastreabilidade metrológica em Metrologia Industrial?",
+    "imagem": "",
+    "resposta": "Cadeia de calibrações ligada a padrões reconhecidos (nacionais/internacionais) com incertezas conhecidas."
+  },
+  {
+    "id": 77,
+    "codigo": "TEM00280",
+    "materia": "MÁQUINAS TÉRMICAS I",
+    "pergunta": "Qual é o conceito central que você precisa dominar em Máquinas Térmicas I?",
+    "imagem": "",
+    "resposta": "Identificar as leis/definições fundamentais da disciplina e saber aplicá-las em exercícios e problemas reais."
+  },
+  {
+    "id": 78,
+    "codigo": "TEM00280",
+    "materia": "MÁQUINAS TÉRMICAS I",
+    "pergunta": "Qual é um erro comum ao estudar Máquinas Térmicas I e como evitar?",
+    "imagem": "",
+    "resposta": "Memorizar fórmulas sem entender hipóteses; evite checando unidades, condições de validade e fazendo exemplos do zero."
+  },
+  {
+    "id": 79,
+    "codigo": "TEE00113",
+    "materia": "ELETROTÉCNICA",
+    "pergunta": "O que é a Lei de Ohm e quando ela é válida em Eletrotécnica?",
+    "imagem": "",
+    "resposta": "V = R·I; válida para elementos ôhmicos em regime linear (R aproximadamente constante)."
+  },
+  {
+    "id": 80,
+    "codigo": "TEE00113",
+    "materia": "ELETROTÉCNICA",
+    "pergunta": "Diferença entre potência ativa, reativa e aparente em Eletrotécnica?",
+    "imagem": "",
+    "resposta": "Ativa (W) realiza trabalho; reativa (var) alterna energia em campos; aparente (VA) é o produto V·I RMS."
+  },
+  {
+    "id": 81,
+    "codigo": "TEM00047",
+    "materia": "USINAGEM",
+    "pergunta": "Qual é a diferença entre processo de fabricação por remoção e por conformação em Usinagem?",
+    "imagem": "",
+    "resposta": "Remoção retira material (usinagem); conformação altera forma sem remover significativamente (laminação, forjamento)."
+  },
+  {
+    "id": 82,
+    "codigo": "TEM00047",
+    "materia": "USINAGEM",
+    "pergunta": "Por que parâmetros de processo (velocidade, avanço, temperatura) importam em Usinagem?",
+    "imagem": "",
+    "resposta": "Afetam acabamento, tolerâncias, tensões residuais, microestrutura e custo/tempo de produção."
+  },
+  {
+    "id": 83,
+    "codigo": "TEM00051",
+    "materia": "ENGENHARIA DOS MATERIAIS II-A",
+    "pergunta": "O que diferencia comportamento elástico de plástico em Engenharia Dos Materiais Ii-A?",
+    "imagem": "",
+    "resposta": "Elástico é reversível (retorna ao estado inicial); plástico é irreversível após exceder o limite de escoamento."
+  },
+  {
+    "id": 84,
+    "codigo": "TEM00051",
+    "materia": "ENGENHARIA DOS MATERIAIS II-A",
+    "pergunta": "Qual é a diferença entre tensão de escoamento e resistência última em Engenharia Dos Materiais Ii-A?",
+    "imagem": "",
+    "resposta": "Escoamento marca início da deformação plástica; resistência última é a tensão máxima antes de ocorrer estricção/ruptura."
+  },
+  {
+    "id": 85,
+    "codigo": "TEM00197",
+    "materia": "ELEMENTOS DE MÁQUINAS I",
+    "pergunta": "Qual é a diferença entre falha por escoamento e falha por fadiga em Elementos De Máquinas I?",
+    "imagem": "",
+    "resposta": "Escoamento ocorre por sobrecarga estática; fadiga ocorre por carregamentos cíclicos mesmo abaixo do limite de escoamento."
+  },
+  {
+    "id": 86,
+    "codigo": "TEM00197",
+    "materia": "ELEMENTOS DE MÁQUINAS I",
+    "pergunta": "Por que fatores de segurança são usados no dimensionamento em Elementos De Máquinas I?",
+    "imagem": "",
+    "resposta": "Para cobrir incertezas de carga, material, fabricação e modelo, garantindo confiabilidade e vida útil."
+  },
+  {
+    "id": 87,
+    "codigo": "TEM00210",
+    "materia": "MÁQUINAS HIDRÁULICAS",
+    "pergunta": "Qual é o conceito central que você precisa dominar em Máquinas Hidráulicas?",
+    "imagem": "",
+    "resposta": "Identificar as leis/definições fundamentais da disciplina e saber aplicá-las em exercícios e problemas reais."
+  },
+  {
+    "id": 88,
+    "codigo": "TEM00210",
+    "materia": "MÁQUINAS HIDRÁULICAS",
+    "pergunta": "Qual é um erro comum ao estudar Máquinas Hidráulicas e como evitar?",
+    "imagem": "",
+    "resposta": "Memorizar fórmulas sem entender hipóteses; evite checando unidades, condições de validade e fazendo exemplos do zero."
+  },
+  {
+    "id": 89,
+    "codigo": "TEM00198",
+    "materia": "ELEMENTOS DE MÁQUINAS II",
+    "pergunta": "Qual é a diferença entre falha por escoamento e falha por fadiga em Elementos De Máquinas Ii?",
+    "imagem": "",
+    "resposta": "Escoamento ocorre por sobrecarga estática; fadiga ocorre por carregamentos cíclicos mesmo abaixo do limite de escoamento."
+  },
+  {
+    "id": 90,
+    "codigo": "TEM00198",
+    "materia": "ELEMENTOS DE MÁQUINAS II",
+    "pergunta": "Por que fatores de segurança são usados no dimensionamento em Elementos De Máquinas Ii?",
+    "imagem": "",
+    "resposta": "Para cobrir incertezas de carga, material, fabricação e modelo, garantindo confiabilidade e vida útil."
+  },
+  {
+    "id": 91,
+    "codigo": "TEM00203",
+    "materia": "FUNDIÇÃO, METALURGIA DO PÓ E MANUFATURA ADITIVA",
+    "pergunta": "Qual é a diferença entre processo de fabricação por remoção e por conformação em Fundição, Metalurgia Do Pó E Manufatura Aditiva?",
+    "imagem": "",
+    "resposta": "Remoção retira material (usinagem); conformação altera forma sem remover significativamente (laminação, forjamento)."
+  },
+  {
+    "id": 92,
+    "codigo": "TEM00203",
+    "materia": "FUNDIÇÃO, METALURGIA DO PÓ E MANUFATURA ADITIVA",
+    "pergunta": "Por que parâmetros de processo (velocidade, avanço, temperatura) importam em Fundição, Metalurgia Do Pó E Manufatura Aditiva?",
+    "imagem": "",
+    "resposta": "Afetam acabamento, tolerâncias, tensões residuais, microestrutura e custo/tempo de produção."
+  },
+  {
+    "id": 93,
+    "codigo": "TEM00204",
+    "materia": "SOLDAGEM E ENSAIOS NÃO DESTRUTIVOS",
+    "pergunta": "Qual é a diferença entre processo de fabricação por remoção e por conformação em Soldagem E Ensaios Não Destrutivos?",
+    "imagem": "",
+    "resposta": "Remoção retira material (usinagem); conformação altera forma sem remover significativamente (laminação, forjamento)."
+  },
+  {
+    "id": 94,
+    "codigo": "TEM00204",
+    "materia": "SOLDAGEM E ENSAIOS NÃO DESTRUTIVOS",
+    "pergunta": "Por que parâmetros de processo (velocidade, avanço, temperatura) importam em Soldagem E Ensaios Não Destrutivos?",
+    "imagem": "",
+    "resposta": "Afetam acabamento, tolerâncias, tensões residuais, microestrutura e custo/tempo de produção."
+  },
+  {
+    "id": 95,
+    "codigo": "TEP00108",
+    "materia": "ADMINISTRAÇÃO APLICADA À ENGENHARIA",
+    "pergunta": "O que é custo fixo e custo variável em Administração Aplicada À Engenharia?",
+    "imagem": "",
+    "resposta": "Fixo não depende do volume produzido (aluguel); variável varia com produção (matéria-prima)."
+  },
+  {
+    "id": 96,
+    "codigo": "TEP00108",
+    "materia": "ADMINISTRAÇÃO APLICADA À ENGENHARIA",
+    "pergunta": "O que é Valor Presente Líquido (VPL) e para que serve em Administração Aplicada À Engenharia?",
+    "imagem": "",
+    "resposta": "Soma dos fluxos de caixa descontados; ajuda a decidir investimentos considerando o valor do dinheiro no tempo."
+  },
+  {
+    "id": 97,
+    "codigo": "TEM00212",
+    "materia": "PROJETO DE ENGENHARIA MECÂNICA I",
+    "pergunta": "Qual é o objetivo principal da disciplina Projeto De Engenharia Mecânica I?",
+    "imagem": "",
+    "resposta": "Consolidar fundamentos e aplicá-los em situações práticas, com foco em metodologia, documentação e tomada de decisão."
+  },
+  {
+    "id": 98,
+    "codigo": "TEM00212",
+    "materia": "PROJETO DE ENGENHARIA MECÂNICA I",
+    "pergunta": "Quais entregáveis típicos você deve produzir em Projeto De Engenharia Mecânica I?",
+    "imagem": "",
+    "resposta": "Relatórios, análises, apresentação de resultados, justificativas técnicas e, quando aplicável, protótipos/implementações."
+  },
+  {
+    "id": 99,
+    "codigo": "TEM00214",
+    "materia": "ESTÁGIO OBRIGATÓRIO EM ENGENHARIA MECÂNICA I",
+    "pergunta": "Qual é o objetivo principal da disciplina Estágio Obrigatório Em Engenharia Mecânica I?",
+    "imagem": "",
+    "resposta": "Consolidar fundamentos e aplicá-los em situações práticas, com foco em metodologia, documentação e tomada de decisão."
+  },
+  {
+    "id": 100,
+    "codigo": "TEM00214",
+    "materia": "ESTÁGIO OBRIGATÓRIO EM ENGENHARIA MECÂNICA I",
+    "pergunta": "Quais entregáveis típicos você deve produzir em Estágio Obrigatório Em Engenharia Mecânica I?",
+    "imagem": "",
+    "resposta": "Relatórios, análises, apresentação de resultados, justificativas técnicas e, quando aplicável, protótipos/implementações."
+  },
+  {
+    "id": 101,
+    "codigo": "TEP00109",
+    "materia": "ECONOMIA APLICADA À ENGENHARIA",
+    "pergunta": "O que é custo fixo e custo variável em Economia Aplicada À Engenharia?",
+    "imagem": "",
+    "resposta": "Fixo não depende do volume produzido (aluguel); variável varia com produção (matéria-prima)."
+  },
+  {
+    "id": 102,
+    "codigo": "TEP00109",
+    "materia": "ECONOMIA APLICADA À ENGENHARIA",
+    "pergunta": "O que é Valor Presente Líquido (VPL) e para que serve em Economia Aplicada À Engenharia?",
+    "imagem": "",
+    "resposta": "Soma dos fluxos de caixa descontados; ajuda a decidir investimentos considerando o valor do dinheiro no tempo."
+  },
+  {
+    "id": 103,
+    "codigo": "TEM00213",
+    "materia": "PROJETO DE ENGENHARIA MECÂNICA II",
+    "pergunta": "Qual é o objetivo principal da disciplina Projeto De Engenharia Mecânica Ii?",
+    "imagem": "",
+    "resposta": "Consolidar fundamentos e aplicá-los em situações práticas, com foco em metodologia, documentação e tomada de decisão."
+  },
+  {
+    "id": 104,
+    "codigo": "TEM00213",
+    "materia": "PROJETO DE ENGENHARIA MECÂNICA II",
+    "pergunta": "Quais entregáveis típicos você deve produzir em Projeto De Engenharia Mecânica Ii?",
+    "imagem": "",
+    "resposta": "Relatórios, análises, apresentação de resultados, justificativas técnicas e, quando aplicável, protótipos/implementações."
+  }
 ]

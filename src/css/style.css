@@ -123,6 +123,299 @@ nav .links ul li span {
     font-weight: 400;
 }
 
+/* Layout 2 */
+/* ================= HEADER MODERNO ================= */
+.modern-header {
+    background: rgba(22, 22, 22, 0.85); /* Fundo escuro semi-transparente */
+    backdrop-filter: blur(12px);        /* Efeito de vidro (blur) */
+    -webkit-backdrop-filter: blur(12px); /* Suporte para Safari */
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05); /* Linha sutil embaixo */
+    padding: 0.8rem 2rem;
+    position: sticky; /* Fixa o menu no topo ao rolar */
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* --- Logo --- */
+.brand-logo {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    text-decoration: none;
+    transition: opacity 0.3s;
+}
+
+.brand-logo:hover {
+    opacity: 0.9;
+}
+
+.brand-logo img {
+    height: 45px; /* Tamanho controlado */
+    width: auto;
+}
+
+.brand-text h1 {
+    color: #fff;
+    font-weight: 700;
+    margin: 0;
+    letter-spacing: 0.5px;
+}
+
+.brand-text span {
+    color: #48A1D9; /* Azul da sua identidade */
+}
+
+/* --- Menu de Links --- */
+.nav-menu {
+    display: flex;
+    align-items: center;
+    gap: 30px; /* Espaçamento entre os itens */
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* Links Padrão */
+.nav-link {
+    text-decoration: none;
+    color: #e0e0e0;
+    font-size: 1rem;
+    font-weight: 500;
+    position: relative;
+    transition: color 0.3s ease;
+    padding: 5px 0;
+}
+
+.nav-link:not(.btn-logout):hover {
+    color: #48A1D9;
+}
+
+/* Efeito de sublinhado animado ao passar o mouse */
+.nav-link:not(.btn-logout)::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #48A1D9;
+    transition: width 0.3s ease;
+}
+
+.nav-link:not(.btn-logout):hover::after {
+    width: 100%;
+}
+
+/* --- Botão Sair (Logout) --- */
+/* Transformamos o link em um botão "outline" elegante */
+.btn-logout {
+    padding: 8px 24px !important;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 50px;
+    color: #fff;
+    transition: all 0.3s ease;
+    font-size: 0.9rem;
+}
+
+.btn-logout:hover {
+    background-color: #48A1D9;
+    border-color: #48A1D9;
+    color: #fff;
+    box-shadow: 0 0 15px rgba(72, 161, 217, 0.4); /* Brilho azul */
+    transform: translateY(-2px);
+}
+
+/* --- Mobile Toggle (Apenas visual por enquanto) --- */
+.mobile-toggle {
+    display: none;
+    color: #fff;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+/* Responsividade Básica */
+@media (max-width: 768px) {
+    .nav-menu {
+        display: none; /* Esconde menu no mobile (precisaria de JS para abrir) */
+    }
+    .mobile-toggle {
+        display: block;
+    }
+}
+
+/* ================= FOOTER MODERNO ================= */
+/* ================= FOOTER REFINADO ================= */
+
+.main-footer{
+  background: #0f0f10;
+  color: rgba(255,255,255,0.78);
+  padding: 70px 0 24px;
+  margin-top: 70px;
+  border-top: 1px solid rgba(72,161,217,0.25);
+  position: relative;
+  overflow: hidden;
+}
+
+/* Glow bem controlado (sem exagero) */
+.main-footer::before{
+  content:"";
+  position:absolute;
+  inset:-200px -200px auto -200px;
+  height: 340px;
+  background: radial-gradient(circle, rgba(72,161,217,0.18), transparent 60%);
+  pointer-events:none;
+  filter: blur(10px);
+}
+
+.footer-content{
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 28px 34px;
+  display: grid;
+  grid-template-columns: 1.3fr 1fr 1fr;
+  gap: 44px;
+  position: relative;
+  z-index: 1;
+}
+
+/* Bloco marca */
+.brand-section{
+  max-width: 420px;
+}
+
+.footer-section h3,
+.footer-section h4{
+  color: #fff;
+  margin-bottom: 16px;
+  font-weight: 600;
+  letter-spacing: 0.4px;
+}
+
+.footer-section h3 span{
+  color:#48A1D9;
+}
+
+.brand-section p{
+  font-size: 0.95rem;
+  line-height: 1.65;
+  color: rgba(255,255,255,0.68);
+}
+
+/* Links */
+.links-section ul{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  gap: 10px;
+}
+
+.links-section ul li a{
+  color: rgba(255,255,255,0.70);
+  text-decoration: none;
+  transition: 0.25s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.links-section ul li a:hover{
+  color: #48A1D9;
+  transform: translateX(4px);
+}
+
+/* “Pontinho” antes do link */
+.links-section ul li a::before{
+  content:"";
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: rgba(72,161,217,0.55);
+  transition: 0.25s ease;
+}
+.links-section ul li a:hover::before{
+  background: #48A1D9;
+  box-shadow: 0 0 14px rgba(72,161,217,0.35);
+}
+
+/* Social */
+.social-icons{
+  display:flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.social-icons a{
+  width: 42px;
+  height: 42px;
+  border-radius: 12px;
+  background: rgba(255,255,255,0.06);
+  border: 1px solid rgba(255,255,255,0.08);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  color: #fff;
+  text-decoration:none;
+  transition: 0.25s ease;
+}
+
+.social-icons a:hover{
+  transform: translateY(-3px);
+  border-color: rgba(72,161,217,0.55);
+  box-shadow: 0 0 22px rgba(72,161,217,0.22);
+}
+
+/* Rodapé final */
+.footer-bottom{
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 18px 28px 0;
+  border-top: 1px solid rgba(255,255,255,0.08);
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 18px;
+  position: relative;
+  z-index: 1;
+  font-size: 0.88rem;
+  color: rgba(255,255,255,0.55);
+}
+
+.footer-bottom .credits{
+  color: rgba(255,255,255,0.45);
+}
+
+/* Responsivo */
+@media (max-width: 900px){
+  .footer-content{
+    grid-template-columns: 1fr 1fr;
+  }
+  .brand-section{
+    grid-column: 1 / -1;
+    max-width: none;
+  }
+}
+
+@media (max-width: 620px){
+  .footer-content{
+    grid-template-columns: 1fr;
+    gap: 28px;
+  }
+  .footer-bottom{
+    flex-direction: column;
+    text-align:center;
+  }
+}
+
 
 @keyframes glowing {
     0% {background-position: 0 0;}
@@ -219,7 +512,7 @@ main {
     visibility: hidden;
 }
 
-/* Rodapé */
+/* Rodapé 
 footer {
     background-color: black;
     color: white;
@@ -234,7 +527,7 @@ footer {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-}
+} */
 
 /* Aviso de Orientação Mobile */
 .orientation-warning {

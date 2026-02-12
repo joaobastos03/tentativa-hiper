@@ -45,19 +45,24 @@
         <img src="src/imagens/rotate-icon.png" alt="Gire o dispositivo">
     </div> -->
 
-    <header>
-        <nav>
-            <ul>
-                <li><img src="src\imagens\logo pet mec.png" alt=""></li>
-                <li><h1><span>HIPER</span>FLUXOGRAMA</h1></li>
+    <header class="modern-header">
+        <nav class="navbar">
+            <a href="home.php" class="brand-logo">
+                <img src="src/imagens/logo pet mec.png" alt="Logo PET MEC">
+                <div class="brand-text">
+                    <h1><span>HIPER</span>FLUXOGRAMA</h1>
+                </div>
+            </a>
+
+            <ul class="nav-menu">
+                <li><a href="dados.php" class="nav-link">Dados</a></li>
+                <li><a href="manutencao.php" class="nav-link">Monitoria</a></li>
+                <li><a href="flashcard/flashcard.php" class="nav-link">Praticar</a></li>
+                <li><a href="login-pages/logout.php" class="nav-link btn-logout">Sair</a></li>
             </ul>
-            <div class="links">
-              <ul>
-                <li><a href="login-pages\logout.php"><button><span>Logout</span></button></a></li>
-                <a href="dados.php"><li><button><span>Dados</span></button></li></a>
-                <a href="manutencao.php"><li><button><span>Monitoria</span></button></li></a>
-                <li><a href="flashcard/flashcard.php"><button><span>Praticar</span></button></a>
-              </ul>
+
+            <div class="mobile-toggle">
+                <i class="fas fa-bars"></i>
             </div>
         </nav>
     </header>
